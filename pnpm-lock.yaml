@@ -44,6 +44,13 @@ importers:
       tailwindcss:
         specifier: ^3.4.19
         version: 3.4.19
+    devDependencies:
+      '@types/react':
+        specifier: ^19.2.8
+        version: 19.2.8
+      '@types/react-dom':
+        specifier: ^19.2.3
+        version: 19.2.3(@types/react@19.2.8)
 
 packages:
 
