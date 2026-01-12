@@ -4,7 +4,7 @@ description: "Switch to Firefox - the independent and privacy-friendly browser"
 pubDate: 2026-01-02
 category: "Browser"
 lang: "en"
-heroImage: "../../../images/soup.jpg"
+heroImage: "../../../assets/soup.jpg"
 ---
 
 # Firefox Browser

@@ -5,6 +5,8 @@ import RecipeCard from "../../components/RecipeCard";
 import NewsletterForm from "../../components/NewsletterForm";
 import { getCollection } from "astro:content";
 import { useTranslations } from "../../utils/i18n";
+import { Image } from "astro:assets";
+import heroImage from "../../assets/hero1.jpg";
 
 export function getStaticPaths() {
   return [{ params: { lang: "de" } }, { params: { lang: "en" } }];
@@ -30,7 +32,12 @@ const featuredRecipes = recipes.slice(0, 3);
   >
     <!-- Hero background image -->
     <div class="absolute inset-0 opacity-20">
-      <img src="/hero1.jpg" alt="" class="w-full h-full object-cover" />
+      <Image
+        src={heroImage}
+        alt=""
+        class="w-full h-full object-cover"
+        loading="eager"
+      />
     </div>
 
     <!-- Content overlay -->

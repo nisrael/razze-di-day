@@ -4,7 +4,7 @@ description: "Wechsle zu Mastodon - dem dezentralen sozialen Netzwerk"
 pubDate: 2026-01-06
 category: "Social Media"
 lang: "de"
-heroImage: "../../../images/cookies.jpg"
+heroImage: "../../../assets/cookies.jpg"
 ---
 
 # Mastodon

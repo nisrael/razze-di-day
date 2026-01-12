@@ -6,6 +6,8 @@ import "../styles/globals.css";
 import MobileMenu from "../components/MobileMenu";
 import de from "../i18n/de.json";
 import en from "../i18n/en.json";
+import { Image } from "astro:assets";
+import logo from "../assets/logo.svg";
 
 interface Props {
   title?: string;
@@ -127,7 +129,7 @@ const legalItems = [
               href={getRelativeLocaleUrl(lang, "/")}
               class="flex items-center gap-3"
             >
-              <img src="/logo.svg" alt="DI.DAY" class="h-10 w-auto" />
+              <Image src={logo} alt="DI.DAY" class="h-10 w-auto" />
             </a>
             <div class="hidden md:flex items-center gap-6">
               <a

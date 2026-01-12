@@ -4,7 +4,7 @@ description: "Switch from Amazon to local bookstores and social alternatives"
 pubDate: 2026-01-02
 category: "Shopping"
 lang: "en"
-heroImage: "../../../images/book.jpg"
+heroImage: "../../../assets/book.jpg"
 ---
 
 # Local Bookstore

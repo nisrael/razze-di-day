@@ -4,7 +4,7 @@ description: "Switch to Mastodon - the decentralized social network"
 pubDate: 2026-01-06
 category: "Social Media"
 lang: "en"
-heroImage: "../../../images/cookies.jpg"
+heroImage: "../../../assets/cookies.jpg"
 ---
 
 # Mastodon
