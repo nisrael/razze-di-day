@@ -4,12 +4,16 @@ import RecipeLayout from "../../../layouts/RecipeLayout.astro";
 
 export async function getStaticPaths() {
   const recipes = await getCollection("recipes");
-  return recipes
-    .filter((recipe) => recipe.data.lang === "en")
-    .map((recipe) => ({
-      params: { slug: recipe.id.replace(/^en\//, "").replace(/\.md$/, "") },
+  return recipes.map((recipe) => {
+    const lang = recipe.data.lang;
+    const slug = recipe.id
+      .replace(new RegExp(`^${lang}/`), "")
+      .replace(/\.md$/, "");
+    return {
+      params: { lang, slug },
       props: { entry: recipe },
-    }));
+    };
+  });
 }
 
 const { entry } = Astro.props;

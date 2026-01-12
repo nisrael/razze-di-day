@@ -5,24 +5,30 @@ import { getCollection } from "astro:content";
 import { useTranslations } from "../../../utils/i18n";
 import { getRelativeLocaleUrl } from "astro:i18n";
 
-const lang = "en";
+export function getStaticPaths() {
+  return [{ params: { lang: "de" } }, { params: { lang: "en" } }];
+}
+
+const { lang } = Astro.params;
 const t = useTranslations(lang);
 
 const recipes = (await getCollection("recipes")).filter(
-  (recipe) => recipe.data.lang === "en"
+  (recipe) => recipe.data.lang === lang
 );
 ---
 
 <BaseLayout
-  lang="en"
-  title="Recipes | Digital Independence Day"
-  description="Step-by-step guides for switching to digital independence"
+  lang={lang}
+  title={`${t.recipes_index.title} | Digital Independence Day`}
+  description={t.recipes_index.desc}
 >
   <div class="container mx-auto px-4 py-12">
     <header class="text-center mb-12">
-      <h1 class="text-4xl md:text-5xl font-display font-bold mb-4">Recipes</h1>
+      <h1 class="text-4xl md:text-5xl font-display font-bold mb-4">
+        {t.recipes_index.title}
+      </h1>
       <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-        Step-by-step guides for switching to digital independence
+        {t.recipes_index.desc}
       </p>
     </header>
 
@@ -37,7 +43,7 @@ const recipes = (await getCollection("recipes")).filter(
             seeText={t.recipe.see}
             href={getRelativeLocaleUrl(
               lang,
-              `recipes/${recipe.id.replace(/^en\//, "").replace(/\.md$/, "")}`
+              `recipes/${recipe.id.replace(new RegExp(`^${lang}/`), "").replace(/\.md$/, "")}`
             )}
             client:load
           />

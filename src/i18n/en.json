@@ -75,5 +75,43 @@
         ],
         "moreQuestions": "Further questions? Feel free to contact us!",
         "cta": "Subscribe to Newsletter"
+    },
+    "newsletter_page": {
+        "title": "Newsletter",
+        "description": "Subscribe to our newsletter for monthly updates",
+        "intro": "Receive monthly updates on new recipes and digital independence",
+        "expect_title": "What to expect?",
+        "expect_items": [
+            "New recipes for digital independence",
+            "Tips and tricks for more privacy",
+            "Announcements about DI.DAY events",
+            "Only once a month, no spam"
+        ]
+    },
+    "initiators_page": {
+        "contact_title": "Contact",
+        "contact_p1": "Do you have questions or want to get involved?",
+        "contact_cta": "Subscribe to our newsletter",
+        "contact_p2": "or contact us directly."
+    },
+    "recipes_index": {
+        "title": "Recipes",
+        "desc": "Step-by-step instructions for switching to digital independence"
+    },
+    "home": {
+        "hero_title": "Switch to the good side every first Sunday!",
+        "hero_subtitle": "The next DI.DAY takes place on February 1st",
+        "hero_cta_recipes": "Discover Recipes",
+        "hero_cta_alternatives": "More Alternatives",
+        "featured_title": "Popular Recipes",
+        "featured_all": "View all recipes →",
+        "why_title": "Why Digital Independence?",
+        "why_p1": "Big tech corporations collect massive amounts of data, influence our perception through algorithms, and have an enormous impact on our lives.",
+        "why_p2": "There are privacy-friendly and ethical alternatives for almost every service. Switching is often easier than expected!",
+        "why_cta": "Learn more",
+        "together_title": "Together we are stronger",
+        "together_desc": "Every small step counts. Share your experiences and help others switch.",
+        "together_cta": "Switch together",
+        "talk_cta": "Talk about it"
     }
 }

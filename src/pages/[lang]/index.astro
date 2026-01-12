@@ -6,16 +6,25 @@ import NewsletterForm from "../../components/NewsletterForm";
 import { getCollection } from "astro:content";
 import { useTranslations } from "../../utils/i18n";
 
-const lang = "en";
+export function getStaticPaths() {
+  return [{ params: { lang: "de" } }, { params: { lang: "en" } }];
+}
+
+const { lang } = Astro.params;
 const t = useTranslations(lang);
 
 const recipes = (await getCollection("recipes")).filter(
-  (recipe) => recipe.data.lang === "en"
+  (recipe) => recipe.data.lang === lang
 );
 const featuredRecipes = recipes.slice(0, 3);
 ---
 
-<BaseLayout lang="en">
+<BaseLayout
+  lang={lang}
+  title={lang === "en"
+    ? `Digital Independence Day | ${t.home.hero_title}`
+    : undefined}
+>
   <section
     class="relative bg-gradient-to-br from-primary-600 to-accent-600 text-white py-20 overflow-hidden"
   >
@@ -27,23 +36,23 @@ const featuredRecipes = recipes.slice(0, 3);
     <!-- Content overlay -->
     <div class="relative container mx-auto px-4 text-center">
       <h1 class="text-5xl md:text-6xl font-display font-bold mb-6">
-        Switch to the good side every first Sunday!
+        {t.home.hero_title}
       </h1>
       <p class="text-xl md:text-2xl mb-8 text-primary-100">
-        The next DI.DAY is on February 1st
+        {t.home.hero_subtitle}
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a
-          href={getRelativeLocaleUrl("en", "recipes")}
+          href={getRelativeLocaleUrl(lang, "recipes")}
           class="px-8 py-4 bg-white text-primary-600 rounded-lg font-semibold hover:bg-primary-50 transition-colors shadow-lg"
         >
-          Discover Recipes
+          {t.home.hero_cta_recipes}
         </a>
         <a
-          href={getRelativeLocaleUrl("en", "alternatives")}
+          href={getRelativeLocaleUrl(lang, "alternatives")}
           class="px-8 py-4 bg-primary-700 text-white rounded-lg font-semibold hover:bg-primary-800 transition-colors"
         >
-          More Alternatives
+          {t.home.hero_cta_alternatives}
         </a>
       </div>
     </div>
@@ -52,7 +61,7 @@ const featuredRecipes = recipes.slice(0, 3);
   <section class="py-16 bg-gray-50 dark:bg-gray-900">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl md:text-4xl font-display font-bold text-center mb-12">
-        Popular Recipes
+        {t.home.featured_title}
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {
@@ -62,7 +71,7 @@ const featuredRecipes = recipes.slice(0, 3);
               seeText={t.recipe.see}
               href={getRelativeLocaleUrl(
                 lang,
-                `recipes/${recipe.id.replace(/^en\//, "").replace(/\.md$/, "")}`
+                `recipes/${recipe.id.replace(new RegExp(`^${lang}/`), "").replace(/\.md$/, "")}`
               )}
               client:load
             />
@@ -71,10 +80,10 @@ const featuredRecipes = recipes.slice(0, 3);
       </div>
       <div class="text-center mt-12">
         <a
-          href={getRelativeLocaleUrl("en", "recipes")}
+          href={getRelativeLocaleUrl(lang, "recipes")}
           class="inline-flex items-center text-primary-600 dark:text-primary-400 font-semibold hover:underline"
         >
-          View all recipes →
+          {t.home.featured_all}
         </a>
       </div>
     </div>
@@ -85,25 +94,22 @@ const featuredRecipes = recipes.slice(0, 3);
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
           <h2 class="text-3xl md:text-4xl font-display font-bold mb-6">
-            Why digital independence?
+            {t.home.why_title}
           </h2>
           <div class="space-y-4 text-gray-600 dark:text-gray-400">
             <p>
-              Big tech corporations collect massive amounts of data, influence
-              our perception through algorithms, and have an enormous impact on
-              our lives.
+              {t.home.why_p1}
             </p>
             <p>
-              There are privacy-friendly and ethical alternatives for almost
-              every service. Switching is often easier than you think!
+              {t.home.why_p2}
             </p>
           </div>
           <div class="mt-8">
             <a
-              href={getRelativeLocaleUrl("en", "faqs")}
+              href={getRelativeLocaleUrl(lang, "faqs")}
               class="inline-flex items-center px-6 py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-colors"
             >
-              Learn more
+              {t.home.why_cta}
             </a>
           </div>
         </div>
@@ -121,25 +127,25 @@ const featuredRecipes = recipes.slice(0, 3);
   <section class="py-16 bg-gray-50 dark:bg-gray-900">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl md:text-4xl font-display font-bold mb-6">
-        Together we are stronger
+        {t.home.together_title}
       </h2>
       <p
         class="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto"
       >
-        Every small step counts. Share your experiences and help others switch.
+        {t.home.together_desc}
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a
-          href={getRelativeLocaleUrl("en", "together")}
+          href={getRelativeLocaleUrl(lang, "together")}
           class="px-6 py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-colors"
         >
-          Switch together
+          {t.home.together_cta}
         </a>
         <a
-          href={getRelativeLocaleUrl("en", "talkaboutit")}
+          href={getRelativeLocaleUrl(lang, "talkaboutit")}
           class="px-6 py-3 border-2 border-primary-600 text-primary-600 dark:text-primary-400 rounded-lg font-semibold hover:bg-primary-50 dark:hover:bg-primary-950 transition-colors"
         >
-          Talk about it
+          {t.home.talk_cta}
         </a>
       </div>
     </div>

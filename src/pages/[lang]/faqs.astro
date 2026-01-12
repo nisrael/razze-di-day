@@ -4,12 +4,17 @@ import FAQItem from "../../components/FAQItem";
 import { getRelativeLocaleUrl } from "astro:i18n";
 import { useTranslations } from "../../utils/i18n";
 
-const lang = "de";
+export function getStaticPaths() {
+  return [{ params: { lang: "de" } }, { params: { lang: "en" } }];
+}
+
+const { lang } = Astro.params;
 const t = useTranslations(lang);
 const faqs = t.faqs.items;
 ---
 
 <BaseLayout
+  lang={lang}
   title={`${t.nav.faqs} | Digital Independence Day`}
   description={t.faqs.desc}
 >

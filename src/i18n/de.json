@@ -75,5 +75,43 @@
         ],
         "moreQuestions": "Weitere Fragen? Kontaktiere uns gerne!",
         "cta": "Newsletter abonnieren"
+    },
+    "newsletter_page": {
+        "title": "Newsletter",
+        "description": "Abonniere unseren Newsletter für monatliche Updates",
+        "intro": "Erhalte monatliche Updates zu neuen Wechselrezepten und digitaler Unabhängigkeit",
+        "expect_title": "Was erwartet dich?",
+        "expect_items": [
+            "Neue Wechselrezepte für digitale Unabhängigkeit",
+            "Tipps und Tricks für mehr Datenschutz",
+            "Ankündigungen zu DI.DAY Events",
+            "Nur einmal im Monat, kein Spam"
+        ]
+    },
+    "initiators_page": {
+        "contact_title": "Kontakt",
+        "contact_p1": "Du hast Fragen oder willst dich beteiligen?",
+        "contact_cta": "Abonniere unseren Newsletter",
+        "contact_p2": "oder kontaktiere uns direkt."
+    },
+    "recipes_index": {
+        "title": "Wechselrezepte",
+        "desc": "Schritt-für-Schritt Anleitungen zum Wechsel zu digitaler Unabhängigkeit"
+    },
+    "home": {
+        "hero_title": "Jeden ersten Sonntag auf die gute Seite wechseln!",
+        "hero_subtitle": "Am 1. Februar findet der nächste DI.DAY statt",
+        "hero_cta_recipes": "Wechselrezepte entdecken",
+        "hero_cta_alternatives": "Mehr Alternativen",
+        "featured_title": "Beliebte Wechselrezepte",
+        "featured_all": "Alle Rezepte ansehen →",
+        "why_title": "Warum digitale Unabhängigkeit?",
+        "why_p1": "Große Tech-Konzerne sammeln massiv Daten, beeinflussen durch Algorithmen unsere Wahrnehmung und haben enormen Einfluss auf unser Leben.",
+        "why_p2": "Es gibt für fast jeden Dienst datenschutzfreundliche und ethische Alternativen. Der Wechsel ist oft einfacher als gedacht!",
+        "why_cta": "Mehr erfahren",
+        "together_title": "Gemeinsam sind wir stärker",
+        "together_desc": "Jeder kleine Schritt zählt. Teile deine Erfahrungen und hilf anderen beim Wechsel.",
+        "together_cta": "Gemeinsam wechseln",
+        "talk_cta": "Sprich drüber"
     }
 }

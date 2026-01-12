@@ -1,0 +1,62 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import NewsletterForm from "../../components/NewsletterForm";
+import { useTranslations } from "../../utils/i18n";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+export function getStaticPaths() {
+  return [{ params: { lang: "de" } }, { params: { lang: "en" } }];
+}
+
+const { lang } = Astro.params;
+const t = useTranslations(lang);
+---
+
+<BaseLayout
+  lang={lang}
+  title={`${t.newsletter_page.title} | Digital Independence Day`}
+  description={t.newsletter_page.description}
+>
+  <div class="container mx-auto px-4 py-12 max-w-2xl">
+    <header class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-display font-bold mb-4">
+        {t.newsletter_page.title}
+      </h1>
+      <p class="text-xl text-gray-600 dark:text-gray-400">
+        {t.newsletter_page.intro}
+      </p>
+    </header>
+
+    <NewsletterForm
+      t={t.newsletter}
+      privacyUrl={getRelativeLocaleUrl(lang, "privacy")}
+      client:load
+    />
+
+    <div class="mt-12 bg-gray-50 dark:bg-gray-800 rounded-xl p-8">
+      <h2 class="text-2xl font-display font-bold mb-4">
+        {t.newsletter_page.expect_title}
+      </h2>
+      <ul class="space-y-3 text-gray-600 dark:text-gray-400">
+        {
+          t.newsletter_page.expect_items.map((item) => (
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-6 h-6 text-primary-600 flex-shrink-0 mt-0.5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span>{item}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</BaseLayout>
