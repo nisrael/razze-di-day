@@ -5,6 +5,7 @@ import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
+import { LOCALES } from "./src/consts";
 
 // https://astro.build/config
 export default defineConfig({
@@ -19,7 +20,7 @@ export default defineConfig({
   ],
   i18n: {
     defaultLocale: "de",
-    locales: ["de", "en"],
+    locales: [...LOCALES],
     routing: {
       prefixDefaultLocale: true,
     },
