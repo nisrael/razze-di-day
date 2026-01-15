@@ -60,3 +60,50 @@ Check out [our documentation](https://docs.astro.build) or jump into our [Discor
 ## Credit
 
 This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+
+## 🌍 Internationalization (i18n) Workflow
+
+This project uses `mdpo` to synchronize Markdown content with Weblate via PO/POT files.
+
+### 1. Prerequisites (System)
+
+The `mdpo` tool requires the `md4c` system libraries.
+
+```bash
+# Ubuntu / Debian
+sudo apt-get update
+sudo apt-get install libmd4c-html0-dev libmd4c-dev
+```
+
+### 2. Setup Virtual Environment
+
+Python tools are managed in a virtual environment to avoid conflicts.
+
+```bash
+# Create virtual environment
+python3 -m venv .venv
+
+# Activate it
+source .venv/bin/activate
+
+# Install mdpo
+pip install mdpo
+```
+
+### 3. Workflow Scripts
+
+Always ensure your virtual environment is active (`source .venv/bin/activate`) before running these scripts.
+
+#### Extract Translations
+Updates the `.pot` templates in `src/i18n/pot/` based on the German (`de`) Markdown source files.
+
+```bash
+./scripts/i18n-extract.sh
+```
+
+#### Generate Translated Pages
+Creates/updates the English (`en`) Markdown pages in `src/content/` based on the translated `.po` files in `src/i18n/po/`.
+
+```bash
+./scripts/i18n-generate.sh
+```
