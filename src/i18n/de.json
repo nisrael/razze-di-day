@@ -3,7 +3,6 @@
         "recipes": "Wechselrezepte",
         "alternatives": "Alternativen",
         "faqs": "FAQs",
-        "newsletter": "Newsletter",
         "imprint": "Impressum",
         "privacy": "Datenschutz",
         "partners": "Partner"
@@ -23,19 +22,6 @@
         "topping": "Topping",
         "locale": "de-DE",
         "see": "Rezept ansehen →"
-    },
-    "newsletter": {
-        "header": "Newsletter abonnieren",
-        "desc": "Erhalte monatliche Updates zu neuen Wechselrezepten und digitaler Unabhängigkeit.",
-        "success": "✓ Erfolgreich angemeldet! Bitte bestätige deine E-Mail-Adresse.",
-        "emailLabel": "E-Mail-Adresse",
-        "emailPlaceholder": "deine@email.de",
-        "consentPart1": "Ich habe die ",
-        "consentPart2": " gelesen und akzeptiere sie.",
-        "privacyLink": "Datenschutzerklärung",
-        "submit": "Abonnieren",
-        "loading": "Wird gesendet...",
-        "consentAlert": "Bitte akzeptiere die Datenschutzerklärung."
     },
     "menu": {
         "title": "Menü",
@@ -76,25 +62,11 @@
             }
         ],
         "moreQuestions": "Weitere Fragen? Kontaktiere uns gerne!",
-        "cta": "Newsletter abonnieren"
-    },
-    "newsletter_page": {
-        "title": "Newsletter",
-        "description": "Abonniere unseren Newsletter für monatliche Updates",
-        "intro": "Erhalte monatliche Updates zu neuen Wechselrezepten und digitaler Unabhängigkeit",
-        "expect_title": "Was erwartet dich?",
-        "expect_items": [
-            "Neue Wechselrezepte für digitale Unabhängigkeit",
-            "Tipps und Tricks für mehr Datenschutz",
-            "Ankündigungen zu DI.DAY Events",
-            "Nur einmal im Monat, kein Spam"
-        ]
     },
     "partners_page": {
         "partners_title": "Partner",
         "contact_title": "Kontakt",
         "contact_p1": "Du hast Fragen oder willst dich beteiligen?",
-        "contact_cta": "Abonniere unseren Newsletter",
         "contact_p2": "oder kontaktiere uns direkt."
     },
     "recipes_index": {

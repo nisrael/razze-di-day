@@ -36,11 +36,6 @@ const navItems = [
     label: t.nav.partners,
   },
   { href: getRelativeLocaleUrl(lang, "faqs"), label: t.nav.faqs },
-  {
-    href: getRelativeLocaleUrl(lang, "newsletter"),
-    label: t.nav.newsletter,
-    isPrimary: true,
-  },
 ];
 
 const legalItems = [
@@ -157,12 +152,6 @@ const legalItems = [
               >
                 {t.nav.faqs}
               </a>
-              <a
-                href={getRelativeLocaleUrl(lang, "newsletter")}
-                class="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors"
-              >
-                {t.nav.newsletter}
-              </a>
               <div
                 class="flex items-center gap-2 border-l border-gray-200 dark:border-gray-700 pl-6 ml-2"
               >
@@ -234,13 +223,6 @@ const legalItems = [
                     href={getRelativeLocaleUrl(lang, "faqs")}
                     class="hover:text-primary-400 transition-colors"
                     >{t.nav.faqs}</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href={getRelativeLocaleUrl(lang, "newsletter")}
-                    class="hover:text-primary-400 transition-colors"
-                    >{t.nav.newsletter}</a
                   >
                 </li>
               </ul>

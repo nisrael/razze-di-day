@@ -3,7 +3,6 @@
         "recipes": "Recipes",
         "alternatives": "Alternatives",
         "faqs": "FAQs",
-        "newsletter": "Newsletter",
         "imprint": "Imprint",
         "privacy": "Privacy",
         "partners": "Partners"
@@ -23,19 +22,6 @@
         "topping": "Topping",
         "locale": "en-US",
         "see": "View recipe →"
-    },
-    "newsletter": {
-        "header": "Subscribe to Newsletter",
-        "desc": "Receive monthly updates on new recipes and digital independence.",
-        "success": "✓ Successfully subscribed! Please confirm your email address.",
-        "emailLabel": "Email Address",
-        "emailPlaceholder": "your@email.com",
-        "consentPart1": "I have read the ",
-        "consentPart2": " and accept it.",
-        "privacyLink": "privacy policy",
-        "submit": "Subscribe",
-        "loading": "Sending...",
-        "consentAlert": "Please accept the privacy policy."
     },
     "menu": {
         "title": "Menu",
@@ -76,25 +62,11 @@
             }
         ],
         "moreQuestions": "Further questions? Feel free to contact us!",
-        "cta": "Subscribe to Newsletter"
-    },
-    "newsletter_page": {
-        "title": "Newsletter",
-        "description": "Subscribe to our newsletter for monthly updates",
-        "intro": "Receive monthly updates on new recipes and digital independence",
-        "expect_title": "What to expect?",
-        "expect_items": [
-            "New recipes for digital independence",
-            "Tips and tricks for more privacy",
-            "Announcements about DI.DAY events",
-            "Only once a month, no spam"
-        ]
     },
     "partners_page": {
         "partners_title": "Partners",
         "contact_title": "Contact",
         "contact_p1": "Do you have questions or want to get involved?",
-        "contact_cta": "Subscribe to our newsletter",
         "contact_p2": "or contact us directly."
     },
     "recipes_index": {
