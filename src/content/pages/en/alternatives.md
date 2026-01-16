@@ -8,8 +8,8 @@ There are privacy-friendly and ethical alternatives for almost every digital ser
 ## Alternative Search Engines
 - **Ecosia**: Plants trees with advertising revenue
 - **DuckDuckGo**: No tracking, no filter bubble
-- **Startpage**: Nutzt Google-Ergebnisse ohne Tracking
-- **Qwant**: Europäische Suchmaschine mit Datenschutz
+- **Startpage**: Uses Google results without tracking
+- **Qwant**: European search engine with data protection
 
 ## Online-Buchhandel
 - **buch7.de**: 75% des Gewinns für soziale Projekte
