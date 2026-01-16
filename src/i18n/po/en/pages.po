@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-16 01:17+0000\n"
+"POT-Creation-Date: 2026-01-16 03:00+0100\n"
 "PO-Revision-Date: 2026-01-16 02:59+0000\n"
 "Last-Translator: Weblate Admin <nils@sxda.io>\n"
 "Language-Team: English <https://weblate.sxda.io/projects/diday-sxda-io/pages/"
@@ -14,20 +14,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.15.2\n"
 
-#
-#: src/content/pages/de/alternatives.md:block 1 (header)
-msgid ""
-"title: \"Alternativen\"\n"
-"description: \"Viele Wege raus aus Rom - Entdecke Alternativen zu Big Tech\""
+msgid "Alternativen"
 msgstr ""
-"title: \"Alternatives\"\n"
-"description: \"Many ways out of Rome – discover alternatives to Big Tech\""
 
-#: src/content/pages/de/alternatives.md:block 2 (header)
+msgid "Viele Wege raus aus Rom - Entdecke Alternativen zu Big Tech"
+msgstr ""
+
 msgid "Viele Wege raus aus Rom"
 msgstr "Many ways out of Rome"
 
-#: src/content/pages/de/alternatives.md:block 3 (paragraph)
 msgid ""
 "Es gibt für fast jeden digitalen Dienst datenschutzfreundliche und ethische "
 "Alternativen. Hier findest du eine Übersicht nach Kategorien."
@@ -35,225 +30,171 @@ msgstr ""
 "There are privacy-friendly and ethical alternatives for almost every digital "
 "service. Here you will find an overview by category."
 
-#: src/content/pages/de/alternatives.md:block 4 (header)
 msgid "Alternative Suchmaschinen"
 msgstr "Alternative Search Engines"
 
-#: src/content/pages/de/alternatives.md:block 5 (unordered list)
 msgid "**Ecosia**: Pflanzt Bäume mit Werbeeinnahmen"
 msgstr "**Ecosia**: Plants trees with advertising revenue"
 
-#: src/content/pages/de/alternatives.md:block 5 (unordered list)
 msgid "**DuckDuckGo**: Keine Verfolgung, keine Filterblase"
 msgstr "**DuckDuckGo**: No tracking, no filter bubble"
 
-#: src/content/pages/de/alternatives.md:block 5 (unordered list)
 msgid "**Startpage**: Nutzt Google-Ergebnisse ohne Tracking"
 msgstr "**Startpage**: Uses Google results without tracking"
 
-#: src/content/pages/de/alternatives.md:block 5 (unordered list)
 msgid "**Qwant**: Europäische Suchmaschine mit Datenschutz"
 msgstr "**Qwant**: European search engine with data protection"
 
-#: src/content/pages/de/alternatives.md:block 6 (header)
 msgid "Online-Buchhandel"
 msgstr ""
 
-#: src/content/pages/de/alternatives.md:block 7 (unordered list)
 msgid "**buch7.de**: 75% des Gewinns für soziale Projekte"
 msgstr ""
 
-#: src/content/pages/de/alternatives.md:block 7 (unordered list)
 msgid "**genialokal.de**: Unterstützt lokale Buchhandlungen"
 msgstr ""
 
-#: src/content/pages/de/alternatives.md:block 7 (unordered list)
 msgid "**Lokale Buchläden**: Persönliche Beratung und lokale Unterstützung"
 msgstr ""
 
-#: src/content/pages/de/alternatives.md:block 8 (header)
 msgid "WhatsApp & Co."
 msgstr ""
 
-#: src/content/pages/de/alternatives.md:block 9 (unordered list)
 msgid "**Signal**: Sichere, verschlüsselte Kommunikation"
 msgstr ""
 
-#: src/content/pages/de/alternatives.md:block 9 (unordered list)
 msgid "**Threema**: Schweizer Messenger mit Datenschutz"
 msgstr ""
 
-#: src/content/pages/de/alternatives.md:block 9 (unordered list)
 msgid "**Element**: Dezentraler Messenger auf Matrix-Basis"
 msgstr ""
 
-#: src/content/pages/de/alternatives.md:block 10 (header)
 msgid "Browser"
 msgstr ""
 
-#: src/content/pages/de/alternatives.md:block 11 (unordered list)
 msgid "**Firefox**: Unabhängig und datenschutzfreundlich"
 msgstr ""
 
-#: src/content/pages/de/alternatives.md:block 11 (unordered list)
 msgid "**Brave**: Blockiert Tracker und Werbung"
 msgstr ""
 
-#: src/content/pages/de/alternatives.md:block 11 (unordered list)
 msgid "**LibreWolf**: Firefox-Fork mit noch mehr Datenschutz"
 msgstr ""
 
-#: src/content/pages/de/alternatives.md:block 12 (header)
 msgid "X / Microblogging"
 msgstr ""
 
-#: src/content/pages/de/alternatives.md:block 13 (unordered list)
 msgid "**Mastodon**: Dezentrales soziales Netzwerk"
 msgstr ""
 
-#: src/content/pages/de/alternatives.md:block 13 (unordered list)
 msgid "**Bluesky**: Offenes Protokoll für soziale Medien"
 msgstr ""
 
-#: src/content/pages/de/alternatives.md:block 13 (unordered list)
 msgid "**Pixelfed**: Instagram-Alternative"
 msgstr ""
 
-#: src/content/pages/de/alternatives.md:block 14 (header)
 msgid "E-Mail"
 msgstr ""
 
-#: src/content/pages/de/alternatives.md:block 15 (unordered list)
 msgid "**Posteo**: Anonym, nachhaltig, sicher"
 msgstr ""
 
-#: src/content/pages/de/alternatives.md:block 15 (unordered list)
 msgid "**Mailbox.org**: Deutsche Alternative mit vielen Features"
 msgstr ""
 
-#: src/content/pages/de/alternatives.md:block 15 (unordered list)
 msgid "**Tutanota**: Ende-zu-Ende-verschlüsselt"
 msgstr ""
 
-#: src/content/pages/de/alternatives.md:block 15 (unordered list)
 msgid "**ProtonMail**: Schweizer Anbieter mit Verschlüsselung"
 msgstr ""
 
-#: src/content/pages/de/imprint.md:block 1 (paragraph)
-msgid "title: \"Impressum\" description: \"Impressum und rechtliche Angaben\""
-msgstr ""
-
-#: src/content/pages/de/imprint.md:block 2 (header)
 msgid "Impressum"
 msgstr ""
 
-#: src/content/pages/de/imprint.md:block 3 (header)
+msgid "Impressum und rechtliche Angaben"
+msgstr ""
+
 msgid "Angaben gemäß § 5 TMG"
 msgstr ""
 
-#: src/content/pages/de/imprint.md:block 4 (paragraph)
 msgid "Digital Independence Day [Ihre Adresse] [PLZ Ort]"
 msgstr ""
 
-#: src/content/pages/de/imprint.md:block 5 (header)
 msgid "Kontakt"
 msgstr ""
 
-#: src/content/pages/de/imprint.md:block 6 (paragraph)
 msgid "E-Mail: [Ihre E-Mail] Telefon: [Ihre Telefonnummer]"
 msgstr ""
 
-#: src/content/pages/de/imprint.md:block 7 (header)
 msgid "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV"
 msgstr ""
 
-#: src/content/pages/de/imprint.md:block 8 (paragraph)
 msgid "[Name] [Adresse] [PLZ Ort]"
 msgstr ""
 
-#: src/content/pages/de/imprint.md:block 9 (header)
 msgid "Haftungsausschluss"
 msgstr ""
 
-#: src/content/pages/de/imprint.md:block 10 (header)
 msgid "Haftung für Inhalte"
 msgstr ""
 
-#: src/content/pages/de/imprint.md:block 11 (paragraph)
 msgid ""
 "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die "
 "Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch "
 "keine Gewähr übernehmen."
 msgstr ""
 
-#: src/content/pages/de/imprint.md:block 12 (header)
 msgid "Haftung für Links"
 msgstr ""
 
-#: src/content/pages/de/imprint.md:block 13 (paragraph)
 msgid ""
-"Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte"
-" wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte "
-"auch keine Gewähr übernehmen."
+"Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte "
+"wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch "
+"keine Gewähr übernehmen."
 msgstr ""
 
-#: src/content/pages/de/imprint.md:block 14 (header)
 msgid "Urheberrecht"
 msgstr ""
 
-#: src/content/pages/de/imprint.md:block 15 (paragraph)
 msgid ""
-"Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten"
-" unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, "
+"Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten "
+"unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, "
 "Verbreitung und jede Art der Verwertung außerhalb der Grenzen des "
 "Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors "
 "bzw. Erstellers."
 msgstr ""
 
-#: src/content/pages/de/partners.md:block 1 (paragraph)
-msgid ""
-"title: \"Partner\" description: \"Über die Partner des Digital Independence "
-"Day\""
-msgstr ""
-
-#: src/content/pages/de/partners.md:block 2 (header)
 msgid "Partner"
 msgstr ""
 
-#: src/content/pages/de/partners.md:block 3 (header)
+msgid "Über die Partner des Digital Independence Day"
+msgstr ""
+
 msgid ""
 "Ein breites Bündnis von Organisationen aus allen Ecken der Gesellschaft hat "
 "den DI.DAY gestartet."
 msgstr ""
 
-#: src/content/pages/de/partners.md:block 4 (paragraph)
 msgid ""
 "Aber das war nur der Anfang: DI.DAY ist für alle da. Der Kreis der "
-"Initiator\\*innen ist nun geschlossen, freut sich aber darüber, wenn weitere"
-" Organisationen, Vereine, Initiativen am DI.DAY mit eigenen Ideen, "
-"Veranstaltungen (gern eintragen unter "
-"[termine.di.day](https://termine.di.day)), Informationsangeboten beteiligen."
+"Initiator\\*innen ist nun geschlossen, freut sich aber darüber, wenn weitere "
+"Organisationen, Vereine, Initiativen am DI.DAY mit eigenen Ideen, "
+"Veranstaltungen (gern eintragen unter [termine.di.day](https://"
+"termine.di.day)), Informationsangeboten beteiligen."
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 1 (paragraph)
-msgid ""
-"title: \"Datenschutzerklärung\" description: \"Datenschutzerklärung und "
-"Informationen zum Datenschutz\""
-msgstr ""
-
-#: src/content/pages/de/privacy.md:block 2 (header)
 msgid "Datenschutzerklärung"
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 3 (header)
+msgid "Datenschutzerklärung und Informationen zum Datenschutz"
+msgstr ""
+
 msgid "1. Datenschutz auf einen Blick"
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 4 (header)
 msgid "Allgemeine Hinweise"
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 5 (paragraph)
 msgid ""
 "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit "
 "Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. "
@@ -261,37 +202,30 @@ msgid ""
 "identifiziert werden können."
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 6 (header)
 msgid "Datenerfassung auf dieser Website"
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 7 (paragraph)
 msgid ""
 "**Wer ist verantwortlich für die Datenerfassung auf dieser Website?** Die "
 "Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. "
 "Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen."
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 8 (header)
 msgid "2. Hosting"
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 9 (paragraph)
 msgid ""
 "Diese Website wird bei einem externen Dienstleister gehostet (Hoster). Die "
 "personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf "
 "den Servern des Hosters gespeichert."
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 10 (header)
 msgid "3. Allgemeine Hinweise und Pflichtinformationen"
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 11 (header)
 msgid "Datenschutz"
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 12 (paragraph)
 msgid ""
 "Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr "
 "ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und "
@@ -299,72 +233,57 @@ msgid ""
 "Datenschutzerklärung."
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 13 (header)
 msgid "Hinweis zur verantwortlichen Stelle"
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 14 (paragraph)
 msgid ""
-"Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:"
-" [Siehe Impressum]"
+"Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist: "
+"[Siehe Impressum]"
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 15 (header)
 msgid "4. Datenerfassung auf dieser Website"
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 16 (header)
 msgid "Server-Log-Dateien"
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 17 (paragraph)
 msgid ""
-"Der Provider der Seiten erhebt und speichert automatisch Informationen in so"
-" genannten Server-Log-Dateien, die Ihr Browser automatisch an uns "
+"Der Provider der Seiten erhebt und speichert automatisch Informationen in so "
+"genannten Server-Log-Dateien, die Ihr Browser automatisch an uns "
 "übermittelt. Dies sind:"
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 18 (unordered list)
 msgid "Browsertyp und Browserversion"
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 18 (unordered list)
 msgid "verwendetes Betriebssystem"
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 18 (unordered list)
 msgid "Referrer URL"
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 18 (unordered list)
 msgid "Hostname des zugreifenden Rechners"
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 18 (unordered list)
 msgid "Uhrzeit der Serveranfrage"
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 18 (unordered list)
 msgid "IP-Adresse"
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 19 (header)
 msgid "Kontaktformular / Newsletter"
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 20 (paragraph)
 msgid ""
-"Wenn Sie uns per Kontaktformular oder Newsletter-Anmeldung Anfragen zukommen"
-" lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen"
-" dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den "
+"Wenn Sie uns per Kontaktformular oder Newsletter-Anmeldung Anfragen zukommen "
+"lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen "
+"dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den "
 "Fall von Anschlussfragen bei uns gespeichert."
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 21 (header)
 msgid "5. Ihre Rechte"
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 22 (paragraph)
 msgid ""
 "Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre "
 "gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den "
@@ -372,62 +291,50 @@ msgid ""
 "dieser Daten."
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 23 (header)
 msgid "6. Widerspruch gegen Werbe-Mails"
 msgstr ""
 
-#: src/content/pages/de/privacy.md:block 24 (paragraph)
 msgid ""
 "Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten "
 "Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung "
 "und Informationsmaterialien wird hiermit widersprochen."
 msgstr ""
 
-#: src/content/pages/de/talkaboutit.md:block 1 (paragraph)
-msgid ""
-"title: \"Sprich drüber\" description: \"Teile deine Erfahrungen mit "
-"digitaler Unabhängigkeit.\""
-msgstr ""
-
-#: src/content/pages/de/talkaboutit.md:block 2 (header)
 msgid "Sprich drüber"
 msgstr ""
 
-#: src/content/pages/de/talkaboutit.md:block 3 (paragraph)
 msgid "Teile deine Erfahrungen mit digitaler Unabhängigkeit."
 msgstr ""
 
-#: src/content/pages/de/talkaboutit.md:block 4 (paragraph)
 msgid ""
 "Diese Seite befindet sich noch im Aufbau. Hier wirst du bald Tipps und "
 "Materialien finden, wie du das Thema digitale Unabhängigkeit in deinem "
 "Umfeld ansprechen und andere motivieren kannst."
 msgstr ""
 
-#: src/content/pages/de/talkaboutit.md:block 5 (paragraph)
 msgid ""
-"In der Zwischenzeit kannst du unsere [Wechselrezepte](/de/recipes) entdecken"
-" oder unseren [Newsletter abonnieren](/de/newsletter), um auf dem Laufenden "
+"In der Zwischenzeit kannst du unsere [Wechselrezepte](/de/recipes) entdecken "
+"oder unseren [Newsletter abonnieren](/de/newsletter), um auf dem Laufenden "
 "zu bleiben."
 msgstr ""
 
-#: src/content/pages/de/together.md:block 1 (paragraph)
-msgid ""
-"title: \"Gemeinsam wechseln\" description: \"Digitale Unabhängigkeit "
-"erreicht man am besten gemeinsam.\""
-msgstr ""
-
-#: src/content/pages/de/together.md:block 2 (header)
 msgid "Gemeinsam wechseln"
 msgstr ""
 
-#: src/content/pages/de/together.md:block 3 (paragraph)
 msgid "Digitale Unabhängigkeit erreicht man am besten gemeinsam."
 msgstr ""
 
-#: src/content/pages/de/together.md:block 4 (paragraph)
 msgid ""
 "Diese Seite befindet sich noch im Aufbau. Hier wirst du bald Informationen "
 "darüber finden, wie du dich mit anderen vernetzen kannst, um gemeinsam den "
 "Wechsel zu datenschutzfreundlichen Alternativen zu gestalten."
 msgstr ""
+
+#
+#~ msgid ""
+#~ "title: \"Alternativen\"\n"
+#~ "description: \"Viele Wege raus aus Rom - Entdecke Alternativen zu Big "
+#~ "Tech\""
+#~ msgstr ""
+#~ "title: \"Alternatives\"\n"
+#~ "description: \"Many ways out of Rome – discover alternatives to Big Tech\""

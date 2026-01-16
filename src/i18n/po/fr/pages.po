@@ -1,0 +1,354 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: src/content/pages/de/together.md 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-16 03:00+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: src/content/pages/de/alternatives.md:0
+msgid "Alternativen"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:0
+msgid "Viele Wege raus aus Rom - Entdecke Alternativen zu Big Tech"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:6
+msgid "Viele Wege raus aus Rom"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:8
+msgid "Es gibt für fast jeden digitalen Dienst datenschutzfreundliche und ethische Alternativen. Hier findest du eine Übersicht nach Kategorien."
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:10
+msgid "Alternative Suchmaschinen"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:12
+msgid "**Ecosia**: Pflanzt Bäume mit Werbeeinnahmen"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:13
+msgid "**DuckDuckGo**: Keine Verfolgung, keine Filterblase"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:14
+msgid "**Startpage**: Nutzt Google-Ergebnisse ohne Tracking"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:15
+msgid "**Qwant**: Europäische Suchmaschine mit Datenschutz"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:17
+msgid "Online-Buchhandel"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:19
+msgid "**buch7.de**: 75% des Gewinns für soziale Projekte"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:20
+msgid "**genialokal.de**: Unterstützt lokale Buchhandlungen"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:21
+msgid "**Lokale Buchläden**: Persönliche Beratung und lokale Unterstützung"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:23
+msgid "WhatsApp & Co."
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:25
+msgid "**Signal**: Sichere, verschlüsselte Kommunikation"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:26
+msgid "**Threema**: Schweizer Messenger mit Datenschutz"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:27
+msgid "**Element**: Dezentraler Messenger auf Matrix-Basis"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:29
+msgid "Browser"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:31
+msgid "**Firefox**: Unabhängig und datenschutzfreundlich"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:32
+msgid "**Brave**: Blockiert Tracker und Werbung"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:33
+msgid "**LibreWolf**: Firefox-Fork mit noch mehr Datenschutz"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:35
+msgid "X / Microblogging"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:37
+msgid "**Mastodon**: Dezentrales soziales Netzwerk"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:38
+msgid "**Bluesky**: Offenes Protokoll für soziale Medien"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:39
+msgid "**Pixelfed**: Instagram-Alternative"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:41
+msgid "E-Mail"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:43
+msgid "**Posteo**: Anonym, nachhaltig, sicher"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:44
+msgid "**Mailbox.org**: Deutsche Alternative mit vielen Features"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:45
+msgid "**Tutanota**: Ende-zu-Ende-verschlüsselt"
+msgstr ""
+
+#: src/content/pages/de/alternatives.md:46
+msgid "**ProtonMail**: Schweizer Anbieter mit Verschlüsselung"
+msgstr ""
+
+#: src/content/pages/de/imprint.md:0 src/content/pages/de/imprint.md:7
+msgid "Impressum"
+msgstr ""
+
+#: src/content/pages/de/imprint.md:0
+msgid "Impressum und rechtliche Angaben"
+msgstr ""
+
+#: src/content/pages/de/imprint.md:9
+msgid "Angaben gemäß § 5 TMG"
+msgstr ""
+
+#: src/content/pages/de/imprint.md:11
+msgid "Digital Independence Day [Ihre Adresse] [PLZ Ort]"
+msgstr ""
+
+#: src/content/pages/de/imprint.md:15
+msgid "Kontakt"
+msgstr ""
+
+#: src/content/pages/de/imprint.md:17
+msgid "E-Mail: [Ihre E-Mail] Telefon: [Ihre Telefonnummer]"
+msgstr ""
+
+#: src/content/pages/de/imprint.md:20
+msgid "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV"
+msgstr ""
+
+#: src/content/pages/de/imprint.md:22
+msgid "[Name] [Adresse] [PLZ Ort]"
+msgstr ""
+
+#: src/content/pages/de/imprint.md:26
+msgid "Haftungsausschluss"
+msgstr ""
+
+#: src/content/pages/de/imprint.md:28
+msgid "Haftung für Inhalte"
+msgstr ""
+
+#: src/content/pages/de/imprint.md:30
+msgid "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen."
+msgstr ""
+
+#: src/content/pages/de/imprint.md:32
+msgid "Haftung für Links"
+msgstr ""
+
+#: src/content/pages/de/imprint.md:34
+msgid "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen."
+msgstr ""
+
+#: src/content/pages/de/imprint.md:36
+msgid "Urheberrecht"
+msgstr ""
+
+#: src/content/pages/de/imprint.md:38
+msgid "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers."
+msgstr ""
+
+#: src/content/pages/de/partners.md:0 src/content/pages/de/partners.md:7
+msgid "Partner"
+msgstr ""
+
+#: src/content/pages/de/partners.md:0
+msgid "Über die Partner des Digital Independence Day"
+msgstr ""
+
+#: src/content/pages/de/partners.md:9
+msgid "Ein breites Bündnis von Organisationen aus allen Ecken der Gesellschaft hat den DI.DAY gestartet."
+msgstr ""
+
+#: src/content/pages/de/partners.md:11
+msgid "Aber das war nur der Anfang: DI.DAY ist für alle da. Der Kreis der Initiator\\*innen ist nun geschlossen, freut sich aber darüber, wenn weitere Organisationen, Vereine, Initiativen am DI.DAY mit eigenen Ideen, Veranstaltungen (gern eintragen unter [termine.di.day](https://termine.di.day)), Informationsangeboten beteiligen."
+msgstr ""
+
+#: src/content/pages/de/privacy.md:0 src/content/pages/de/privacy.md:7
+msgid "Datenschutzerklärung"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:0
+msgid "Datenschutzerklärung und Informationen zum Datenschutz"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:9
+msgid "1. Datenschutz auf einen Blick"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:11
+msgid "Allgemeine Hinweise"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:13
+msgid "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können."
+msgstr ""
+
+#: src/content/pages/de/privacy.md:15
+msgid "Datenerfassung auf dieser Website"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:17
+msgid "**Wer ist verantwortlich für die Datenerfassung auf dieser Website?** Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen."
+msgstr ""
+
+#: src/content/pages/de/privacy.md:20
+msgid "2. Hosting"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:22
+msgid "Diese Website wird bei einem externen Dienstleister gehostet (Hoster). Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert."
+msgstr ""
+
+#: src/content/pages/de/privacy.md:24
+msgid "3. Allgemeine Hinweise und Pflichtinformationen"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:26
+msgid "Datenschutz"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:28
+msgid "Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung."
+msgstr ""
+
+#: src/content/pages/de/privacy.md:30
+msgid "Hinweis zur verantwortlichen Stelle"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:32
+msgid "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist: [Siehe Impressum]"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:35
+msgid "4. Datenerfassung auf dieser Website"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:37
+msgid "Server-Log-Dateien"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:39
+msgid "Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:41
+msgid "Browsertyp und Browserversion"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:42
+msgid "verwendetes Betriebssystem"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:43
+msgid "Referrer URL"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:44
+msgid "Hostname des zugreifenden Rechners"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:45
+msgid "Uhrzeit der Serveranfrage"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:46
+msgid "IP-Adresse"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:48
+msgid "Kontaktformular / Newsletter"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:50
+msgid "Wenn Sie uns per Kontaktformular oder Newsletter-Anmeldung Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert."
+msgstr ""
+
+#: src/content/pages/de/privacy.md:52
+msgid "5. Ihre Rechte"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:54
+msgid "Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung oder Löschung dieser Daten."
+msgstr ""
+
+#: src/content/pages/de/privacy.md:56
+msgid "6. Widerspruch gegen Werbe-Mails"
+msgstr ""
+
+#: src/content/pages/de/privacy.md:58
+msgid "Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit widersprochen."
+msgstr ""
+
+#: src/content/pages/de/talkaboutit.md:0 src/content/pages/de/talkaboutit.md:7
+msgid "Sprich drüber"
+msgstr ""
+
+#: src/content/pages/de/talkaboutit.md:0 src/content/pages/de/talkaboutit.md:9
+msgid "Teile deine Erfahrungen mit digitaler Unabhängigkeit."
+msgstr ""
+
+#: src/content/pages/de/talkaboutit.md:11
+msgid "Diese Seite befindet sich noch im Aufbau. Hier wirst du bald Tipps und Materialien finden, wie du das Thema digitale Unabhängigkeit in deinem Umfeld ansprechen und andere motivieren kannst."
+msgstr ""
+
+#: src/content/pages/de/talkaboutit.md:13 src/content/pages/de/together.md:13
+msgid "In der Zwischenzeit kannst du unsere [Wechselrezepte](/de/recipes) entdecken oder unseren [Newsletter abonnieren](/de/newsletter), um auf dem Laufenden zu bleiben."
+msgstr ""
+
+#: src/content/pages/de/together.md:0 src/content/pages/de/together.md:7
+msgid "Gemeinsam wechseln"
+msgstr ""
+
+#: src/content/pages/de/together.md:0 src/content/pages/de/together.md:9
+msgid "Digitale Unabhängigkeit erreicht man am besten gemeinsam."
+msgstr ""
+
+#: src/content/pages/de/together.md:11
+msgid "Diese Seite befindet sich noch im Aufbau. Hier wirst du bald Informationen darüber finden, wie du dich mit anderen vernetzen kannst, um gemeinsam den Wechsel zu datenschutzfreundlichen Alternativen zu gestalten."
+msgstr ""
