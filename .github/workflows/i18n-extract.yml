@@ -3,8 +3,7 @@ name: i18n Extract (Markdown to POT)
 on:
   push:
     branches:
-      - main
-      - master
+      - '**'
     paths:
       - 'src/content/pages/de/*.md'
       - 'src/content/recipes/de/*.md'
@@ -38,7 +37,7 @@ jobs:
             echo "Changes detected in POT files."
             git add src/i18n/pot/*.pot
             git commit -m "chore(i18n): update POT templates"
-            git push
+            git push origin HEAD:${{ github.ref }}
           else
             echo "No changes in POT files."
           fi

@@ -3,8 +3,7 @@ name: i18n Generate (PO to Markdown)
 on:
   push:
     branches:
-      - main
-      - master
+      - '**'
     paths:
       - 'src/i18n/po/**'
   workflow_dispatch:
@@ -38,7 +37,7 @@ jobs:
             echo "Changes detected in translated content."
             git add src/content/pages/ src/content/recipes/
             git commit -m "chore(i18n): update translated content"
-            git push
+            git push origin HEAD:${{ github.ref }}
           else
             echo "No changes in translated content."
           fi
