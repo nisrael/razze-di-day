@@ -1,11 +1,16 @@
 {
     "nav": {
         "recipes": "Wechselrezepte",
+        "motivation": "Motivation",
+        "snacks": "Wissenshäppchen",
         "alternatives": "Alternativen",
         "faqs": "FAQs",
         "imprint": "Impressum",
+        "legal": "Rechtliches",
         "privacy": "Datenschutz",
-        "partners": "Partner"
+        "partners": "Partner",
+        "support": "Unterstützen",
+        "press": "Presse"
     },
     "site": {
         "title": "Digital Independence Day",
@@ -77,8 +82,8 @@
         "hero_title": "Jeden ersten Sonntag auf die gute Seite wechseln!",
         "hero_subtitle": "Am 1. Februar findet der nächste DI.DAY statt",
         "hero_cta_recipes": "Wechselrezepte entdecken",
-        "hero_cta_alternatives": "Mehr Alternativen",
-        "featured_title": "Beliebte Wechselrezepte",
+        "hero_cta_alternatives": "Mehr über digitale Unabhängigkeit",
+        "featured_title": "Der nächste Digital Independence Day",
         "featured_all": "Alle Rezepte ansehen →",
         "why_title": "Warum digitale Unabhängigkeit?",
         "why_p1": "Große Tech-Konzerne sammeln massiv Daten, beeinflussen durch Algorithmen unsere Wahrnehmung und haben enormen Einfluss auf unser Leben.",
@@ -88,5 +93,20 @@
         "together_desc": "Jeder kleine Schritt zählt. Teile deine Erfahrungen und hilf anderen beim Wechsel.",
         "together_cta": "Gemeinsam wechseln",
         "talk_cta": "Sprich drüber"
+    },
+    "dates": {
+        "title": "Termine",
+        "description": "Alle Veranstaltungen und wichtigen Daten",
+        "cta": "Zur Terminübersicht →",
+        "info_title": "Digitale Unabhängigkeit erleben",
+        "info_text": "Entdecke alle Termine, Veranstaltungen und wichtigen Daten rund um den Digital Independence Day auf unserer Terminseite."
+    },
+    "press": {
+        "title": "Presse",
+        "description": "Informationen für Medienvertreter und Journalisten",
+        "graphics_title": "Grafiken & Materialien",
+        "graphics_text": "Hier finden Sie Logos, Banner und andere Materialien für die Berichterstattung.",
+        "contact_title": "Kontakt",
+        "contact_text": "Für Anfragen und weitere Informationen kontaktieren Sie uns unter:"
     }
 }

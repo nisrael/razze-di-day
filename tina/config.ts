@@ -138,6 +138,62 @@ export default defineConfig({
           },
         ],
       },
+      {
+        name: "faqs",
+        label: "FAQs",
+        path: "src/i18n",
+        format: "json",
+        match: {
+          include: "{de,en}",
+        },
+        fields: [
+          {
+            type: "object",
+            name: "faqs",
+            label: "FAQ Section",
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "FAQ Title",
+              },
+              {
+                type: "string",
+                name: "desc",
+                label: "FAQ Description",
+              },
+              {
+                type: "object",
+                name: "items",
+                label: "FAQ Items",
+                list: true,
+                ui: {
+                  itemProps: (item) => {
+                    return { label: item?.question };
+                  },
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "question",
+                    label: "Question",
+                    required: true,
+                  },
+                  {
+                    type: "string",
+                    name: "answer",
+                    label: "Answer",
+                    required: true,
+                    ui: {
+                      component: "textarea",
+                    },
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
     ],
   },
 });

@@ -12,13 +12,22 @@ interface Props {
     label: string;
     isPrimary?: boolean;
   }>;
+  footerLinks: Array<{
+    href: string;
+    label: string;
+  }>;
   legalItems: Array<{
     href: string;
     label: string;
   }>;
 }
 
-export default function MobileMenu({ t, navItems, legalItems }: Props) {
+export default function MobileMenu({
+  t,
+  navItems,
+  footerLinks,
+  legalItems,
+}: Props) {
   const [isOpen, setIsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
 
@@ -92,17 +101,44 @@ export default function MobileMenu({ t, navItems, legalItems }: Props) {
 
           {/* Footer links */}
           <div className="p-4 border-t border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-800/50">
-            <div className="space-y-3 text-sm">
-              {legalItems.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className="block text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.label}
-                </a>
-              ))}
+            <div className="space-y-4">
+              {/* Links section */}
+              <div>
+                <h3 className="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-2">
+                  Links
+                </h3>
+                <div className="space-y-2 text-sm">
+                  {footerLinks.map((item) => (
+                    <a
+                      key={item.href}
+                      href={item.href}
+                      className="block text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+
+              {/* Legal section */}
+              <div>
+                <h3 className="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wide mb-2">
+                  Legal
+                </h3>
+                <div className="space-y-2 text-sm">
+                  {legalItems.map((item) => (
+                    <a
+                      key={item.href}
+                      href={item.href}
+                      className="block text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>

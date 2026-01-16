@@ -2,10 +2,10 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getRelativeLocaleUrl } from "astro:i18n";
 import RecipeCard from "../../components/RecipeCard";
-import NewsletterForm from "../../components/NewsletterForm";
 import { getCollection } from "astro:content";
 import { useTranslations } from "../../utils/i18n";
 import { Image } from "astro:assets";
+import { getNextDIDayInfo } from "../../utils/diday";
 import heroImage from "../../assets/hero1.jpg";
 import { LOCALES } from "../../consts";
 
@@ -19,7 +19,13 @@ const t = useTranslations(lang);
 const recipes = (await getCollection("recipes")).filter(
   (recipe) => recipe.id.split("/")[0] === lang
 );
-const featuredRecipes = recipes.slice(0, 3);
+const featuredRecipes = recipes.slice(0, 6);
+
+// Get next DI.DAY date
+const { formatted: nextDIDayDate } = getNextDIDayInfo(lang);
+const heroSubtitle = lang === "de"
+  ? `Am ${nextDIDayDate} findet der nächste DI.DAY statt`
+  : `The next DI.DAY will take place on ${nextDIDayDate}`;
 ---
 
 <BaseLayout
@@ -47,7 +53,7 @@ const featuredRecipes = recipes.slice(0, 3);
         {t.home.hero_title}
       </h1>
       <p class="text-xl md:text-2xl mb-8 text-primary-100">
-        {t.home.hero_subtitle}
+        {heroSubtitle}
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a
@@ -57,7 +63,7 @@ const featuredRecipes = recipes.slice(0, 3);
           {t.home.hero_cta_recipes}
         </a>
         <a
-          href={getRelativeLocaleUrl(lang, "alternatives")}
+          href={getRelativeLocaleUrl(lang, "motivation")}
           class="px-8 py-4 bg-primary-700 text-white rounded-lg font-semibold hover:bg-primary-800 transition-colors"
         >
           {t.home.hero_cta_alternatives}
@@ -66,12 +72,20 @@ const featuredRecipes = recipes.slice(0, 3);
     </div>
   </section>
 
-  <section class="py-16 bg-gray-50 dark:bg-gray-900">
+  <section class="py-16 bg-accent-50 dark:bg-gray-800">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-display font-bold text-center mb-12">
-        {t.home.featured_title}
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">
+          {lang === "de" ? "Der nächste Digital Independence Day" : "Next Digital Independence Day"}
+        </h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-8">
+          {lang === "de"
+            ? "Am ersten Sonntag jeden Monats ermutigen wir dich, einen Schritt zu digitaler Unabhängigkeit zu machen. Entdecke unsere Wechselrezepte und kleine Tipps."
+            : "On the first Sunday of every month, we encourage you to take a step toward digital independence. Discover our switch recipes and tips."}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
         {
           featuredRecipes.map((recipe) => (
             <RecipeCard
@@ -86,10 +100,11 @@ const featuredRecipes = recipes.slice(0, 3);
           ))
         }
       </div>
-      <div class="text-center mt-12">
+
+      <div class="text-center">
         <a
           href={getRelativeLocaleUrl(lang, "recipes")}
-          class="inline-flex items-center text-primary-600 dark:text-primary-400 font-semibold hover:underline"
+          class="inline-flex items-center text-primary-600 dark:text-primary-400 font-semibold hover:underline text-lg"
         >
           {t.home.featured_all}
         </a>
@@ -114,7 +129,7 @@ const featuredRecipes = recipes.slice(0, 3);
           </div>
           <div class="mt-8">
             <a
-              href={getRelativeLocaleUrl(lang, "faqs")}
+              href={getRelativeLocaleUrl(lang, "motivation")}
               class="inline-flex items-center px-6 py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-colors"
             >
               {t.home.why_cta}
@@ -137,13 +152,13 @@ const featuredRecipes = recipes.slice(0, 3);
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a
-          href={getRelativeLocaleUrl(lang, "together")}
+          href={getRelativeLocaleUrl(lang, "support")}
           class="px-6 py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-colors"
         >
           {t.home.together_cta}
         </a>
         <a
-          href={getRelativeLocaleUrl(lang, "talkaboutit")}
+          href={getRelativeLocaleUrl(lang, "motivation")}
           class="px-6 py-3 border-2 border-primary-600 text-primary-600 dark:text-primary-400 rounded-lg font-semibold hover:bg-primary-50 dark:hover:bg-primary-950 transition-colors"
         >
           {t.home.talk_cta}
@@ -152,3 +167,4 @@ const featuredRecipes = recipes.slice(0, 3);
     </div>
   </section>
 </BaseLayout>
+

@@ -1,11 +1,16 @@
 {
     "nav": {
         "recipes": "Recipes",
+        "motivation": "Motivation",
+        "snacks": "Snacks",
         "alternatives": "Alternatives",
         "faqs": "FAQs",
         "imprint": "Imprint",
+        "legal": "Legal",
         "privacy": "Privacy",
-        "partners": "Partners"
+        "partners": "Partners",
+        "support": "Support",
+        "press": "Press"
     },
     "site": {
         "title": "Digital Independence Day",
@@ -77,8 +82,8 @@
         "hero_title": "Switch to the good side every first Sunday!",
         "hero_subtitle": "The next DI.DAY takes place on February 1st",
         "hero_cta_recipes": "Discover Recipes",
-        "hero_cta_alternatives": "More Alternatives",
-        "featured_title": "Popular Recipes",
+        "hero_cta_alternatives": "Learn about Digital Independence",
+        "featured_title": "Next Digital Independence Day",
         "featured_all": "View all recipes →",
         "why_title": "Why Digital Independence?",
         "why_p1": "Big tech corporations collect massive amounts of data, influence our perception through algorithms, and have an enormous impact on our lives.",
@@ -88,5 +93,20 @@
         "together_desc": "Every small step counts. Share your experiences and help others switch.",
         "together_cta": "Switch together",
         "talk_cta": "Talk about it"
+    },
+    "dates": {
+        "title": "Dates",
+        "description": "All events and important dates",
+        "cta": "View all dates →",
+        "info_title": "Experience Digital Independence",
+        "info_text": "Discover all dates, events and important information about Digital Independence Day on our dates page."
+    },
+    "press": {
+        "title": "Press",
+        "description": "Information for media representatives and journalists",
+        "graphics_title": "Graphics & Materials",
+        "graphics_text": "Here you will find logos, banners and other materials for reporting.",
+        "contact_title": "Contact",
+        "contact_text": "For inquiries and further information, please contact us at:"
     }
 }

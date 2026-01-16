@@ -24,32 +24,47 @@ const { title = t.site.title, description = t.site.description } = Astro.props;
 const navItems = [
   { href: getRelativeLocaleUrl(lang, "/"), label: "Home" }, // Home is usually fine untranslated
   {
+    href: getRelativeLocaleUrl(lang, "motivation"),
+    label: t.nav.motivation,
+  },
+  {
+    href: getRelativeLocaleUrl(lang, "snacks"),
+    label: t.nav.snacks,
+  },
+  {
     href: getRelativeLocaleUrl(lang, "recipes"),
     label: t.nav.recipes,
   },
-  {
-    href: getRelativeLocaleUrl(lang, "alternatives"),
-    label: t.nav.alternatives,
-  },
+  { href: getRelativeLocaleUrl(lang, "faqs"), label: t.nav.faqs },
   {
     href: getRelativeLocaleUrl(lang, "partners"),
     label: t.nav.partners,
   },
-  { href: getRelativeLocaleUrl(lang, "faqs"), label: t.nav.faqs },
+];
+
+const footerLinks = [
+  {
+    href: getRelativeLocaleUrl(lang, "partners"),
+    label: t.nav.partners,
+  },
+  {
+    href: getRelativeLocaleUrl(lang, "support"),
+    label: t.nav.support,
+  },
 ];
 
 const legalItems = [
   {
-    href: getRelativeLocaleUrl(lang, "imprint"),
-    label: t.nav.imprint,
+    href: getRelativeLocaleUrl(lang, "legal"),
+    label: t.nav.legal,
   },
   {
     href: getRelativeLocaleUrl(lang, "privacy"),
     label: t.nav.privacy,
   },
   {
-    href: getRelativeLocaleUrl(lang, "partners"),
-    label: t.nav.partners,
+    href: getRelativeLocaleUrl(lang, "press"),
+    label: t.nav.press,
   },
 ];
 ---
@@ -129,28 +144,34 @@ const legalItems = [
             </a>
             <div class="hidden md:flex items-center gap-6">
               <a
+                href={getRelativeLocaleUrl(lang, "motivation")}
+                class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+              >
+                {t.nav.motivation}
+              </a>
+              <a
+                href={getRelativeLocaleUrl(lang, "snacks")}
+                class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+              >
+                {t.nav.snacks}
+              </a>
+              <a
                 href={getRelativeLocaleUrl(lang, "recipes")}
                 class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
               >
                 {t.nav.recipes}
               </a>
               <a
-                href={getRelativeLocaleUrl(lang, "alternatives")}
+                href={getRelativeLocaleUrl(lang, "faqs")}
                 class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
               >
-                {t.nav.alternatives}
+                {t.nav.faqs}
               </a>
               <a
                 href={getRelativeLocaleUrl(lang, "partners")}
                 class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
               >
                 {t.nav.partners}
-              </a>
-              <a
-                href={getRelativeLocaleUrl(lang, "faqs")}
-                class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
-              >
-                {t.nav.faqs}
               </a>
               <div
                 class="flex items-center gap-2 border-l border-gray-200 dark:border-gray-700 pl-6 ml-2"
@@ -177,6 +198,7 @@ const legalItems = [
             <MobileMenu
               t={t.menu}
               navItems={navItems}
+              footerLinks={footerLinks}
               legalItems={legalItems}
               client:load
             />
@@ -190,7 +212,7 @@ const legalItems = [
 
       <footer class="bg-gray-900 text-gray-300 py-12">
         <div class="container mx-auto px-4">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <h3 class="text-xl font-display font-bold text-white mb-4">
                 {t.site.title}
@@ -206,16 +228,37 @@ const legalItems = [
               <ul class="space-y-2 text-sm">
                 <li>
                   <a
-                    href={getRelativeLocaleUrl(lang, "recipes")}
+                    href={getRelativeLocaleUrl(lang, "partners")}
                     class="hover:text-primary-400 transition-colors"
-                    >{t.nav.recipes}</a
+                    >{t.nav.partners}</a
                   >
                 </li>
                 <li>
                   <a
-                    href={getRelativeLocaleUrl(lang, "alternatives")}
+                    href={getRelativeLocaleUrl(lang, "support")}
                     class="hover:text-primary-400 transition-colors"
-                    >{t.nav.alternatives}</a
+                    >{t.nav.support}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href={getRelativeLocaleUrl(lang, "motivation")}
+                    class="hover:text-primary-400 transition-colors"
+                    >{t.nav.motivation}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href={getRelativeLocaleUrl(lang, "snacks")}
+                    class="hover:text-primary-400 transition-colors"
+                    >{t.nav.snacks}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href={getRelativeLocaleUrl(lang, "recipes")}
+                    class="hover:text-primary-400 transition-colors"
+                    >{t.nav.recipes}</a
                   >
                 </li>
                 <li>
@@ -234,9 +277,9 @@ const legalItems = [
               <ul class="space-y-2 text-sm">
                 <li>
                   <a
-                    href={getRelativeLocaleUrl(lang, "imprint")}
+                    href={getRelativeLocaleUrl(lang, "legal")}
                     class="hover:text-primary-400 transition-colors"
-                    >{t.nav.imprint}</a
+                    >{t.nav.legal}</a
                   >
                 </li>
                 <li>
@@ -248,9 +291,9 @@ const legalItems = [
                 </li>
                 <li>
                   <a
-                    href={getRelativeLocaleUrl(lang, "partners")}
+                    href={getRelativeLocaleUrl(lang, "press")}
                     class="hover:text-primary-400 transition-colors"
-                    >{t.nav.partners}</a
+                    >{t.nav.press}</a
                   >
                 </li>
               </ul>
