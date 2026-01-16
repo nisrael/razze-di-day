@@ -1,11 +1,11 @@
----
-title: "Partners"
-description: "About the partners of Digital Independence Day"
+***
 
----
+title: "Partner" description: "Über die Partner des Digital Independence Day"
 
-# Partners
+***
 
-## A broad alliance of organizations from all corners of society has launched DI.DAY.
+# Partner
 
-But that was just the beginning: DI.DAY is for everyone. The circle of initiators is now closed, but we welcome other organizations, associations, and initiatives to participate in DI.DAY with their own ideas, events (feel free to register at [termine.di.day](https://termine.di.day)), and information offerings.
+## Ein breites Bündnis von Organisationen aus allen Ecken der Gesellschaft hat den DI.DAY gestartet.
+
+Aber das war nur der Anfang: DI.DAY ist für alle da. Der Kreis der Initiator\*innen ist nun geschlossen, freut sich aber darüber, wenn weitere Organisationen, Vereine, Initiativen am DI.DAY mit eigenen Ideen, Veranstaltungen (gern eintragen unter [termine.di.day](https://termine.di.day)), Informationsangeboten beteiligen.

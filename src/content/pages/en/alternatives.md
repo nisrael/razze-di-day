@@ -1,46 +1,60 @@
----
-title: "Alternatives"
-description: "Many roads lead out of Rome - Discover alternatives to Big Tech"
----
+***
 
-# Many roads lead out of Rome
+## title: "Alternatives"
+description: "Many ways out of Rome – discover alternatives to Big Tech"
+
+# Many ways out of Rome
 
 There are privacy-friendly and ethical alternatives for almost every digital service. Here you will find an overview by category.
 
-## Alternative Search Engines
+## Alternative Suchmaschinen
 
-- **Ecosia**: Plants trees with advertising revenue
-- **DuckDuckGo**: No tracking, no filter bubble
-- **Startpage**: Uses Google results without tracking
-- **Qwant**: European search engine with privacy
+- **Ecosia**: Pflanzt Bäume mit Werbeeinnahmen
 
-## Online Bookstores
+- **DuckDuckGo**: Keine Verfolgung, keine Filterblase
 
-- **buch7.de**: 75% of profit for social projects
-- **genialokal.de**: Supports local bookstores
-- **Local Bookstores**: Personal advice and local support
+- **Startpage**: Nutzt Google-Ergebnisse ohne Tracking
+
+- **Qwant**: Europäische Suchmaschine mit Datenschutz
+
+## Online-Buchhandel
+
+- **buch7.de**: 75% des Gewinns für soziale Projekte
+
+- **genialokal.de**: Unterstützt lokale Buchhandlungen
+
+- **Lokale Buchläden**: Persönliche Beratung und lokale Unterstützung
 
 ## WhatsApp & Co.
 
-- **Signal**: Secure, encrypted communication
-- **Threema**: Swiss messenger with privacy
-- **Element**: Decentralized messenger based on Matrix
+- **Signal**: Sichere, verschlüsselte Kommunikation
 
-## Browsers
+- **Threema**: Schweizer Messenger mit Datenschutz
 
-- **Firefox**: Independent and privacy-friendly
-- **Brave**: Blocks trackers and ads
-- **LibreWolf**: Firefox fork with even more privacy
+- **Element**: Dezentraler Messenger auf Matrix-Basis
+
+## Browser
+
+- **Firefox**: Unabhängig und datenschutzfreundlich
+
+- **Brave**: Blockiert Tracker und Werbung
+
+- **LibreWolf**: Firefox-Fork mit noch mehr Datenschutz
 
 ## X / Microblogging
 
-- **Mastodon**: Decentralized social network
-- **Bluesky**: Open protocol for social media
-- **Pixelfed**: Instagram alternative
+- **Mastodon**: Dezentrales soziales Netzwerk
+
+- **Bluesky**: Offenes Protokoll für soziale Medien
+
+- **Pixelfed**: Instagram-Alternative
 
 ## E-Mail
 
-- **Posteo**: Anonymous, sustainable, secure
-- **Mailbox.org**: German alternative with many features
-- **Tutanota**: End-to-end encrypted
-- **ProtonMail**: Swiss provider with encryption
+- **Posteo**: Anonym, nachhaltig, sicher
+
+- **Mailbox.org**: Deutsche Alternative mit vielen Features
+
+- **Tutanota**: Ende-zu-Ende-verschlüsselt
+
+- **ProtonMail**: Schweizer Anbieter mit Verschlüsselung

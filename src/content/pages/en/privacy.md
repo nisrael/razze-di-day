@@ -1,58 +1,61 @@
----
-title: "Privacy Policy"
-description: "Privacy policy and information about data protection"
+***
 
----
+title: "Datenschutzerklärung" description: "Datenschutzerklärung und Informationen zum Datenschutz"
 
-# Privacy Policy
+***
 
-## 1. Privacy at a Glance
+# Datenschutzerklärung
 
-### General Information
+## Datenschutz auf einen Blick
 
-The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is any data that can be used to identify you personally.
+### Allgemeine Hinweise
 
-### Data Collection on this Website
+Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
 
-**Who is responsible for data collection on this website?**
-Data processing on this website is performed by the website operator. Their contact details can be found in the imprint of this website.
+### Datenerfassung auf dieser Website
 
-## 2. Hosting
+**Wer ist verantwortlich für die Datenerfassung auf dieser Website?** Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.
 
-This website is hosted by an external service provider (host). The personal data collected on this website is stored on the host's servers.
+## Hosting
 
-## 3. General Notes and Mandatory Information
+Diese Website wird bei einem externen Dienstleister gehostet (Hoster). Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert.
 
-### Data Protection
+## Allgemeine Hinweise und Pflichtinformationen
 
-The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this privacy policy.
+### Datenschutz
 
-### Note on the Responsible Body
+Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
 
-The responsible body for data processing on this website is:
-[See Imprint]
+### Hinweis zur verantwortlichen Stelle
 
-## 4. Data Collection on this Website
+Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist: [Siehe Impressum]
 
-### Server Log Files
+## Datenerfassung auf dieser Website
 
-The provider of the pages automatically collects and stores information in so-called server log files, which your browser automatically transmits to us. These are:
+### Server-Log-Dateien
 
-- Browser type and browser version
-- Operating system used
+Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
+
+- Browsertyp und Browserversion
+
+- verwendetes Betriebssystem
+
 - Referrer URL
-- Hostname of the accessing computer
-- Time of the server request
-- IP address
 
-### Contact Form / Newsletter
+- Hostname des zugreifenden Rechners
 
-If you send us inquiries via the contact form or newsletter registration, your details from the inquiry form, including the contact details you provided there, will be stored for the purpose of processing the inquiry and in case of follow-up questions.
+- Uhrzeit der Serveranfrage
 
-## 5. Your Rights
+- IP-Adresse
 
-You have the right at any time to receive free information about your stored personal data, its origin and recipient and the purpose of data processing, as well as the right to correct or delete this data.
+### Kontaktformular / Newsletter
 
-## 6. Objection to Advertising Emails
+Wenn Sie uns per Kontaktformular oder Newsletter-Anmeldung Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.
 
-The use of contact data published as part of the imprint obligation for the purpose of sending unsolicited advertising and information material is hereby prohibited.
+## Ihre Rechte
+
+Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung oder Löschung dieser Daten.
+
+## Widerspruch gegen Werbe-Mails
+
+Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit widersprochen.

@@ -1,13 +1,13 @@
----
-title: "Talk About It"
-description: "Share your experiences with digital independence."
+***
 
----
+title: "Sprich drüber" description: "Teile deine Erfahrungen mit digitaler Unabhängigkeit."
 
-# Talk About It
+***
 
-Share your experiences with digital independence.
+# Sprich drüber
 
-This page is currently under construction. Here you will soon find tips and materials on how to raise the topic of digital independence in your environment and motivate others.
+Teile deine Erfahrungen mit digitaler Unabhängigkeit.
 
-In the meantime, you can explore our [recipes](/en/recipes) or [subscribe to our newsletter](/en/newsletter) to stay updated.
+Diese Seite befindet sich noch im Aufbau. Hier wirst du bald Tipps und Materialien finden, wie du das Thema digitale Unabhängigkeit in deinem Umfeld ansprechen und andere motivieren kannst.
+
+In der Zwischenzeit kannst du unsere [Wechselrezepte](/de/recipes) entdecken oder unseren [Newsletter abonnieren](/de/newsletter), um auf dem Laufenden zu bleiben.

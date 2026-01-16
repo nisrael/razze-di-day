@@ -1,38 +1,33 @@
----
-title: "Imprint"
-description: "Imprint and legal information"
+***
 
----
+title: "Impressum" description: "Impressum und rechtliche Angaben"
 
-# Imprint
+***
 
-## Information according to § 5 TMG
+# Impressum
 
-Digital Independence Day
-[Your Address]
-[Zip Code City]
+## Angaben gemäß § 5 TMG
 
-## Contact
+Digital Independence Day [Ihre Adresse] [PLZ Ort]
 
-E-Mail: [Your E-Mail]
-Phone: [Your Phone Number]
+## Kontakt
 
-## Responsible for content according to § 55 Abs. 2 RStV
+E-Mail: [Ihre E-Mail] Telefon: [Ihre Telefonnummer]
 
-[Name]
-[Address]
-[Zip Code City]
+## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
 
-## Disclaimer
+[Name] [Adresse] [PLZ Ort]
 
-### Liability for content
+## Haftungsausschluss
 
-The contents of our pages were created with great care. However, we cannot assume any liability for the correctness, completeness, and timeliness of the content.
+### Haftung für Inhalte
 
-### Liability for links
+Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
 
-Our offer contains links to external websites of third parties, on whose content we have no influence. Therefore, we cannot assume any liability for this foreign content.
+### Haftung für Links
 
-### Copyright
+Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
 
-The content and works created by the page operators on these pages are subject to German copyright law. Reproduction, processing, distribution, and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator.
+### Urheberrecht
+
+Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
