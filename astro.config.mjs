@@ -26,6 +26,7 @@ export default defineConfig({
     },
   },
   redirects: {
+    "/": "/de/",
     "/de/rezepte": "/de/recipes",
     "/de/alternativen": "/de/alternatives",
     "/de/datenschutz": "/de/privacy",
