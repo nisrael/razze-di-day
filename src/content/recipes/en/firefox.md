@@ -7,9 +7,9 @@ title: Firefox Browser
 
 ---
 # Firefox Browser
-Firefox ist ein quelloffener Browser von Mozilla, der deine Privatsphäre schützt.
+Firefox is an open-source browser from Mozilla that protects your privacy.
 ## Preparation
-1. **Firefox herunterladen**
+1. **Download Firefox**
    - Besuche [mozilla.org/firefox](https://www.mozilla.org/de/firefox/)
    - Lade die passende Version für dein System herunter
    - Installiere Firefox

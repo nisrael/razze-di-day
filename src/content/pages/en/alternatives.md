@@ -5,9 +5,9 @@ title: Alternativen
 ---
 # Many ways out of Rome
 There are privacy-friendly and ethical alternatives for almost every digital service. Here you will find an overview by category.
-## Alternative Suchmaschinen
-- **Ecosia**: Pflanzt Bäume mit Werbeeinnahmen
-- **DuckDuckGo**: Keine Verfolgung, keine Filterblase
+## Alternative Search Engines
+- **Ecosia**: Plants trees with advertising revenue
+- **DuckDuckGo**: No tracking, no filter bubble
 - **Startpage**: Nutzt Google-Ergebnisse ohne Tracking
 - **Qwant**: Europäische Suchmaschine mit Datenschutz
 
