@@ -1,24 +1,35 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { getEntry, render } from "astro:content";
 import { Image } from "astro:assets";
 import romeImage from "../../assets/rome.jpg";
 import { LOCALES } from "../../consts";
+import { getCollection } from "astro:content";
 
 export function getStaticPaths() {
   return LOCALES.map((lang) => ({ params: { lang } }));
 }
 
 const { lang } = Astro.params;
-const entry = await getEntry("pages", `${lang}/alternatives`);
-if (!entry) return Astro.redirect("/404");
-const { Content } = await render(entry);
+const snacksCollection = await getCollection("snacks");
+const snacksItem = snacksCollection.find((item) => item.id === lang);
+
+if (!snacksItem) return Astro.redirect("/404");
+
+const data = snacksItem.data;
+
+// Function to convert markdown to HTML
+function markdownToHtml(markdown: string): string {
+  return markdown
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>") // Bold
+    .replace(/\*(.+?)\*/g, "<em>$1</em>") // Italic
+    .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>'); // Links
+}
 ---
 
 <BaseLayout
   lang={lang}
-  title={`${entry.data.title} | Digital Independence Day`}
-  description={entry.data.description}
+  title={`${data.title} | Digital Independence Day`}
+  description={data.description}
 >
   <!-- Hero section with Rome image -->
   <section
@@ -29,39 +40,81 @@ const { Content } = await render(entry);
     </div>
     <div class="relative container mx-auto px-4 text-center">
       <h1 class="text-4xl md:text-5xl font-display font-bold mb-4">
-        {entry.data.title}
+        {data.title}
       </h1>
       <p class="text-xl text-primary-100">
-        {entry.data.description}
+        {data.description}
       </p>
     </div>
   </section>
 
-  <div class="container mx-auto px-4 py-12 max-w-4xl">
-    <div class="prose prose-lg dark:prose-invert max-w-none">
-      <Content />
+  <div class="container mx-auto px-4 py-12 max-w-5xl">
+    <div class="space-y-8">
+      {
+        data.groups.map((group) => (
+          <section class="space-y-4">
+            <div class="space-y-2">
+              <h2 class="text-2xl font-display font-bold text-gray-900 dark:text-gray-100 pb-3 border-b-2 border-primary-200 dark:border-primary-700">
+                {group.title}
+              </h2>
+              {group.description && (
+                <p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <Fragment set:html={markdownToHtml(group.description)} />
+                </p>
+              )}
+            </div>
+            <div class="space-y-3">
+              {group.items.map((item) => (
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow p-5 border-l-4 border-primary-500 hover:border-accent-500">
+                  <div class="flex justify-between items-start gap-4">
+                    <div class="flex-1">
+                      <h3 class="font-display font-semibold text-gray-900 dark:text-gray-100 mb-1">
+                        {item.title}
+                      </h3>
+                      <p class="text-sm text-gray-700 dark:text-gray-300">
+                        {item.content}
+                      </p>
+                    </div>
+                    {item.link && (
+                      <a
+                        href={item.link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-1 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-semibold text-xs whitespace-nowrap transition-colors"
+                      >
+                        {item.link.text}
+                        <svg
+                          class="w-3 h-3"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        ))
+      }
     </div>
   </div>
 </BaseLayout>
 
 <style>
-  .prose :global(h1) {
-    display: none; /* Hide the h1 in the prose as we have it in the hero */
+  :global(html.dark) div {
+    @apply bg-gray-800;
   }
 
-  .prose :global(h2) {
-    @apply text-2xl font-display font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100;
-  }
-
-  .prose :global(ul) {
-    @apply list-disc pl-6 space-y-2;
-  }
-
-  .prose :global(li) {
-    @apply text-gray-700 dark:text-gray-300;
-  }
-
-  .prose :global(strong) {
-    @apply font-semibold text-gray-900 dark:text-gray-100;
+  p :global(a) {
+    @apply text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors;
   }
 </style>

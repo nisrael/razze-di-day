@@ -194,6 +194,116 @@ export default defineConfig({
           },
         ],
       },
+      {
+        name: "snacks",
+        label: "Snacks",
+        path: "src/content/snacks",
+        format: "json",
+        ui: {
+          allowedActions: {
+            create: false,
+            delete: false,
+          },
+        },
+        match: {
+          include: "*",
+        },
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+            required: true,
+          },
+          {
+            type: "object",
+            name: "groups",
+            label: "Groups",
+            list: true,
+            ui: {
+              itemProps: (item) => {
+                return { label: item?.title };
+              },
+            },
+            fields: [
+              {
+                type: "string",
+                name: "id",
+                label: "ID",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "title",
+                label: "Group Title",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "description",
+                label: "Group Description",
+                ui: {
+                  component: "textarea",
+                },
+              },
+              {
+                type: "object",
+                name: "items",
+                label: "Items",
+                list: true,
+                ui: {
+                  itemProps: (item) => {
+                    return { label: item?.title };
+                  },
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "id",
+                    label: "ID",
+                    required: true,
+                  },
+                  {
+                    type: "string",
+                    name: "title",
+                    label: "Item Title",
+                    required: true,
+                  },
+                  {
+                    type: "string",
+                    name: "content",
+                    label: "Content",
+                    required: true,
+                  },
+                  {
+                    type: "object",
+                    name: "link",
+                    label: "Link",
+                    fields: [
+                      {
+                        type: "string",
+                        name: "text",
+                        label: "Link Text",
+                      },
+                      {
+                        type: "string",
+                        name: "url",
+                        label: "Link URL",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
     ],
   },
 });

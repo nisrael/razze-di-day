@@ -22,4 +22,32 @@ const pages = defineCollection({
   }),
 });
 
-export const collections = { recipes, pages };
+const snacks = defineCollection({
+  loader: glob({ base: "./src/content/snacks", pattern: "*.json" }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    groups: z.array(
+      z.object({
+        id: z.string(),
+        title: z.string(),
+        description: z.string().optional(),
+        items: z.array(
+          z.object({
+            id: z.string(),
+            title: z.string(),
+            content: z.string(),
+            link: z
+              .object({
+                text: z.string(),
+                url: z.string(),
+              })
+              .nullable(),
+          }),
+        ),
+      }),
+    ),
+  }),
+});
+
+export const collections = { recipes, pages, snacks };
