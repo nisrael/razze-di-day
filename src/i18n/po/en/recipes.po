@@ -1,0 +1,675 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-16 00:45+0000\n"
+"PO-Revision-Date: 2026-01-16 00:54+0000\n"
+"Last-Translator: Weblate Admin <nils@sxda.io>\n"
+"Language-Team: English <https://weblate.sxda.io/projects/sxda-di-day/recipes/"
+"en/>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+#
+#: src/content/recipes/de/bookstore.md:block 1 (header)
+msgid ""
+"title: \"Lokaler Buchladen\"\n"
+"description: \"Unterstütze lokale Buchhandlungen statt Amazon\"\n"
+"pubDate: 2026-01-05\n"
+"category: \"Shopping\"\n"
+"heroImage: \"../../../assets/book.jpg\""
+msgstr ""
+"title: \"Local Bookstore\"\n"
+"description: \"Support local book stores instead of Amazon\"\n"
+"pubDate: 2026-01-05\n"
+"category: \"Shopping\"\n"
+"heroImage: \"../../../assets/book.jpg\""
+
+#: src/content/recipes/de/bookstore.md:block 2 (header)
+msgid "Lokaler Buchladen"
+msgstr "Local Bookstore"
+
+#: src/content/recipes/de/bookstore.md:block 3 (paragraph)
+msgid ""
+"Kaufe Bücher bei lokalen Buchhandlungen oder nutze faire Online-"
+"Alternativen."
+msgstr "Support local businesses and social projects when buying books."
+
+#: src/content/recipes/de/bookstore.md:block 4 (header)
+msgid "Zubereitung"
+msgstr "Preparation"
+
+#: src/content/recipes/de/bookstore.md:block 5 (ordered list)
+msgid "**Lokale Buchhandlung finden**"
+msgstr "**Search for Local Bookstores**"
+
+#: src/content/recipes/de/bookstore.md:block 5 (ordered list)
+msgid "Suche nach Buchhandlungen in deiner Nähe"
+msgstr "Use a search engine or map to find bookstores in your area"
+
+#: src/content/recipes/de/bookstore.md:block 5 (ordered list)
+msgid "Viele bieten Online-Bestellung mit Abholung an"
+msgstr "Many offer online ordering with pickup"
+
+#: src/content/recipes/de/bookstore.md:block 5 (ordered list)
+msgid "Unterstütze damit lokale Geschäfte und Arbeitsplätze"
+msgstr "Support local businesses and jobs"
+
+#: src/content/recipes/de/bookstore.md:block 5 (ordered list)
+msgid "**Online-Alternativen**"
+msgstr "**Online alternatives**"
+
+#: src/content/recipes/de/bookstore.md:block 5 (ordered list)
+msgid "**buch7.de**: Spendet 75% des Gewinns an soziale Projekte"
+msgstr "**buch7.de**: Donates 75% of its profits to social projects"
+
+#: src/content/recipes/de/bookstore.md:block 5 (ordered list)
+msgid "**genialokal.de**: Vermittelt an lokale Buchhandlungen"
+msgstr "**genialokal.de**: Connects customers with local bookstores"
+
+#: src/content/recipes/de/bookstore.md:block 5 (ordered list)
+msgid "**Thalia, Hugendubel**: Deutsche Buchhandelsketten"
+msgstr "**Thalia, Hugendubel**: German bookstore retailers"
+
+#: src/content/recipes/de/bookstore.md:block 5 (ordered list)
+msgid "**Gebrauchte Bücher**"
+msgstr "**Used books**"
+
+#: src/content/recipes/de/bookstore.md:block 5 (ordered list)
+msgid "**medimops.de**: Gebrauchte Bücher, Filme, Spiele"
+msgstr "**medimops.de**: Used books, movies, games"
+
+#: src/content/recipes/de/bookstore.md:block 5 (ordered list)
+msgid "**booklooker.de**: Marktplatz für gebrauchte Bücher"
+msgstr "**booklooker.de**: Marketplace for used books"
+
+#: src/content/recipes/de/bookstore.md:block 5 (ordered list)
+msgid "Lokale Second-Hand-Läden"
+msgstr "Local second-hand stores"
+
+#: src/content/recipes/de/bookstore.md:block 6 (header)
+msgid "Nachtisch"
+msgstr "Dessert"
+
+#: src/content/recipes/de/bookstore.md:block 7 (paragraph)
+msgid ""
+"**Bibliothek**: Nutze deine lokale Bibliothek - viele bieten auch E-Book-"
+"Ausleihe an."
+msgstr ""
+"**Library**: Use your local library—many also offer e-book lending services."
+
+#: src/content/recipes/de/bookstore.md:block 8 (paragraph)
+msgid ""
+"**Lesekreise**: Tausche Bücher mit Freunden oder tritt einem Lesekreis bei."
+msgstr "**Reading groups**: Swap books with friends or join a reading group."
+
+#: src/content/recipes/de/bookstore.md:block 9 (header)
+msgid "Topping"
+msgstr "Topping"
+
+#: src/content/recipes/de/bookstore.md:block 10 (unordered list)
+msgid "**Lokale Wirtschaft**: Unterstützt Arbeitsplätze vor Ort"
+msgstr "**Local economy:** Supports local jobs"
+
+#: src/content/recipes/de/bookstore.md:block 10 (unordered list)
+msgid "**Beratung**: Persönliche Buchempfehlungen vom Fachpersonal"
+msgstr "**Advice**: Personal book recommendations from specialist staff"
+
+#: src/content/recipes/de/bookstore.md:block 10 (unordered list)
+msgid "**Nachhaltigkeit**: Kürzere Lieferwege, weniger Verpackung"
+msgstr "**Sustainability**: Shorter delivery routes, less packaging"
+
+#: src/content/recipes/de/bookstore.md:block 10 (unordered list)
+msgid ""
+"**Faire Arbeitsbedingungen**: Bessere Bedingungen als bei großen Online-"
+"Händlern"
+msgstr ""
+"**Fair working conditions**: Better conditions than at large online retailers"
+
+#: src/content/recipes/de/firefox.md:block 1 (paragraph)
+msgid ""
+"title: \"Firefox Browser\" description: \"Wechsle zu Firefox - dem "
+"unabhängigen und datenschutzfreundlichen Browser\" pubDate: 2026-01-02 "
+"category: \"Browser\""
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 2 (header)
+msgid "heroImage: \"../../../assets/soup.jpg\""
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 3 (header)
+msgid "Firefox Browser"
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 4 (paragraph)
+msgid ""
+"Firefox ist ein quelloffener Browser von Mozilla, der deine Privatsphäre "
+"schützt."
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 6 (ordered list)
+msgid "**Firefox herunterladen**"
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 6 (ordered list)
+msgid "Besuche [mozilla.org/firefox](https://www.mozilla.org/de/firefox/)"
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 6 (ordered list)
+msgid "Lade die passende Version für dein System herunter"
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 6 (ordered list)
+msgid "Installiere Firefox"
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 6 (ordered list)
+msgid "**Daten importieren**"
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 6 (ordered list)
+msgid ""
+"Beim ersten Start bietet Firefox an, Lesezeichen und Passwörter zu "
+"importieren"
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 6 (ordered list)
+msgid "Wähle deinen bisherigen Browser aus"
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 6 (ordered list)
+msgid "Bestätige den Import"
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 6 (ordered list)
+msgid "**Firefox anpassen**"
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 6 (ordered list)
+msgid "Melde dich mit einem Firefox-Konto an (optional)"
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 6 (ordered list)
+msgid "Passe die Datenschutzeinstellungen an"
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 6 (ordered list)
+msgid "Installiere nützliche Add-ons wie uBlock Origin"
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 6 (ordered list)
+msgid "**Als Standardbrowser festlegen**"
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 6 (ordered list)
+msgid "Firefox fragt beim ersten Start, ob er Standardbrowser werden soll"
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 6 (ordered list)
+msgid "Oder: Systemeinstellungen → Standard-Apps → Webbrowser"
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 8 (paragraph)
+msgid ""
+"**Sync**: Mit einem Firefox-Konto kannst du Lesezeichen, Passwörter und Tabs"
+" zwischen Geräten synchronisieren."
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 9 (paragraph)
+msgid ""
+"**Container**: Firefox bietet \"Container Tabs\", um verschiedene "
+"Identitäten (privat, Arbeit, Shopping) zu trennen."
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 11 (unordered list)
+msgid "**Tracking-Schutz**: Blockiert standardmäßig viele Tracker"
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 11 (unordered list)
+msgid "**Open Source**: Der Quellcode ist öffentlich einsehbar"
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 11 (unordered list)
+msgid ""
+"**Unabhängig**: Firefox wird von der gemeinnützigen Mozilla Foundation "
+"entwickelt"
+msgstr ""
+
+#: src/content/recipes/de/firefox.md:block 11 (unordered list)
+msgid "**Erweiterungen**: Große Auswahl an Datenschutz-Add-ons verfügbar"
+msgstr ""
+
+#: src/content/recipes/de/google-to-ecosia.md:block 1 (paragraph)
+msgid ""
+"title: \"Google zu Ecosia\" description: \"Wechsle von Google zu Ecosia - "
+"der Suchmaschine, die Bäume pflanzt\" pubDate: 2026-01-05 category: "
+"\"Suchmaschine\""
+msgstr ""
+
+#: src/content/recipes/de/google-to-ecosia.md:block 2 (header)
+msgid "heroImage: \"../../../assets/bowl.jpg\""
+msgstr ""
+
+#: src/content/recipes/de/google-to-ecosia.md:block 3 (header)
+msgid "Google zu Ecosia"
+msgstr ""
+
+#: src/content/recipes/de/google-to-ecosia.md:block 4 (paragraph)
+msgid ""
+"Ecosia ist eine umweltfreundliche Suchmaschine, die mit ihren Werbeeinnahmen"
+" Bäume pflanzt."
+msgstr ""
+
+#: src/content/recipes/de/google-to-ecosia.md:block 6 (ordered list)
+msgid "**Browser-Erweiterung installieren**"
+msgstr ""
+
+#: src/content/recipes/de/google-to-ecosia.md:block 6 (ordered list)
+msgid "Besuche [ecosia.org](https://www.ecosia.org)"
+msgstr ""
+
+#: src/content/recipes/de/google-to-ecosia.md:block 6 (ordered list)
+msgid "Klicke auf \"Ecosia zu [Browser] hinzufügen\""
+msgstr ""
+
+#: src/content/recipes/de/google-to-ecosia.md:block 6 (ordered list)
+msgid "Bestätige die Installation"
+msgstr ""
+
+#: src/content/recipes/de/google-to-ecosia.md:block 6 (ordered list)
+msgid "**Als Standardsuchmaschine festlegen**"
+msgstr ""
+
+#: src/content/recipes/de/google-to-ecosia.md:block 6 (ordered list)
+msgid "**Chrome/Edge**: Einstellungen → Suchmaschine → Ecosia auswählen"
+msgstr ""
+
+#: src/content/recipes/de/google-to-ecosia.md:block 6 (ordered list)
+msgid "**Firefox**: Einstellungen → Suche → Standardsuchmaschine → Ecosia"
+msgstr ""
+
+#: src/content/recipes/de/google-to-ecosia.md:block 6 (ordered list)
+msgid "**Safari**: Einstellungen → Suche → Ecosia"
+msgstr ""
+
+#: src/content/recipes/de/google-to-ecosia.md:block 6 (ordered list)
+msgid "**Mobile App installieren**"
+msgstr ""
+
+#: src/content/recipes/de/google-to-ecosia.md:block 6 (ordered list)
+msgid "Lade die Ecosia-App aus dem App Store oder Google Play Store"
+msgstr ""
+
+#: src/content/recipes/de/google-to-ecosia.md:block 6 (ordered list)
+msgid "Oder nutze Ecosia im mobilen Browser"
+msgstr ""
+
+#: src/content/recipes/de/google-to-ecosia.md:block 8 (paragraph)
+msgid ""
+"**Suchverlauf**: Ecosia speichert deine Suchanfragen nicht dauerhaft. Nach "
+"einer Woche werden alle Daten anonymisiert."
+msgstr ""
+
+#: src/content/recipes/de/google-to-ecosia.md:block 9 (paragraph)
+msgid ""
+"**Transparenz**: Auf der Ecosia-Website kannst du genau nachverfolgen, wie "
+"viele Bäume bereits gepflanzt wurden."
+msgstr ""
+
+#: src/content/recipes/de/google-to-ecosia.md:block 11 (unordered list)
+msgid ""
+"**80% der Gewinne für Baumpflanzungen**: Ecosia investiert den Großteil "
+"seiner Gewinne in Aufforstungsprojekte"
+msgstr ""
+
+#: src/content/recipes/de/google-to-ecosia.md:block 11 (unordered list)
+msgid ""
+"**CO₂-negativ**: Ecosia entfernt mehr CO₂ aus der Atmosphäre, als es "
+"verursacht"
+msgstr ""
+
+#: src/content/recipes/de/google-to-ecosia.md:block 11 (unordered list)
+msgid "**Datenschutz**: Keine Verkauf von Daten an Dritte"
+msgstr ""
+
+#: src/content/recipes/de/google-to-ecosia.md:block 11 (unordered list)
+msgid ""
+"**Transparente Finanzberichte**: Monatliche Veröffentlichung aller Einnahmen"
+" und Ausgaben"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 1 (paragraph)
+msgid ""
+"title: \"Mastodon\" description: \"Wechsle zu Mastodon - dem dezentralen "
+"sozialen Netzwerk\" pubDate: 2026-01-06 category: \"Social Media\""
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 2 (header)
+msgid "heroImage: \"../../../assets/cookies.jpg\""
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 3 (header)
+msgid "Mastodon"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 4 (paragraph)
+msgid ""
+"Mastodon ist ein dezentrales soziales Netzwerk ohne Algorithmen und Werbung."
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 6 (ordered list)
+msgid "**Server auswählen**"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 6 (ordered list)
+msgid "Besuche [joinmastodon.org/servers](https://joinmastodon.org/servers)"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 6 (ordered list)
+msgid "Wähle einen Server basierend auf deinen Interessen oder deiner Region"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 6 (ordered list)
+msgid "Empfehlung für deutschsprachige Nutzer: mastodon.social, chaos.social"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 6 (ordered list)
+msgid "**Konto erstellen**"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 6 (ordered list)
+msgid "Klicke auf \"Registrieren\" auf dem gewählten Server"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 6 (ordered list)
+msgid "Gib Benutzername, E-Mail und Passwort ein"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 6 (ordered list)
+msgid "Bestätige deine E-Mail-Adresse"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 6 (ordered list)
+msgid "**Profil einrichten**"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 6 (ordered list)
+msgid "Füge ein Profilbild und Header hinzu"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 6 (ordered list)
+msgid "Schreibe eine kurze Bio"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 6 (ordered list)
+msgid "Verlinke deine Website oder andere Profile"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 6 (ordered list)
+msgid "**Leuten folgen**"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 6 (ordered list)
+msgid "Suche nach Hashtags, die dich interessieren"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 6 (ordered list)
+msgid "Folge interessanten Accounts"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 6 (ordered list)
+msgid "Nutze die lokale und föderierte Timeline zur Entdeckung"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 8 (paragraph)
+msgid ""
+"**Apps**: Es gibt viele Apps für Mastodon - z.B. Tusky (Android), Ivory "
+"(iOS), oder nutze die Web-Oberfläche."
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 9 (paragraph)
+msgid ""
+"**Umzug**: Du kannst später zu einem anderen Server umziehen und deine "
+"Follower mitnehmen."
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 11 (unordered list)
+msgid "**Dezentral**: Kein einzelnes Unternehmen kontrolliert das Netzwerk"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 11 (unordered list)
+msgid "**Chronologische Timeline**: Keine algorithmische Sortierung"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 11 (unordered list)
+msgid "**Open Source**: Der Code ist öffentlich einsehbar"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 11 (unordered list)
+msgid "**Keine Werbung**: Finanziert durch Spenden und Freiwillige"
+msgstr ""
+
+#: src/content/recipes/de/mastodon.md:block 11 (unordered list)
+msgid "**Datenschutz**: Du entscheidest, wer deine Beiträge sehen kann"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 1 (paragraph)
+msgid ""
+"title: \"Posteo & Mailbox.org\" description: \"Wechsle zu deutschen, "
+"datenschutzfreundlichen E-Mail-Anbietern\" pubDate: 2026-01-02 category: "
+"\"E-Mail\""
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 2 (header)
+msgid "heroImage: \"../../../assets/bread.jpg\""
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 3 (header)
+msgid "Posteo & Mailbox.org"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 4 (paragraph)
+msgid "Sichere E-Mail-Anbieter aus Deutschland mit starkem Datenschutz."
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 6 (header)
+msgid "Posteo"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 7 (ordered list)
+msgid "Besuche [posteo.de](https://posteo.de)"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 7 (ordered list)
+msgid "Klicke auf \"Jetzt Posteo-Konto erstellen\""
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 7 (ordered list)
+msgid "Wähle eine E-Mail-Adresse (1€/Monat)"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 7 (ordered list)
+msgid "**Bezahlung**"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 7 (ordered list)
+msgid "Posteo akzeptiert anonyme Zahlungen (Bargeld, Überweisung)"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 7 (ordered list)
+msgid "Keine Angabe persönlicher Daten erforderlich"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 7 (ordered list)
+msgid "**E-Mail-Client einrichten**"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 7 (ordered list)
+msgid "Nutze die Weboberfläche oder richte einen E-Mail-Client ein"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 7 (ordered list)
+msgid "IMAP: posteo.de:993 (SSL/TLS)"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 7 (ordered list)
+msgid "SMTP: posteo.de:465 (SSL/TLS)"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 8 (header)
+msgid "Mailbox.org"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 9 (ordered list)
+msgid "Besuche [mailbox.org](https://mailbox.org)"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 9 (ordered list)
+msgid "Wähle einen Tarif (ab 1€/Monat)"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 9 (ordered list)
+msgid "Erstelle dein Konto"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 9 (ordered list)
+msgid "**Zusatzfunktionen**"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 9 (ordered list)
+msgid "Kalender und Kontakte inklusive"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 9 (ordered list)
+msgid "Office-Suite verfügbar"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 9 (ordered list)
+msgid "Verschlüsselung mit PGP möglich"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 11 (paragraph)
+msgid ""
+"**Migration**: Beide Anbieter bieten Tools zum Import von E-Mails aus "
+"anderen Postfächern."
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 12 (paragraph)
+msgid ""
+"**Verschlüsselung**: Nutze PGP für Ende-zu-Ende-verschlüsselte E-Mails."
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 14 (unordered list)
+msgid "**Datenschutz**: Server in Deutschland, DSGVO-konform"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 14 (unordered list)
+msgid "**Nachhaltig**: Beide nutzen Ökostrom"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 14 (unordered list)
+msgid "**Keine Werbung**: Werbefrei und tracker-frei"
+msgstr ""
+
+#: src/content/recipes/de/posteo-mailbox-org.md:block 14 (unordered list)
+msgid "**Zusatzfunktionen**: Kalender, Kontakte, Cloud-Speicher"
+msgstr ""
+
+#: src/content/recipes/de/whatsapp-to-signal.md:block 1 (paragraph)
+msgid ""
+"title: \"WhatsApp zu Signal\" description: \"Wechsle von WhatsApp zu Signal "
+"- der sicheren und datenschutzfreundlichen Alternative\" pubDate: 2026-01-02"
+" category: \"Messenger\""
+msgstr ""
+
+#: src/content/recipes/de/whatsapp-to-signal.md:block 2 (header)
+msgid "heroImage: \"../../../assets/cake.jpg\""
+msgstr ""
+
+#: src/content/recipes/de/whatsapp-to-signal.md:block 3 (header)
+msgid "WhatsApp zu Signal"
+msgstr ""
+
+#: src/content/recipes/de/whatsapp-to-signal.md:block 4 (paragraph)
+msgid ""
+"Signal ist eine sichere, quelloffene Messaging-App, die deine Privatsphäre "
+"respektiert."
+msgstr ""
+
+#: src/content/recipes/de/whatsapp-to-signal.md:block 6 (ordered list)
+msgid "**Signal installieren**"
+msgstr ""
+
+#: src/content/recipes/de/whatsapp-to-signal.md:block 6 (ordered list)
+msgid ""
+"Lade Signal aus dem App Store (iOS) oder Google Play Store (Android) "
+"herunter"
+msgstr ""
+
+#: src/content/recipes/de/whatsapp-to-signal.md:block 6 (ordered list)
+msgid "Oder besuche [signal.org](https://signal.org) für Desktop-Versionen"
+msgstr ""
+
+#: src/content/recipes/de/whatsapp-to-signal.md:block 6 (ordered list)
+msgid "**Registrierung**"
+msgstr ""
+
+#: src/content/recipes/de/whatsapp-to-signal.md:block 6 (ordered list)
+msgid "Öffne Signal und gib deine Telefonnummer ein"
+msgstr ""
+
+#: src/content/recipes/de/whatsapp-to-signal.md:block 6 (ordered list)
+msgid "Bestätige die Nummer mit dem SMS-Code"
+msgstr ""
+
+#: src/content/recipes/de/whatsapp-to-signal.md:block 6 (ordered list)
+msgid "Füge einen Namen und ein Profilbild hinzu"
+msgstr ""
+
+#: src/content/recipes/de/whatsapp-to-signal.md:block 6 (ordered list)
+msgid "Passe deine Datenschutzeinstellungen an"
+msgstr ""
+
+#: src/content/recipes/de/whatsapp-to-signal.md:block 6 (ordered list)
+msgid "**Kontakte informieren**"
+msgstr ""
+
+#: src/content/recipes/de/whatsapp-to-signal.md:block 6 (ordered list)
+msgid "Signal findet automatisch Kontakte, die bereits Signal nutzen"
+msgstr ""
+
+#: src/content/recipes/de/whatsapp-to-signal.md:block 6 (ordered list)
+msgid "Informiere deine wichtigsten Kontakte über den Wechsel"
+msgstr ""
+
+#: src/content/recipes/de/whatsapp-to-signal.md:block 8 (paragraph)
+msgid ""
+"**Gruppen übertragen**: Erstelle deine wichtigsten WhatsApp-Gruppen neu in "
+"Signal und lade die Mitglieder ein."
+msgstr ""
+
+#: src/content/recipes/de/whatsapp-to-signal.md:block 9 (paragraph)
+msgid ""
+"**Backup**: Signal bietet verschlüsselte Backups für deine Chats an. "
+"Aktiviere diese Funktion in den Einstellungen."
+msgstr ""
+
+#: src/content/recipes/de/whatsapp-to-signal.md:block 11 (unordered list)
+msgid ""
+"**Ende-zu-Ende-Verschlüsselung**: Alle Nachrichten sind standardmäßig "
+"verschlüsselt"
+msgstr ""
+
+#: src/content/recipes/de/whatsapp-to-signal.md:block 11 (unordered list)
+msgid "**Keine Werbung**: Signal ist komplett werbefrei"
+msgstr ""
+
+#: src/content/recipes/de/whatsapp-to-signal.md:block 11 (unordered list)
+msgid ""
+"**Spenden-finanziert**: Signal wird durch Spenden finanziert, nicht durch "
+"Datenverkauf"
+msgstr ""

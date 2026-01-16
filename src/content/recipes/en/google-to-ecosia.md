@@ -1,43 +1,41 @@
----
-title: "Google to Ecosia"
-description: "Switch from Google to Ecosia - the search engine that plants trees"
-pubDate: 2026-01-05
-category: "Search Engine"
+***
 
-heroImage: "../../../assets/bowl.jpg"
----
+title: "Google zu Ecosia" description: "Wechsle von Google zu Ecosia - der Suchmaschine, die Bäume pflanzt" pubDate: 2026-01-05 category: "Suchmaschine"
 
-# Google to Ecosia
+## heroImage: "../../../assets/bowl.jpg"
 
-Ecosia is an eco-friendly search engine that plants trees with its advertising revenue.
+# Google zu Ecosia
+
+Ecosia ist eine umweltfreundliche Suchmaschine, die mit ihren Werbeeinnahmen Bäume pflanzt.
 
 ## Preparation
 
-1. **Install Browser Extension**
+1. **Browser-Erweiterung installieren**
 
-   - Visit [ecosia.org](https://www.ecosia.org)
-   - Click "Add Ecosia to [Browser]"
-   - Confirm the installation
+   - Besuche [ecosia.org](https://www.ecosia.org)
+   - Klicke auf "Ecosia zu [Browser] hinzufügen"
+   - Bestätige die Installation
 
-2. **Set as Default Search Engine**
+1. **Als Standardsuchmaschine festlegen**
 
-   - **Chrome/Edge**: Settings -> Search engine -> Select Ecosia
-   - **Firefox**: Settings -> Search -> Default Search Engine -> Ecosia
-   - **Safari**: Settings -> Search -> Ecosia
+   - **Chrome/Edge**: Einstellungen → Suchmaschine → Ecosia auswählen
+   - **Firefox**: Einstellungen → Suche → Standardsuchmaschine → Ecosia
+   - **Safari**: Einstellungen → Suche → Ecosia
 
-3. **Install Mobile App**
-   - Download the Ecosia app from the App Store or Google Play Store
-   - Or use Ecosia in your mobile browser
+1. **Mobile App installieren**
+
+   - Lade die Ecosia-App aus dem App Store oder Google Play Store
+   - Oder nutze Ecosia im mobilen Browser
 
 ## Dessert
 
-**Search History**: Ecosia does not store your search queries permanently. After one week, all data is anonymized.
+**Suchverlauf**: Ecosia speichert deine Suchanfragen nicht dauerhaft. Nach einer Woche werden alle Daten anonymisiert.
 
-**Transparency**: On the Ecosia website, you can track exactly how many trees have already been planted.
+**Transparenz**: Auf der Ecosia-Website kannst du genau nachverfolgen, wie viele Bäume bereits gepflanzt wurden.
 
 ## Topping
 
-- **80% of Profits for Tree Planting**: Ecosia invests most of its profits in reforestation projects
-- **CO2 Negative**: Ecosia removes more CO2 from the atmosphere than it produces
-- **Privacy**: No selling of data to third parties
-- **Transparent Financial Reports**: Monthly publication of all income and expenses
+- **80% der Gewinne für Baumpflanzungen**: Ecosia investiert den Großteil seiner Gewinne in Aufforstungsprojekte
+- **CO₂-negativ**: Ecosia entfernt mehr CO₂ aus der Atmosphäre, als es verursacht
+- **Datenschutz**: Keine Verkauf von Daten an Dritte
+- **Transparente Finanzberichte**: Monatliche Veröffentlichung aller Einnahmen und Ausgaben

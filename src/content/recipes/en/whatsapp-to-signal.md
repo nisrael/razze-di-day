@@ -1,46 +1,44 @@
----
-title: "WhatsApp to Signal"
-description: "Switch from WhatsApp to Signal - the secure and privacy-friendly alternative"
-pubDate: 2026-01-02
-category: "Messenger"
+***
 
-heroImage: "../../../assets/cake.jpg"
----
+title: "WhatsApp zu Signal" description: "Wechsle von WhatsApp zu Signal - der sicheren und datenschutzfreundlichen Alternative" pubDate: 2026-01-02 category: "Messenger"
 
-# WhatsApp to Signal
+## heroImage: "../../../assets/cake.jpg"
 
-Signal is a secure, open-source messaging app that respects your privacy.
+# WhatsApp zu Signal
+
+Signal ist eine sichere, quelloffene Messaging-App, die deine Privatsphäre respektiert.
 
 ## Preparation
 
-1. **Install Signal**
+1. **Signal installieren**
 
-   - Download Signal from the App Store (iOS) or Google Play Store (Android)
-   - Or visit [signal.org](https://signal.org) for desktop versions
+   - Lade Signal aus dem App Store (iOS) oder Google Play Store (Android) herunter
+   - Oder besuche [signal.org](https://signal.org) für Desktop-Versionen
 
-2. **Registration**
+1. **Registrierung**
 
-   - Open Signal and enter your phone number
-   - Confirm the number with the SMS code
+   - Öffne Signal und gib deine Telefonnummer ein
+   - Bestätige die Nummer mit dem SMS-Code
 
-3. **Set Up Profile**
+1. **Profil einrichten**
 
-   - Add a name and a profile picture
-   - Adjust your privacy settings
+   - Füge einen Namen und ein Profilbild hinzu
+   - Passe deine Datenschutzeinstellungen an
 
-4. **Inform Contacts**
-   - Signal automatically finds contacts who already use Signal
-   - Inform your most important contacts about the switch
+1. **Kontakte informieren**
+
+   - Signal findet automatisch Kontakte, die bereits Signal nutzen
+   - Informiere deine wichtigsten Kontakte über den Wechsel
 
 ## Dessert
 
-**Transfer Groups**: Recreate your most important WhatsApp groups in Signal and invite the members.
+**Gruppen übertragen**: Erstelle deine wichtigsten WhatsApp-Gruppen neu in Signal und lade die Mitglieder ein.
 
-**Backup**: Signal offers encrypted backups for your chats. Enable this feature in the settings.
+**Backup**: Signal bietet verschlüsselte Backups für deine Chats an. Aktiviere diese Funktion in den Einstellungen.
 
 ## Topping
 
-- **End-to-End Encryption**: All messages are encrypted by default
-- **No Ads**: Signal is completely ad-free
-- **Open Source**: The source code is publicly viewable
-- **Donation-funded**: Signal is funded by donations, not by selling data
+- **Ende-zu-Ende-Verschlüsselung**: Alle Nachrichten sind standardmäßig verschlüsselt
+- **Keine Werbung**: Signal ist komplett werbefrei
+- **Open Source**: Der Quellcode ist öffentlich einsehbar
+- **Spenden-finanziert**: Signal wird durch Spenden finanziert, nicht durch Datenverkauf

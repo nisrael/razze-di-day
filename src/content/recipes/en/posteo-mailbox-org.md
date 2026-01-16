@@ -1,58 +1,57 @@
----
-title: "Posteo & Mailbox.org"
-description: "Switch to German, privacy-friendly email providers"
-pubDate: 2026-01-02
-category: "Email"
+***
 
-heroImage: "../../../assets/bread.jpg"
----
+title: "Posteo & Mailbox.org" description: "Wechsle zu deutschen, datenschutzfreundlichen E-Mail-Anbietern" pubDate: 2026-01-02 category: "E-Mail"
+
+## heroImage: "../../../assets/bread.jpg"
 
 # Posteo & Mailbox.org
 
-Secure email providers from Germany with strong privacy.
+Sichere E-Mail-Anbieter aus Deutschland mit starkem Datenschutz.
 
 ## Preparation
 
 ### Posteo
 
-1. **Create Account**
+1. **Konto erstellen**
 
-   - Visit [posteo.de/en](https://posteo.de/en)
-   - Click "Create a Posteo account now"
-   - Choose an email address (1€/month)
+   - Besuche [posteo.de](https://posteo.de)
+   - Klicke auf "Jetzt Posteo-Konto erstellen"
+   - Wähle eine E-Mail-Adresse (1€/Monat)
 
-2. **Payment**
+1. **Bezahlung**
 
-   - Posteo accepts anonymous payments (cash, bank transfer)
-   - No personal data required
+   - Posteo akzeptiert anonyme Zahlungen (Bargeld, Überweisung)
+   - Keine Angabe persönlicher Daten erforderlich
 
-3. **Set Up Email Client**
-   - Use the web interface or set up an email client
+1. **E-Mail-Client einrichten**
+
+   - Nutze die Weboberfläche oder richte einen E-Mail-Client ein
    - IMAP: posteo.de:993 (SSL/TLS)
    - SMTP: posteo.de:465 (SSL/TLS)
 
 ### Mailbox.org
 
-1. **Create Account**
+1. **Konto erstellen**
 
-   - Visit [mailbox.org/en](https://mailbox.org/en)
-   - Choose a plan (from 1€/month)
-   - Create your account
+   - Besuche [mailbox.org](https://mailbox.org)
+   - Wähle einen Tarif (ab 1€/Monat)
+   - Erstelle dein Konto
 
-2. **Additional Features**
-   - Calendar and contacts included
-   - Office suite available
-   - PGP encryption possible
+1. **Zusatzfunktionen**
+
+   - Kalender und Kontakte inklusive
+   - Office-Suite verfügbar
+   - Verschlüsselung mit PGP möglich
 
 ## Dessert
 
-**Migration**: Both providers offer tools to import emails from other mailboxes.
+**Migration**: Beide Anbieter bieten Tools zum Import von E-Mails aus anderen Postfächern.
 
-**Encryption**: Use PGP for end-to-end encrypted emails.
+**Verschlüsselung**: Nutze PGP für Ende-zu-Ende-verschlüsselte E-Mails.
 
 ## Topping
 
-- **Privacy**: Servers in Germany, GDPR compliant
-- **Sustainable**: Both use green electricity
-- **No Ads**: Ad-free and tracker-free
-- **Additional Features**: Calendar, contacts, cloud storage
+- **Datenschutz**: Server in Deutschland, DSGVO-konform
+- **Nachhaltig**: Beide nutzen Ökostrom
+- **Keine Werbung**: Werbefrei und tracker-frei
+- **Zusatzfunktionen**: Kalender, Kontakte, Cloud-Speicher

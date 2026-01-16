@@ -1,51 +1,49 @@
----
-title: "Mastodon"
-description: "Switch to Mastodon - the decentralized social network"
-pubDate: 2026-01-06
-category: "Social Media"
+***
 
-heroImage: "../../../assets/cookies.jpg"
----
+title: "Mastodon" description: "Wechsle zu Mastodon - dem dezentralen sozialen Netzwerk" pubDate: 2026-01-06 category: "Social Media"
+
+## heroImage: "../../../assets/cookies.jpg"
 
 # Mastodon
 
-Mastodon is a decentralized social network without algorithms or advertising.
+Mastodon ist ein dezentrales soziales Netzwerk ohne Algorithmen und Werbung.
 
 ## Preparation
 
-1. **Choose a Server**
+1. **Server auswählen**
 
-   - Visit [joinmastodon.org/servers](https://joinmastodon.org/servers)
-   - Choose a server based on your interests or region
-   - Recommended for English speakers: mastodon.social, mstdn.social
+   - Besuche [joinmastodon.org/servers](https://joinmastodon.org/servers)
+   - Wähle einen Server basierend auf deinen Interessen oder deiner Region
+   - Empfehlung für deutschsprachige Nutzer: mastodon.social, chaos.social
 
-2. **Create Account**
+1. **Konto erstellen**
 
-   - Click "Sign up" on the chosen server
-   - Enter username, email, and password
-   - Confirm your email address
+   - Klicke auf "Registrieren" auf dem gewählten Server
+   - Gib Benutzername, E-Mail und Passwort ein
+   - Bestätige deine E-Mail-Adresse
 
-3. **Set Up Profile**
+1. **Profil einrichten**
 
-   - Add a profile picture and header
-   - Write a short bio
-   - Link your website or other profiles
+   - Füge ein Profilbild und Header hinzu
+   - Schreibe eine kurze Bio
+   - Verlinke deine Website oder andere Profile
 
-4. **Follow People**
-   - Search for hashtags that interest you
-   - Follow interesting accounts
-   - Use the local and federated timelines for discovery
+1. **Leuten folgen**
+
+   - Suche nach Hashtags, die dich interessieren
+   - Folge interessanten Accounts
+   - Nutze die lokale und föderierte Timeline zur Entdeckung
 
 ## Dessert
 
-**Apps**: There are many apps for Mastodon - e.g., Tusky (Android), Ivory (iOS), or use the web interface.
+**Apps**: Es gibt viele Apps für Mastodon - z.B. Tusky (Android), Ivory (iOS), oder nutze die Web-Oberfläche.
 
-**Migration**: You can later move to a different server and take your followers with you.
+**Umzug**: Du kannst später zu einem anderen Server umziehen und deine Follower mitnehmen.
 
 ## Topping
 
-- **Decentralized**: No single company controls the network
-- **Chronological Timeline**: No algorithmic sorting
-- **Open Source**: The code is publicly viewable
-- **No Ads**: Funded by donations and volunteers
-- **Privacy**: You decide who can see your posts
+- **Dezentral**: Kein einzelnes Unternehmen kontrolliert das Netzwerk
+- **Chronologische Timeline**: Keine algorithmische Sortierung
+- **Open Source**: Der Code ist öffentlich einsehbar
+- **Keine Werbung**: Finanziert durch Spenden und Freiwillige
+- **Datenschutz**: Du entscheidest, wer deine Beiträge sehen kann

@@ -1,0 +1,52 @@
+name: i18n Generate (PO to Markdown)
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'src/i18n/po/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libmd4c-html0-dev libmd4c-dev
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install mdpo
+        run: pip install mdpo
+
+      - name: Run generation script
+        run: |
+          chmod +x scripts/i18n-generate.sh
+          ./scripts/i18n-generate.sh
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # Check for changes in the content directories
+          if [[ -n $(git status --porcelain src/content/) ]]; then
+            echo "Changes detected in translated content."
+            git add src/content/pages/ src/content/recipes/
+            git commit -m "chore(i18n): update translated content"
+            git push
+          else
+            echo "No changes in translated content."
+          fi
