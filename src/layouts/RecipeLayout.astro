@@ -3,6 +3,7 @@ import BaseLayout from "./BaseLayout.astro";
 import { getRelativeLocaleUrl } from "astro:i18n";
 import { useTranslations } from "../utils/i18n";
 import { Clock, Zap, CheckCircle, ArrowLeft } from "lucide-react";
+import FallbackBanner from "@/components/FallbackBanner.astro";
 
 import { remark } from "remark";
 import html from "remark-html";
@@ -23,11 +24,12 @@ interface Props {
   time?: string;
   difficulty?: string;
   ingredients?: Array<{ content: string }>;
-  instructions: Array<{ content: string }>;
+  instructions?: Array<{ content: string }>;
   dessert: string;
   conclusion: string;
   topping?: string;
   lang: string;
+  isFallback?: boolean;
 }
 
 const {
@@ -44,6 +46,7 @@ const {
   conclusion,
   topping,
   lang,
+  isFallback = false,
 } = Astro.props;
 
 const t = useTranslations(lang);
@@ -52,12 +55,12 @@ const dessertHtml = await parseMd(dessert);
 const conclusionHtml = await parseMd(conclusion);
 const toppingHtml = topping ? await parseMd(topping) : "";
 
-const instructionItems = await Promise.all(
+const instructionItems = instructions ? await Promise.all(
   instructions.map(async (step) => ({
     ...step,
     html: await parseMd(step.content),
   })),
-);
+) : [];
 
 const ingredientItems = ingredients
   ? await Promise.all(
@@ -156,6 +159,7 @@ const ingredientItems = ingredients
       )
     }
 
+    {isFallback && <FallbackBanner lang={lang} />}
     <header class="mb-10 text-center">
       <div
         class="inline-block px-3 py-1 mb-4 text-sm font-medium text-primary-700 bg-primary-100 dark:text-primary-300 dark:bg-primary-900/50 rounded-full"

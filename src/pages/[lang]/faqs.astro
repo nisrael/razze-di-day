@@ -1,9 +1,10 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import FAQsList from "../../components/FAQsList";
-import { useTranslations } from "../../utils/i18n";
-import { LOCALES } from "../../consts";
+import { useTranslations } from "@/utils/i18n.ts";
+import { LOCALES, DEFAULT_LOCALE } from "@/consts.ts";
 import { getCollection } from "astro:content";
+import FallbackBanner from "@/components/FallbackBanner.astro";
 
 export async function getStaticPaths() {
   const faqsCollection = await getCollection("faqs");
@@ -12,16 +13,22 @@ export async function getStaticPaths() {
     const faqsForLang = faqsCollection.find(
       (faq) => faq.id === lang
     );
+    const fallbackFaqs = faqsCollection.find(
+      (faq) => faq.id === DEFAULT_LOCALE
+    );
+
+    const faqsData = faqsForLang || fallbackFaqs;
+    const isFallback = !faqsForLang && !!fallbackFaqs;
 
     return {
       params: { lang },
-      props: { faqsData: faqsForLang?.data },
+      props: { faqsData: faqsData?.data, isFallback },
     };
   });
 }
 
 const { lang } = Astro.params;
-const { faqsData } = Astro.props;
+const { faqsData, isFallback } = Astro.props;
 const t = useTranslations(lang);
 const faqs = faqsData?.items || [];
 ---
@@ -49,6 +56,7 @@ const faqs = faqsData?.items || [];
     })}
   />
   <div class="container mx-auto px-4 py-12 max-w-4xl">
+    {isFallback && <FallbackBanner lang={lang} />}
     <header class="text-center mb-12">
       <h1 class="text-4xl md:text-5xl font-display font-bold mb-4">
         {faqsData?.title}

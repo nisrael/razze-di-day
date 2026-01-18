@@ -1,14 +1,16 @@
 ---
 import { LOCALES } from "../../consts";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { getEntry, render } from "astro:content";
+import { render } from "astro:content";
+import { getLocalizedContent } from "@/utils/content.ts";
+import FallbackBanner from "@/components/FallbackBanner.astro";
 
 export function getStaticPaths() {
   return LOCALES.map((lang) => ({ params: { lang } }));
 }
 
 const { lang } = Astro.params;
-const entry = await getEntry("pages", `${lang}/support`);
+const { entry, isFallback } = await getLocalizedContent("pages", `${lang}/support`);
 if (!entry) return Astro.redirect("/404");
 const { Content } = await render(entry);
 ---
@@ -20,6 +22,7 @@ const { Content } = await render(entry);
 >
   <div class="container mx-auto px-4 py-12 max-w-4xl">
     <div class="prose prose-lg dark:prose-invert max-w-none">
+      {isFallback && <FallbackBanner lang={lang} />}
       <Content />
     </div>
   </div>

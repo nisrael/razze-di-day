@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import RecipeLayout from "../../../layouts/RecipeLayout.astro";
-import { LOCALES } from "../../../consts";
+import { LOCALES, DEFAULT_LOCALE } from "@/consts.ts";
 import { RecipesRecipes } from "tina/__generated__/types";
 
 export async function getStaticPaths() {
@@ -10,12 +10,21 @@ export async function getStaticPaths() {
   const paths: unknown[] = [];
 
   LOCALES.forEach((lang) => {
-    const recipesData = recipesCollection.find((r) => r.id === lang);
+    let recipesData = recipesCollection.find((r) => r.id === lang);
+    let isFallback = false;
+    
+    if (!recipesData && lang !== DEFAULT_LOCALE) {
+      recipesData = recipesCollection.find((r) => r.id === DEFAULT_LOCALE);
+      if (recipesData) {
+        isFallback = true;
+      }
+    }
+    
     const recipes = recipesData?.data.recipes || [];
     recipes.forEach((recipe: RecipesRecipes) => {
       paths.push({
         params: { lang, slug: recipe.id },
-        props: { recipe, lang },
+        props: { recipe, lang, isFallback },
       });
     });
   });
@@ -23,7 +32,7 @@ export async function getStaticPaths() {
   return paths;
 }
 
-const { recipe, lang } = Astro.props;
+const { recipe, lang, isFallback } = Astro.props;
 ---
 
 <RecipeLayout
@@ -40,4 +49,5 @@ const { recipe, lang } = Astro.props;
   conclusion={recipe.conclusion}
   topping={recipe.topping}
   lang={lang}
+  isFallback={isFallback}
 />
