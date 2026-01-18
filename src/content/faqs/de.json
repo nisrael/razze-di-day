@@ -1,0 +1,55 @@
+{
+    "title": "Häufig gestellte Fragen",
+    "desc": "Alles, was du über digitale Unabhängigkeit wissen musst",
+    "items": [
+        {
+            "question": "Was ist der Digital Independence Day?",
+            "answer": "Der DID ist „entspannte Rebellion\": An jedem ersten Sonntag im Monat ruft ein breites Bündnis aus Organisationen zum #DigitalIndependenceDay (DID) auf. Wir wechseln zu demokratiefreundlichen digitalen Alternativen, holen uns unser freies digitales Leben zurück und zerstören die Demokratie nicht weiter. Und wir sichern uns nach und nach unsere digitale Unabhängigkeit."
+        },
+        {
+            "question": "Wieso der Digital Independence Day?",
+            "answer": "Unser digitales Leben befindet sich in der Hand weniger Superreicher. Mit ihrer (Quasi-)Monopolstellung bestimmen Unternehmen wie X, Meta, Microsoft, Amazon, Apple, Spotify, ByteDance (TikTok) und Menschen wie Elon Musk, Jeff Bezos oder Mark Zuckerberg weltweit, wie wir uns online informieren, wie wir diskutieren, kommunizieren oder handeln. Einen solchen unkontrollierten Einfluss sollte kein Mensch und kein Unternehmen besitzen. Die gute Nachricht: Wir geben Big Tech diese Macht derzeit, und wir können sie Big Tech auch wieder nehmen."
+        },
+        {
+            "question": "Warum ist digitale Unabhängigkeit wichtig?",
+            "answer": "Digitale Unabhängigkeit ist wichtig, weil unser Alltag heute immer mehr digital stattfindet: von der Ticketbuchung für den nächsten Urlaub über Nachrichten bis hin zu Glückwünschen zum Geburtstag. Wenn wir von wenigen großen Plattformen abhängig sind, geben wir unbemerkt Kontrolle ab: Kontrolle über unsere Daten, unsere Kommunikation und darüber, was wir sehen, sagen oder teilen können.\n\nDas birgt Gefahren, auch für jeden einzelnen: Accounts werden gesperrt, Inhalte verschwinden, Reichweite bricht ein – manchmal ohne Erklärung. Die Big-Tech-Monopole sammeln unsere persönlichen Daten, werten sie aus und machen uns zur Ware, um ihre Gewinne zu maximieren. Wir passen unser Leben Algorithmen an, die nur Gewinne maximieren oder Weltanschauungen verbreiten sollen, anstatt frei zu handeln.\n\nAuch für die Gesellschaft ist diese Abhängigkeit problematisch. Wenn wenige Konzerne bestimmen, welche Informationen sichtbar sind, können sie Meinungen, Debatten und sogar demokratische Prozesse beeinflussen. Vielfalt geht verloren. Abhängigkeit macht verletzlich: Technische Ausfälle, politische Entscheidungen oder wirtschaftliche Interessen können ganze Bereiche lahmlegen.\n\nDigitale Unabhängigkeit heißt deshalb: mehr Selbstbestimmung, mehr Transparenz, mehr Resilienz und mehr Verantwortung. Sie stärkt Individuen, schützt die Vielfalt unserer Gesellschaft und sorgt dafür, dass Technologie uns dient – und nicht umgekehrt."
+        },
+        {
+            "question": "Muss ich jetzt mein Leben ändern?",
+            "answer": "Nein, es geht beim DID um „entspannte Rebellion\". Die Kirchen hatten einen guten Riecher dafür, wann Menschen vielleicht ein wenig Zeit haben – sonntagsmorgens? Daher schlagen wir vor, dass Du Dir einmal im Monat, am ersten Sonntag, ein wenig Zeit für einen Wechsel nimmst. Und ein Wechsel reicht auch erst einmal! Starte vielleicht mit einem leichten Wechsel – hin zu einem alternativen Browser oder einer europäischen Suchmaschine. Dann kannst Du Dir einen Monat lang auf die Schulter klopfen und Dich langsam auf den nächsten DID freuen. Und wenn es einmal nicht klappt, weil Oma ihren 80. feiert oder die Konfirmation ansteht – kein Problem: Der DID ist keine Pflicht, sondern eine Freude. Und der nächste DID kommt bestimmt."
+        },
+        {
+            "question": "In Euren Wechselrezepten gebt ihr Empfehlungen: Habt ihr die auch geprüft?",
+            "answer": "Wir sind nicht die Stiftung Warentest: Dafür reichen unsere Kapazitäten (leider!) nicht. Wir zeigen Dir in unseren Wechselrezepten einen einfachen Weg für den Abschied von Big Tech, den wir sorgfältig recherchiert haben - aber es gibt auch andere Wege, die nicht unbedingt schlechter sind. Über die Kriterien für „gut\", „weniger gut\" und „schlecht\" lässt sich trefflich streiten: Uns geht es auf DI.DAY um schnell umzusetzende Wege für den Abschied von Big Tech (und nicht um Purismus oder reine Lehre). Eine gute Übersicht über weitere Alternativen zu Big Tech findest Du auch auf unserer Alternativenseite."
+        },
+        {
+            "question": "Was sind denn Eure Kriterien für die Auswahl der Alternativen?",
+            "answer": "Uns geht es darum, dass Alternativen mehr Datenschutz bieten, mehr souveränen Umgang mit eigenen Daten, weniger Abhängigkeit von einem Anbieter (Locked-In) und mehr Wahlfreiheit. Daneben gibt es viele Kriterien, die eine individuelle Wahl ausmachen könnten: Wir finden zum Beispiel Open-Source-Projekte großartig – aber nicht alle Empfehlungen beruhen darauf, weil aus unserer Sicht auch andere Projekte eine Alternative zu Big Tech bieten können. Und darum geht's beim DID."
+        },
+        {
+            "question": "Kleine oder große Unternehmen? Lokale Buchläden oder europäische Unternehmen?",
+            "answer": "Purismus und reine Lehre sind nicht unser Mantra: Uns geht darum, Alternativen zu wenigen, fast monopolistischen Konzernen aufzuzeigen. Unter den Alternativen gibt es große wie kleine mit Vor- und Nachteilen. Am Ende muss jede und jeder selbst entscheiden, was am besten passt. Aus unserer Sicht macht unsere Gesellschaft alles stärker, was die Abhängigkeit von wenigen Big-Tech-Konzernen verringert – ob groß oder klein."
+        },
+        {
+            "question": "Ich habe eine viel bessere Idee als ihr für einen Wechsel - was tun?",
+            "answer": "Schreib uns gern eine Email an hallo@di.day – wir werden umso besser, je mehr Menschen mitdenken und unser Projekt wachsen lassen."
+        },
+        {
+            "question": "Und was ist dann der DUT?",
+            "answer": "Der Digitale Unabhängigkeitstag (DUT) ist nur der deutsche Name für den DID. Auf der einen Seite finden wir, dass die deutsche Sprache genügend für unsere entspannte Rebellion bereithält. Auf der anderen Seite wünschen wir uns, dass der DUT auch in anderen Ländern zur Regel wird. Daher setzen wir von Beginn an eher auf den englischen „Digital Independence Day\". Du kannst es halten wie ein unabhängiger Dachdecker: I #DIDit und #DUTgemacht sind gleich gut."
+        },
+        {
+            "question": "Wer unterstützt den DID?",
+            "answer": "Den DI.DAY macht nicht eine Organisation allein: Von Wikimedia über die Mastodon-Firma oder den Mastodon-Server freiburg.social bis hin zu Robin Wood. Eine ausführliche Liste findest Du auf unserer Partner-Seite."
+        },
+        {
+            "question": "Sind alle DID-Unterstützenden schon „auf der guten Seite\"?",
+            "answer": "Klar, wir stehen alle auf der guten Seite, Du auch! Weil uns das gemeinsame Ziel verbindet – digitale Unabhängigkeit. Alle genannten Organisationen unterstützen also den DID und treten für seine Ziele ein. Aber ganz ehrlich: Keine der Organisationen hat schon alle Wechsel hinter sich. Viele von uns machen sich selbst auf den Weg, nach und nach Alternativen einzusetzen – bei einigen geht es schneller, bei anderen langsamer. Und das ist auch in Ordnung: Es geht nicht um Purismus, sondern um das gemeinsame Ziel."
+        },
+        {
+            "question": "Wie kann sich meine Organisation beteiligen?",
+            "answer": "Wir schmieden ein möglichst breites Bündnis aus demokratischen Organisationen, Unternehmen, Akteur*innen der Zivilgesellschaft, die alle auf ihre Art und Weise am DI.DAY mitmachen: entweder, indem sie selbst wechseln und davon auf ihren Kanälen erzählen, oder/und, indem sie ihre Communities zum Wechsel aufrufen und Unterstützung anbieten. Schreib uns gern an hallo@di.day. Wir wollen auch vor Ort Hilfe anbieten – in Wechselbrunches und Rebellions-Cafés. Wenn Du dafür Ideen hast, schreibt uns auch gern!"
+        }
+    ],
+    "moreQuestions": "Wenn Du keine Antwort auf Deine Frage findest, schreib uns gern an hallo@di.day. Danke!"
+}

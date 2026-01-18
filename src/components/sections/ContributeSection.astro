@@ -1,0 +1,69 @@
+---
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+interface Props {
+  lang: string;
+  title: string;
+  description: string;
+  cta1Label: string;
+}
+
+const { lang, title, description, cta1Label } = Astro.props;
+---
+
+<section
+  class="py-24 md:py-32 bg-gradient-to-br from-primary-600 via-primary-500 to-accent-600 text-white relative overflow-hidden"
+>
+  <!-- Decorative gradient orbs -->
+  <div
+    class="absolute top-0 right-0 -mt-40 -mr-40 w-96 h-96 bg-white opacity-10 rounded-full blur-3xl"
+  >
+  </div>
+  <div
+    class="absolute bottom-0 left-0 -mb-40 -ml-40 w-96 h-96 bg-white opacity-10 rounded-full blur-3xl"
+  >
+  </div>
+  <div
+    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl h-96 bg-white opacity-5 rounded-full blur-3xl"
+  >
+  </div>
+
+  <div class="container mx-auto px-4 relative">
+    <div class="text-center max-w-4xl mx-auto">
+      <h2
+        class="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-8 leading-tight"
+      >
+        {title}
+      </h2>
+
+      <p
+        class="text-lg md:text-xl text-primary-100 mb-16 leading-relaxed max-w-3xl mx-auto font-light opacity-95"
+      >
+        {description}
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a
+          href={getRelativeLocaleUrl(lang, "support")}
+          class="group px-8 py-4 bg-white text-primary-600 rounded-xl font-semibold hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-2xl hover:-translate-y-0.5 active:scale-95"
+        >
+          <span class="flex items-center justify-center gap-2">
+            {cta1Label}
+            <svg
+              class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

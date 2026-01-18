@@ -1,0 +1,55 @@
+{
+    "title": "Frequently Asked Questions",
+    "desc": "Everything you need to know about digital independence",
+    "items": [
+        {
+            "question": "What is Digital Independence Day?",
+            "answer": "Digital Independence Day (DID) is \"relaxed rebellion\": Every first Sunday of the month, a broad coalition of organizations calls for #DigitalIndependenceDay (DID). We switch to democracy-friendly digital alternatives, reclaim our free digital lives, and stop destroying democracy further. We progressively secure our digital independence."
+        },
+        {
+            "question": "Why Digital Independence Day?",
+            "answer": "Our digital lives are in the hands of a few super-rich individuals. With their quasi-monopoly status, companies like X, Meta, Microsoft, Amazon, Apple, Spotify, ByteDance (TikTok) and people like Elon Musk, Jeff Bezos, or Mark Zuckerberg determine worldwide how we get information online, how we discuss, communicate, and act. No human and no company should have such unchecked influence. The good news: We currently give Big Tech this power, and we can take it back from Big Tech."
+        },
+        {
+            "question": "Why is digital independence important?",
+            "answer": "Digital independence is important because our daily lives are increasingly digital: from booking tickets for the next vacation to messages to birthday greetings. When we depend on a few large platforms, we unknowingly give up control: control over our data, our communication, and what we can see, say, or share.\n\nThis poses dangers, even for each individual: Accounts get locked, content disappears, reach collapses – sometimes without explanation. Big Tech monopolies collect our personal data, analyze it, and turn us into commodities to maximize their profits. We adapt our lives to algorithms designed only to maximize profits or spread worldviews, instead of acting freely.\n\nThis dependence is also problematic for society. If a few corporations decide which information is visible, they can influence opinions, debates, and even democratic processes. Diversity is lost. Dependence makes us vulnerable: Technical failures, political decisions, or economic interests can paralyze entire sectors.\n\nDigital independence therefore means: more self-determination, more transparency, more resilience, and more responsibility. It strengthens individuals, protects the diversity of our society, and ensures that technology serves us – not the other way around."
+        },
+        {
+            "question": "Do I have to change my life now?",
+            "answer": "No, DID is about \"relaxed rebellion\". The churches had a good sense of timing for when people might have a little time – Sunday mornings? That's why we suggest you take a little time once a month, on the first Sunday, to make a switch. And just one switch is enough for starters! Maybe start with an easy switch – to an alternative browser or a European search engine. Then you can pat yourself on the back for a month and slowly look forward to the next DID. And if it doesn't work out sometime because grandma's turning 80 or there's a confirmation coming up – no problem: DID is not a duty, but a joy. And the next DID will certainly come."
+        },
+        {
+            "question": "In your recipes, you give recommendations: Have you checked them?",
+            "answer": "We are not the Consumer Reports: Our capacities don't go that far (unfortunately!). In our recipes, we show you an easy path away from Big Tech that we've carefully researched - but there are other paths that aren't necessarily worse. You can argue endlessly about the criteria for \"good\", \"less good\", and \"bad\": We're focused on DI.DAY on quick ways to break away from Big Tech (not on purism or ideological purity). You can also find a good overview of other alternatives to Big Tech on our alternatives page."
+        },
+        {
+            "question": "What are your criteria for selecting alternatives?",
+            "answer": "We focus on alternatives that offer more privacy, more sovereign control of personal data, less dependence on a single provider (lock-in), and more freedom of choice. Beyond that, there are many criteria that could affect individual choice: For example, we think open-source projects are great – but not all recommendations are based on that, because from our perspective, other projects can also be an alternative to Big Tech. And that's what DID is about."
+        },
+        {
+            "question": "Small or large companies? Local bookstores or European companies?",
+            "answer": "Purism and ideological purity are not our mantra: We aim to show alternatives to a few, almost monopolistic corporations. Among alternatives, there are large and small ones with advantages and disadvantages. In the end, everyone has to decide for themselves what works best. From our perspective, everything strengthens our society that reduces dependence on a few Big Tech corporations – whether large or small."
+        },
+        {
+            "question": "I have a much better idea than you for a switch - what now?",
+            "answer": "Feel free to write us an email at hallo@di.day – we get better the more people think along and help our project grow."
+        },
+        {
+            "question": "And what is the DUT then?",
+            "answer": "The Digital Independence Day (DUT) in German is just the German name for DID. On one hand, we think the German language has plenty to offer for our relaxed rebellion. On the other hand, we hope the DUT will become the norm in other countries too. So from the start, we focus more on the English \"Digital Independence Day\". You can handle it like an independent roofer: I #DIDit and #DUTgemacht are equally good."
+        },
+        {
+            "question": "Who supports DID?",
+            "answer": "DI.DAY is not run by a single organization: From Wikimedia to the Mastodon company or the Mastodon server freiburg.social to Robin Wood. You'll find a detailed list on our partners page."
+        },
+        {
+            "question": "Are all DID supporters already \"on the good side\"?",
+            "answer": "Sure, we're all on the good side, you too! Because we're united by a common goal – digital independence. All mentioned organizations support DID and stand for its goals. But honestly: None of the organizations have already completed all their switches. Many of us are on the path, gradually adopting alternatives – for some it goes faster, for others slower. And that's okay too: It's not about purism, but about the common goal."
+        },
+        {
+            "question": "How can my organization get involved?",
+            "answer": "We're building the broadest possible coalition of democratic organizations, companies, and civil society actors who participate in DID in their own way: either by switching themselves and sharing about it on their channels, or/and by calling on their communities to switch and offering support. Feel free to write to us at hallo@di.day. We also want to provide help locally – at switching brunches and rebellion cafés. If you have ideas for that, feel free to write to us too!"
+        }
+    ],
+    "moreQuestions": "If you don't find an answer to your question, feel free to write to us at hallo@di.day. Thanks!"
+}
