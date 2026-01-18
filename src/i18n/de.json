@@ -83,5 +83,8 @@
         "title": "Seite nicht gefunden",
         "description": "Entschuldigung, wir konnten die Seite, die du suchst, nicht finden. Sie wurde möglicherweise verschoben oder gelöscht.",
         "home": "Zurück zur Startseite"
+    },
+    "fallback": {
+        "banner": "Dieser Inhalt ist in Ihrer Sprache noch nicht verfügbar. Es wird die deutsche Version angezeigt."
     }
 }

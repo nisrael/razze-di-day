@@ -3,16 +3,15 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 import romeImage from "../../assets/rome.jpg";
 import { LOCALES } from "../../consts";
-import { getCollection } from "astro:content";
+import FallbackBanner from "../../components/FallbackBanner.astro";
+import { getLocalizedContent } from "../../utils/content";
 
 export function getStaticPaths() {
   return LOCALES.map((lang) => ({ params: { lang } }));
 }
 
 const { lang } = Astro.params;
-const snacksCollection = await getCollection("snacks");
-const snacksItem = snacksCollection.find((item) => item.id === lang);
-
+const { entry: snacksItem, isFallback } = await getLocalizedContent("snacks", lang);
 if (!snacksItem) return Astro.redirect("/404");
 
 const data = snacksItem.data;
@@ -49,6 +48,7 @@ function markdownToHtml(markdown: string): string {
   </section>
 
   <div class="container mx-auto px-4 py-12 max-w-5xl">
+    {isFallback && <FallbackBanner lang={lang} />}
     <div class="space-y-8">
       {
         data.groups.map((group) => (
