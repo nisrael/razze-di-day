@@ -1,0 +1,63 @@
+---
+import { getRelativeLocaleUrl } from "astro:i18n";
+import { ArrowRight } from "lucide-react";
+import RecipeCard from "../RecipeCard";
+
+interface Props {
+  lang: string;
+  title: string;
+  description: string;
+  recipes: any[];
+  viewAllLabel: string;
+  seeText: string;
+}
+
+const { lang, title, description, recipes, viewAllLabel, seeText } =
+  Astro.props;
+---
+
+<section
+  class="py-24 md:py-32 bg-white dark:bg-gray-950 relative overflow-hidden"
+>
+  <div class="container mx-auto px-4 relative">
+    <div class="max-w-3xl mx-auto text-center mb-20">
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
+        {title}
+      </h2>
+
+      <p
+        class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed"
+      >
+        {description}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+      {
+        recipes.map((recipe) => (
+          <RecipeCard
+            recipe={recipe}
+            seeText={seeText}
+            href={getRelativeLocaleUrl(
+              lang,
+              `recipes/${recipe.id.split("/")[1]}`,
+            )}
+            client:load
+          />
+        ))
+      }
+    </div>
+
+    <div class="text-center">
+      <a
+        href={getRelativeLocaleUrl(lang, "recipes")}
+        class="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-xl font-semibold hover:from-primary-700 hover:to-primary-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:scale-95"
+      >
+        <span>{viewAllLabel}</span>
+        <ArrowRight
+          className="size-5 group-hover:translate-x-1 transition-transform"
+        />
+      </a>
+    </div>
+  </div>
+</section>
