@@ -2,7 +2,8 @@ import { defineConfig } from "tinacms";
 import { LOCALES } from "../src/consts";
 
 // Your hosting provider likely exposes this as an environment variable
-const branch = process.env.GITHUB_BRANCH ||
+const branch =
+  process.env.GITHUB_BRANCH ||
   process.env.VERCEL_GIT_COMMIT_REF ||
   process.env.HEAD ||
   "main";
@@ -114,12 +115,7 @@ export default defineConfig({
                 isBody: false,
                 required: true,
               },
-              {
-                type: "string",
-                name: "pubDate",
-                label: "Publication Date",
-                required: true,
-              },
+
               {
                 type: "string",
                 name: "category",
@@ -145,35 +141,28 @@ export default defineConfig({
                 required: false,
               },
               {
-                type: "string",
+                type: "object",
                 name: "ingredients",
                 label: "Ingredients",
                 list: true,
-                required: false,
+                fields: [
+                  {
+                    type: "rich-text",
+                    name: "content",
+                    label: "Content",
+                  },
+                ],
               },
               {
                 type: "object",
                 name: "prep",
                 label: "Preparation",
                 list: true,
-                ui: {
-                  itemProps: (item) => {
-                    return { label: item?.title };
-                  },
-                },
                 fields: [
                   {
-                    type: "string",
-                    name: "title",
-                    label: "Section Title",
-                    required: true,
-                  },
-                  {
                     type: "rich-text",
-                    name: "description",
+                    name: "content",
                     label: "Content",
-                    isBody: false,
-                    required: true,
                   },
                 ],
               },
@@ -186,8 +175,8 @@ export default defineConfig({
               },
               {
                 type: "rich-text",
-                name: "topping",
-                label: "Topping",
+                name: "conclusion",
+                label: "Conclusion",
                 isBody: false,
                 required: true,
               },

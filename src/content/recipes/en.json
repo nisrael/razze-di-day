@@ -5,171 +5,146 @@
     {
       "id": "firefox",
       "title": "Firefox Browser",
-      "pubDate": "2026-01-02",
       "category": "Browser",
       "heroImage": "/images/recipes/soup.jpg",
       "prep": [
         {
-          "title": "Download Firefox",
-          "description": "Visit [mozilla.org/firefox](https://www.mozilla.org/firefox/)\n   - Download the version for your system\n   - Install Firefox"
+          "content": "Visit [mozilla.org/firefox](https://www.mozilla.org/firefox/)\n- Download the version for your system\n- Install Firefox"
         },
         {
-          "title": "Import Data",
-          "description": "On the first start, Firefox offers to import bookmarks and passwords\n   - Select your previous browser\n   - Confirm the import"
+          "content": "On the first start, Firefox offers to import bookmarks and passwords\n- Select your previous browser\n- Confirm the import"
         },
         {
-          "title": "Customize Firefox",
-          "description": "Sign in with a Firefox account (optional)\n   - Adjust privacy settings\n   - Install useful add-ons like uBlock Origin"
+          "content": "Sign in with a Firefox account (optional)\n- Adjust privacy settings\n- Install useful add-ons like uBlock Origin"
         },
         {
-          "title": "Set as Default Browser",
-          "description": "Firefox asks on the first start if it should be the default browser\n   - Or: System Settings → Default Apps → Web Browser"
+          "content": "Firefox asks on the first start if it should be the default browser\n- Or: System Settings → Default Apps → Web Browser"
         }
       ],
       "dessert": "**Sync**: With a Firefox account, you can synchronize bookmarks, passwords, and tabs between devices.\n\n**Containers**: Firefox offers \"Multi-Account Containers\" to separate different identities (private, work, shopping).",
-      "topping": "- **Tracking Protection**: Blocks many trackers by default\n- **Open Source**: The source code is publicly viewable\n- **Independent**: Firefox is developed by the non-profit Mozilla Foundation\n- **Extensions**: Wide selection of privacy add-ons available",
+      "conclusion": "- **Tracking Protection**: Blocks many trackers by default\n- **Open Source**: The source code is publicly viewable\n- **Independent**: Firefox is developed by the non-profit Mozilla Foundation\n- **Extensions**: Wide selection of privacy add-ons available",
       "description": "Switch to Firefox - the independent and privacy-friendly browser"
     },
     {
       "id": "posteo-mailbox-org",
       "title": "Posteo & Mailbox.org",
-      "pubDate": "2026-01-02",
       "category": "Email",
       "heroImage": "/images/recipes/bread.jpg",
       "prep": [
         {
-          "title": "Create Account",
-          "description": "Visit [posteo.de](https://posteo.de)\n   - Click \"Create Posteo Account\"\n   - Choose an email address (€1/month)"
+          "content": "Visit [posteo.de](https://posteo.de)\n- Click \"Create Posteo Account\"\n- Choose an email address (€1/month)"
         },
         {
-          "title": "Payment",
-          "description": "Posteo accepts anonymous payments (cash, transfer)\n   - No personal data required"
+          "content": "Posteo accepts anonymous payments (cash, transfer)\n- No personal data required"
         },
         {
-          "title": "Set up Email Client",
-          "description": "Use the web interface or set up an email client\n   - IMAP: posteo.de:993 (SSL/TLS)\n   - SMTP: posteo.de:465 (SSL/TLS)\n\n### Mailbox.org"
+          "content": "Use the web interface or set up an email client\n- IMAP: posteo.de:993 (SSL/TLS)\n- SMTP: posteo.de:465 (SSL/TLS)"
         },
         {
-          "title": "Create Account",
-          "description": "Visit [mailbox.org](https://mailbox.org)\n   - Choose a plan (from €1/month)\n   - Create your account"
+          "content": "Visit [mailbox.org](https://mailbox.org)\n- Choose a plan (from €1/month)\n- Create your account"
         },
         {
-          "title": "Additional Features",
-          "description": "Calendar and contacts included\n   - Office suite available\n   - PGP encryption possible"
+          "content": "Calendar and contacts included\n- Office suite available\n- PGP encryption possible"
         }
       ],
       "dessert": "**Migration**: Both providers offer tools to import emails from other mailboxes.\n\n**Encryption**: Use PGP for end-to-end encrypted emails.",
-      "topping": "- **Privacy**: Servers in Germany, GDPR compliant\n- **Sustainable**: Both use renewable energy\n- **No Ads**: Ad-free and tracker-free\n- **Additional Features**: Calendar, contacts, cloud storage",
+      "conclusion": "- **Privacy**: Servers in Germany, GDPR compliant\n- **Sustainable**: Both use renewable energy\n- **No Ads**: Ad-free and tracker-free\n- **Additional Features**: Calendar, contacts, cloud storage",
       "description": "Switch to German, privacy-friendly email providers",
       "time": "45 minutes (plus follow-up time)",
       "difficulty": "Advanced (Master class of independence!)",
       "ingredients": [
-        "One Euro per month.",
-        "An account for example at Posteo.de (green, secure, anonymous), Mailbox.org, Proton.me (from Switzerland, strong encryption) or Tuta (consistently encrypted, from Hannover)."
+        {
+          "content": "One Euro per month."
+        },
+        {
+          "content": "An account for example at Posteo.de (green, secure, anonymous), Mailbox.org, Proton.me (from Switzerland, strong encryption) or Tuta (consistently encrypted, from Hannover)."
+        }
       ]
     },
     {
       "id": "whatsapp-to-signal",
       "title": "WhatsApp to Signal",
-      "pubDate": "2026-01-02",
       "category": "Messenger",
       "heroImage": "/images/recipes/cake.jpg",
       "prep": [
         {
-          "title": "Install Signal",
-          "description": "Download Signal from the App Store (iOS) or Google Play Store (Android)\n   - Or visit [signal.org](https://signal.org) for desktop versions"
+          "content": "Download Signal from the App Store (iOS) or Google Play Store (Android)\n- Or visit [signal.org](https://signal.org) for desktop versions"
         },
         {
-          "title": "Registration",
-          "description": "Open Signal and enter your phone number\n   - Confirm your number with the SMS code"
+          "content": "Open Signal and enter your phone number\n- Confirm your number with the SMS code"
         },
         {
-          "title": "Set up Profile",
-          "description": "Add a name and profile picture\n   - Adjust your privacy settings"
+          "content": "Add a name and profile picture\n- Adjust your privacy settings"
         },
         {
-          "title": "Inform Contacts",
-          "description": "Signal automatically finds contacts who already use Signal\n   - Inform your important contacts about the switch"
+          "content": "Signal automatically finds contacts who already use Signal\n- Inform your important contacts about the switch"
         }
       ],
       "dessert": "**Transfer Groups**: Recreate your important WhatsApp groups in Signal and invite members.\n\n**Backup**: Signal offers encrypted backups for your chats. Enable this feature in settings.",
-      "topping": "- **End-to-End Encryption**: All messages are encrypted by default\n- **No Ads**: Signal is completely ad-free\n- **Open Source**: The source code is publicly viewable\n- **Donation-Funded**: Signal is funded by donations, not data sales",
+      "conclusion": "- **End-to-End Encryption**: All messages are encrypted by default\n- **No Ads**: Signal is completely ad-free\n- **Open Source**: The source code is publicly viewable\n- **Donation-Funded**: Signal is funded by donations, not data sales",
       "description": "Switch from WhatsApp to Signal - the secure and privacy-friendly alternative"
     },
     {
       "id": "google-to-ecosia",
       "title": "Google to Ecosia",
-      "pubDate": "2026-01-05",
       "category": "Search Engine",
       "heroImage": "/images/recipes/bowl.jpg",
       "prep": [
         {
-          "title": "Install Browser Extension",
-          "description": "Visit [ecosia.org](https://www.ecosia.org)\n   - Click \"Add Ecosia to [Browser]\"\n   - Confirm the installation"
+          "content": "Visit [ecosia.org](https://www.ecosia.org)\n- Click \"Add Ecosia to [Browser]\"\n- Confirm the installation"
         },
         {
-          "title": "Set as Default Search Engine",
-          "description": "**Chrome/Edge**: Settings → Search engine → Select Ecosia\n   - **Firefox**: Settings → Search → Default search engine → Ecosia\n   - **Safari**: Settings → Search → Ecosia"
+          "content": "**Chrome/Edge**: Settings → Search engine → Select Ecosia\n- **Firefox**: Settings → Search → Default search engine → Ecosia\n- **Safari**: Settings → Search → Ecosia"
         },
         {
-          "title": "Install Mobile App",
-          "description": "Download the Ecosia app from the App Store or Google Play Store\n   - Or use Ecosia in your mobile browser"
+          "content": "Download the Ecosia app from the App Store or Google Play Store\n- Or use Ecosia in your mobile browser"
         }
       ],
       "dessert": "**Search History**: Ecosia does not permanently store your search queries. After one week, all data is anonymized.\n\n**Transparency**: On the Ecosia website, you can see exactly how many trees have been planted.",
-      "topping": "- **80% of Profits for Tree Planting**: Ecosia invests most of its profits in reforestation projects\n- **Carbon Negative**: Ecosia removes more CO₂ from the atmosphere than it causes\n- **Privacy**: No data sales to third parties\n- **Transparent Financial Reports**: Monthly publication of all income and expenses",
+      "conclusion": "- **80% of Profits for Tree Planting**: Ecosia invests most of its profits in reforestation projects\n- **Carbon Negative**: Ecosia removes more CO₂ from the atmosphere than it causes\n- **Privacy**: No data sales to third parties\n- **Transparent Financial Reports**: Monthly publication of all income and expenses",
       "description": "Switch from Google to Ecosia - the search engine that plants trees"
     },
     {
       "id": "mastodon",
       "title": "Mastodon",
-      "pubDate": "2026-01-06",
       "category": "Social Media",
       "heroImage": "/images/recipes/cookies.jpg",
       "prep": [
         {
-          "title": "Choose a Server",
-          "description": "Visit [joinmastodon.org/servers](https://joinmastodon.org/servers)\n   - Choose a server based on your interests or region\n   - Recommendation for German-speaking users: mastodon.social, chaos.social"
+          "content": "Visit [joinmastodon.org/servers](https://joinmastodon.org/servers)\n- Choose a server based on your interests or region\n- Recommendation for German-speaking users: mastodon.social, chaos.social"
         },
         {
-          "title": "Create Account",
-          "description": "Click \"Sign Up\" on your chosen server\n   - Enter username, email, and password\n   - Confirm your email address"
+          "content": "Click \"Sign Up\" on your chosen server\n- Enter username, email, and password\n- Confirm your email address"
         },
         {
-          "title": "Set up Profile",
-          "description": "Add a profile picture and header\n   - Write a short bio\n   - Link your website or other profiles"
+          "content": "Add a profile picture and header\n- Write a short bio\n- Link your website or other profiles"
         },
         {
-          "title": "Follow People",
-          "description": "Search for hashtags that interest you\n   - Follow interesting accounts\n   - Use the local and federated timeline for discovery"
+          "content": "Search for hashtags that interest you\n- Follow interesting accounts\n- Use the local and federated timeline for discovery"
         }
       ],
       "dessert": "**Apps**: There are many apps for Mastodon - e.g. Tusky (Android), Ivory (iOS), or use the web interface.\n\n**Migration**: You can move to another server later and take your followers with you.",
-      "topping": "- **Decentralized**: No single company controls the network\n- **Chronological Timeline**: No algorithmic sorting\n- **Open Source**: The code is publicly viewable\n- **No Ads**: Funded by donations and volunteers\n- **Privacy**: You decide who can see your posts",
+      "conclusion": "- **Decentralized**: No single company controls the network\n- **Chronological Timeline**: No algorithmic sorting\n- **Open Source**: The code is publicly viewable\n- **No Ads**: Funded by donations and volunteers\n- **Privacy**: You decide who can see your posts",
       "description": "Switch to Mastodon - the decentralized social network"
     },
     {
       "id": "bookstore",
       "title": "Local Bookstore",
-      "pubDate": "2026-01-05",
       "category": "Shopping",
       "heroImage": "/images/recipes/book.jpg",
       "prep": [
         {
-          "title": "Find Local Bookstore",
-          "description": "Search for bookstores in your area\n   - Many offer online ordering with pickup\n   - Support local businesses and jobs"
+          "content": "Search for bookstores in your area\n- Many offer online ordering with pickup\n- Support local businesses and jobs"
         },
         {
-          "title": "Online Alternatives",
-          "description": "**buch7.de**: Donates 75% of profits to social projects\n   - **genialokal.de**: Mediates to local bookstores\n   - **Thalia, Hugendubel**: German book retail chains"
+          "content": "**buch7.de**: Donates 75% of profits to social projects\n- **genialokal.de**: Mediates to local bookstores\n- **Thalia, Hugendubel**: German book retail chains"
         },
         {
-          "title": "Used Books",
-          "description": "**medimops.de**: Used books, movies, games\n   - **booklooker.de**: Marketplace for used books\n   - Local second-hand stores"
+          "content": "**medimops.de**: Used books, movies, games\n- **booklooker.de**: Marketplace for used books\n- Local second-hand stores"
         }
       ],
       "dessert": "**Library**: Use your local library - many also offer e-book lending.\n\n**Reading Circles**: Exchange books with friends or join a reading circle.",
-      "topping": "- **Local Economy**: Supports local jobs\n- **Expert Advice**: Personal book recommendations from staff\n- **Sustainability**: Shorter shipping distances, less packaging\n- **Fair Working Conditions**: Better conditions than large online retailers",
+      "conclusion": "- **Local Economy**: Supports local jobs\n- **Expert Advice**: Personal book recommendations from staff\n- **Sustainability**: Shorter shipping distances, less packaging\n- **Fair Working Conditions**: Better conditions than large online retailers",
       "description": "Support local bookstores instead of Amazon"
     }
   ]

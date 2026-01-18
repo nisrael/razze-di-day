@@ -21,10 +21,9 @@
         "legal": "Legal"
     },
     "recipe": {
-        "back": "← Back to all recipes",
+        "back": "Back to all recipes",
         "prep": "Preparation",
         "dessert": "Dessert",
-        "topping": "Topping",
         "see": "View recipe →"
     },
     "menu": {

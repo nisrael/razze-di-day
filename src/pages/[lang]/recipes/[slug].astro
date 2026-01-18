@@ -28,7 +28,6 @@ const { recipe, lang } = Astro.props;
 <RecipeLayout
   title={recipe.title}
   description={recipe.description}
-  pubDate={new Date(recipe.pubDate)}
   category={recipe.category}
   heroImage={recipe.heroImage}
   slug={recipe.id}
@@ -37,7 +36,6 @@ const { recipe, lang } = Astro.props;
   ingredients={recipe.ingredients}
   prep={recipe.prep}
   dessert={recipe.dessert}
-  topping={recipe.topping}
+  conclusion={recipe.conclusion}
   lang={lang}
 />
-

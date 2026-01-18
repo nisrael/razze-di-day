@@ -21,10 +21,9 @@
         "legal": "Rechtliches"
     },
     "recipe": {
-        "back": "← Zurück zu allen Wechselrezepten",
+        "back": "Zurück zu allen Wechselrezepten",
         "prep": "Zubereitung",
         "dessert": "Nachtisch",
-        "topping": "Topping",
         "see": "Rezept ansehen →"
     },
     "menu": {
