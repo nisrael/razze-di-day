@@ -1,10 +1,11 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import RecipeCard from "../../../components/RecipeCard";
-import { useTranslations } from "../../../utils/i18n";
+import { useTranslations } from "@/utils/i18n.ts";
 import { getRelativeLocaleUrl } from "astro:i18n";
-import { LOCALES } from "../../../consts";
-import { getEntry } from "astro:content";
+import { LOCALES } from "@/consts.ts";
+import { getLocalizedContent } from "@/utils/content.ts";
+import FallbackBanner from "@/components/FallbackBanner.astro";
 
 export function getStaticPaths() {
   return LOCALES.map((lang) => ({ params: { lang } }));
@@ -13,7 +14,8 @@ export function getStaticPaths() {
 const { lang } = Astro.params;
 const t = useTranslations(lang);
 
-const recipesData = (await getEntry("recipes", lang))?.data.recipes || [];
+const { entry, isFallback } = await getLocalizedContent("recipes", lang);
+const recipesData = entry?.data.recipes || [];
 const recipes = recipesData.map((recipe: any) => ({
   id: `${lang}/${recipe.id}`,
   data: {
@@ -30,6 +32,7 @@ const recipes = recipesData.map((recipe: any) => ({
   description={t.recipes_index.desc}
 >
   <div class="container mx-auto px-4 py-12">
+    {isFallback && <FallbackBanner lang={lang} />}
     <header class="text-center mb-12">
       <h1 class="text-4xl md:text-5xl font-display font-bold mb-4">
         {t.recipes_index.title}
@@ -44,7 +47,7 @@ const recipes = recipesData.map((recipe: any) => ({
       transition:animate="fade"
     >
       {
-        recipes.map((recipe) => (
+        recipes.map((recipe: any) => (
           <RecipeCard
             recipe={recipe}
             href={getRelativeLocaleUrl(

@@ -1,9 +1,11 @@
 ---
-import { LOCALES } from "../../consts";
+import { LOCALES } from "@/consts.ts";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeroBanner from "../../components/HeroBanner.astro";
-import { useTranslations } from "../../utils/i18n";
-import { getEntry, render } from "astro:content";
+import { useTranslations } from "@/utils/i18n.ts";
+import { render } from "astro:content";
+import { getLocalizedContent } from "@/utils/content.ts";
+import FallbackBanner from "@/components/FallbackBanner.astro";
 
 export function getStaticPaths() {
   return LOCALES.map((lang) => ({ params: { lang } }));
@@ -13,7 +15,7 @@ const { lang } = Astro.params;
 const t = useTranslations(lang);
 
 // Try to get a press content page, if it exists
-let entry = await getEntry("pages", `${lang}/press`);
+const { entry, isFallback } = await getLocalizedContent("pages", `${lang}/press`);
 let hasContent = false;
 if (entry) {
   hasContent = true;
@@ -42,6 +44,7 @@ if (entry) {
     {
       hasContent && Content ? (
         <div class="prose prose-lg dark:prose-invert max-w-none">
+          {isFallback && <FallbackBanner lang={lang} />}
           <Content />
         </div>
       ) : (

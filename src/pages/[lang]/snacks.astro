@@ -2,11 +2,12 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 import romeImage from "../../assets/rome.jpg";
-import { LOCALES } from "../../consts";
+import { LOCALES, DEFAULT_LOCALE } from "@/consts.ts";
 import { getCollection } from "astro:content";
 import { remark } from "remark";
 import html from "remark-html";
 import { ExternalLink, Link } from "lucide-react";
+import FallbackBanner from "@/components/FallbackBanner.astro";
 
 export function getStaticPaths() {
   return LOCALES.map((lang) => ({ params: { lang } }));
@@ -14,7 +15,15 @@ export function getStaticPaths() {
 
 const { lang } = Astro.params;
 const snacksCollection = await getCollection("snacks");
-const snacksItem = snacksCollection.find((item) => item.id === lang);
+let snacksItem = snacksCollection.find((item) => item.id === lang);
+let isFallback = false;
+
+if (!snacksItem && lang !== DEFAULT_LOCALE) {
+  snacksItem = snacksCollection.find((item) => item.id === DEFAULT_LOCALE);
+  if (snacksItem) {
+    isFallback = true;
+  }
+}
 
 if (!snacksItem) return Astro.redirect("/404");
 
@@ -58,6 +67,7 @@ const processedGroups = await Promise.all(
   </section>
 
   <div class="container mx-auto px-4 py-12 max-w-5xl">
+    {isFallback && <FallbackBanner lang={lang} />}
     <div class="space-y-8">
       {
         processedGroups.map((group) => (
