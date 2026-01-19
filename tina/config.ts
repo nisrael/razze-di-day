@@ -58,7 +58,7 @@ export default defineConfig({
         name: "recipes",
         label: "Recipes",
         path: "src/content/recipes",
-        format: "json",
+        format: "yaml",
         ui: {
           allowedActions: {
             create: false,
@@ -235,7 +235,7 @@ export default defineConfig({
         name: "faqs",
         label: "FAQs",
         path: "src/content/faqs",
-        format: "json",
+        format: "yaml",
         ui: {
           allowedActions: {
             create: false,
@@ -295,7 +295,7 @@ export default defineConfig({
         name: "snacks",
         label: "Snacks",
         path: "src/content/snacks",
-        format: "json",
+        format: "yaml",
         ui: {
           allowedActions: {
             create: false,

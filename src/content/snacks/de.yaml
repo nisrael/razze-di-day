@@ -1,0 +1,135 @@
+title: Wissenshäppchen
+description: Schnelle Tipps und Einblicke für digitale Unabhängigkeit
+groups:
+- id: search-engines
+  title: Alternative Suchmaschinen
+  description: '**Ecosia**, **DuckDuckGo**, metager und viele andere: Unterschiedliche Suchmaschinen haben unterschiedliche Vor- und Nachteile. Wenn Du tiefer einsteigen möchtest, findest Du weitere Informationen bei [European Alternatives](https://european-alternatives.eu/category/search-engines), [It''s FOSS](https://itsfoss.com/privacy-search-engines/) und [Digitalcourage](https://digitalcourage.de/digitale-selbstverteidigung/suchmaschinen).'
+  items:
+  - id: ecosia
+    title: Ecosia
+    content: Pflanzt Bäume mit Werbeeinnahmen
+    link:
+      text: Besuche Ecosia
+      url: https://www.ecosia.org/
+  - id: duckduckgo
+    title: DuckDuckGo
+    content: Keine Verfolgung, keine Filterblase
+    link:
+      text: Besuche DuckDuckGo
+      url: https://duckduckgo.com/
+  - id: startpage
+    title: Startpage
+    content: Nutzt Google-Ergebnisse ohne Tracking
+    link:
+      text: Besuche Startpage
+      url: https://www.startpage.com/
+  - id: qwant
+    title: Qwant
+    content: Europäische Suchmaschine mit Datenschutz
+    link:
+      text: Besuche Qwant
+      url: https://www.qwant.com/
+- id: bookstores
+  title: Online-Buchhandel
+  description: Viele Buchläden bieten heute Online-Shops, die den Marktbeherrschern in nichts nachstehen. Auch für den **internationalen Buchmarkt** gibt es Alternativen. Weitere Informationen und Vergleiche findest Du bei [Utopia](https://utopia.de/ratgeber/buchhandlung-online-fair_32959/), [Buchpanda](https://www.buchpanda.de/p/llqjwf/buecher-kaufen-8-bessere-alternativen-zu-amazon) und [Yourbookfriend](https://yourbookfriend.com/2025/03/03/best-amazon-alternatives-for-book-lovers/).
+  items:
+  - id: buch7
+    title: buch7.de
+    content: 75% des Gewinns für soziale Projekte
+    link:
+      text: Besuche buch7.de
+      url: https://www.buch7.de/
+  - id: genialokal
+    title: genialokal.de
+    content: Unterstützt lokale Buchhandlungen
+    link:
+      text: Besuche genialokal.de
+      url: https://www.genialokal.de/
+- id: messengers
+  title: WhatsApp & Co.
+  description: '**Signal**, **Threema**, **Matrix**, **Element** und andere: Unterschiedliche Messenger haben unterschiedliche Vor- und Nachteile. Weitere Informationen findest Du bei [European Alternatives](https://european-alternatives.eu/category/instant-messaging-apps), [Verbraucherzentrale](https://www.verbraucherzentrale.de/wissen/digitale-welt/datenschutz/whatsappalternativen-messenger-im-ueberblick-13055), [Digitalcourage](https://digitalcourage.de/digitale-selbstverteidigung/messenger) und [Freie Messenger](https://www.freie-messenger.de/).'
+  items:
+  - id: signal
+    title: Signal
+    content: Sichere, verschlüsselte Kommunikation
+    link:
+      text: Signal herunterladen
+      url: https://signal.org/
+  - id: threema
+    title: Threema
+    content: Schweizer Messenger mit Datenschutz
+    link:
+      text: Threema herunterladen
+      url: https://threema.ch/
+  - id: element
+    title: Element
+    content: Dezentraler, verschlüsselter Messenger
+    link:
+      text: Besuche Element
+      url: https://element.io/
+- id: browsers
+  description: '**Firefox**, **Brave** oder Ungoogled Chromium: Unterschiedliche Browser haben unterschiedliche Vor- und Nachteile. Weitere Informationen findest Du bei [European Alternatives](https://european-alternatives.eu/alternative-to/google-chrome) und [FOSS Linux](https://www.fosslinux.com/141040/open-source-proxy-browsers-for-online-privacy.htm).'
+  title: Browser
+  items:
+  - id: firefox
+    title: Firefox
+    content: Unabhängig und datenschutzfreundlich
+    link:
+      text: Firefox herunterladen
+      url: https://www.mozilla.org/firefox/
+  - id: brave
+    title: Brave
+    content: Blockiert Tracker und Werbung
+    link:
+      text: Brave herunterladen
+      url: https://brave.com/
+  - id: librewolf
+    title: LibreWolf
+    content: Firefox-Fork mit noch mehr Datenschutz
+    link:
+      text: LibreWolf herunterladen
+      url: https://librewolf.net/
+- id: social-networks
+  description: Der Abschied von X ist aus unserer Sicht **überfällig**. Auf welcher Plattform sich jedoch am besten ähnlich kommunizieren lässt – darüber kann man unterschiedlicher Meinung sein. **Wir empfehlen derzeit Mastodon.** Weitere Alternativen findest Du bei [European Alternatives](https://european-alternatives.eu/category/microblogging-services) und [Heise](https://www.heise.de/tipps-tricks/Diese-Twitter-Alternativen-gibt-s-8968053.html).
+  title: X / Microblogging
+  items:
+  - id: mastodon
+    title: Mastodon
+    content: Dezentrales soziales Netzwerk
+    link:
+      text: Trete Mastodon bei
+      url: https://joinmastodon.org/
+  - id: pixelfed
+    title: Pixelfed
+    content: Instagram-Alternative
+    link:
+      text: Besuche Pixelfed
+      url: https://pixelfed.org/
+- id: email
+  description: Weil E-Mail über **offene Protokolle** funktioniert, kannst Du von jedem Anbieter auch jeden anderen erreichen – anders als bei den geschlossenen Datensilos der Social-Media-Netze. Daher gibt es bei E-Mail auch **echten Wettbewerb** und viele Möglichkeiten. Weitere Informationen findest Du bei [European Alternatives](https://european-alternatives.eu/category/email-providers) und [Kuketz-Blog](https://www.kuketz-blog.de/empfehlungsecke/#email-anbieter).
+  title: E-Mail
+  items:
+  - id: posteo
+    title: Posteo
+    content: Anonym, nachhaltig, sicher
+    link:
+      text: Besuche Posteo
+      url: https://posteo.de/
+  - id: mailbox-org
+    title: Mailbox.org
+    content: Deutsche Alternative mit vielen Features
+    link:
+      text: Besuche Mailbox.org
+      url: https://mailbox.org/
+  - id: tutanota
+    title: Tutanota
+    content: Ende-zu-Ende-verschlüsselt
+    link:
+      text: Besuche Tutanota
+      url: https://tutanota.com/
+  - id: protonmail
+    title: ProtonMail
+    content: Schweizer Anbieter mit Verschlüsselung
+    link:
+      text: Besuche ProtonMail
+      url: https://protonmail.com/

@@ -1,0 +1,337 @@
+title: Wechselrezepte
+description:
+  "Schritt-für-Schritt Anleitungen zum Wechsel zu digitaler Unabhängigkeit
+
+  "
+recipes:
+  - id: whatsapp-to-signal
+    title: WhatsApp zu Signal
+    description:
+      'Signal bietet alles, was du von WhatsApp kennst – nur ohne kommerzielle Interessen und mit mehr Respekt vor Dir und Deinen Daten.
+
+      Sehr viele Menschen nutzen heute schon Signal. Die App ist ohne Werbung und gibt deine Daten nicht weiter. Gleichzeitig ist sie Ende-zu-Ende-verschlüsselt und wird regelmäßig von unabhängigen Expert:innen geprüft.\*
+
+      '
+    category: Messenger
+    heroImage: /images/recipes/cake.jpg
+    time: 20 Minuten
+    difficulty: Anfänger
+    ingredients:
+      - content:
+          "Signal aus dem App Store oder von [signal.org](https://signal.org) herunterladen.
+
+          "
+    instructions:
+      - content:
+          "**Registriere dich** mit deiner Telefonnummer (nur zur Identifikation, sie ist für andere später nicht sichtbar)
+
+          "
+      - content:
+          "**Schau, wer von deinen Kontakten** schon alles auf Signal ist. Das geht am einfachsten, indem Signal Zugriff auf dein Telefonkontakte (Adressbuch) erhält. Signal zeigt dir dann automatisch mit einem kleinen Schloss-Symbol an, wer schon da ist.
+
+          "
+      - content: "**Fertig,** du bist jetzt auf Signal!
+
+          "
+    dessert:
+      '**1. …** sehr einfach Freund:innen einladen, auch zu Signal zu kommen, falls sie noch nicht da sind. Signal bereitet dir eine entsprechende Nachricht vor, wenn du deine Kontakte importiert hast.
+
+
+      **2. …** deine Gruppen zu Signal bringen: Erstelle in Signal eine neue Gruppe mit den Kontakten, aktiviere dort den „Gruppenlink" und teile ihn in der alten WhatsApp-Gruppe – so können Mitglieder einfach beitreten.
+
+
+      **3. …** „verschwindenden Nachrichten" für sensible Chats aktivieren: sie löschen sich automatisch nach einem einstellbaren Zeitraum (5 Sekunden bis 4 Wochen). Das kann jederzeit pro Chat oder insgesamt angepasst werden.
+
+
+      **4. WhatsApp löschen,** wenn du bereit dazu bist: Zuerst das Konto deaktivieren oder ganz löschen, dann die App vom Gerät deinstallieren. Dadurch wird sichergestellt, dass dein Konto endgültig von den WhatsApp-Servern entfernt wird und keine Daten mehr synchronisiert werden.
+
+      '
+    conclusion:
+      "**Guten Appetit!** Du hast einen riesigen Schritt zu mehr digitaler Unabhängigkeit gemacht.
+
+
+      **And once you #DIDit** – Teile unseren Wechselpost und inspiriere andere dazu, ihre digitale Privatsphäre selbst in die Hand zu nehmen!
+
+      "
+    topping:
+      "**Daten-Experte Mike Kuketz** empfiehlt Signal als sicherste Alternative zu WhatsApp – weil das Projekt transparent, gemeinnützig und ohne kommerzielle Abhängigkeiten arbeitet.
+
+      Alternativen zu Signal gibt es natürlich auch, falls Dich das interessiert: [Threema](https://threema.com/de) oder [Element](https://element.io/de) (Nachrichten im [Matrix](https://matrix.org/)-System, hier kannst Du den Server sogar selbst betreiben). Die Initiative Freie Messenger und andere empfehlen - aus unserer Sicht schon eher für Spezialisten - [Messenger auf Basis des XMPP-Standards](https://www.freie-messenger.de/xmpp/).
+
+      "
+  - id: mastodon
+    title: X zu Mastodon
+    description:
+      'Elon Musk hat X (ehemals Twitter) zu einer Plattform umgebaut, auf der (rechtsextreme) Hassrede und Desinformation Vorfahrt haben. Mastodon ist so etwas wie das Gegenteil – und besser! Ein Verbund aus vielen kleinen Netzwerken ("dezentral"), meist werbefrei und in der Hand der Nutzer:innen. Es gibt keinen Algorithmus, der Dich wütend machen will – Du siehst, was Deine Freunde posten, chronologisch und entspannt.
+
+      '
+    category: Social Media
+    heroImage: /images/recipes/cookies.jpg
+    time: 25 Minuten
+    difficulty: Mittel (Wegen der Server-Wahl – aber keine Angst, wir helfen!)
+    ingredients:
+      - content: "Ein bisschen Verständnis: Mastodon ist keine einzelne Webseite, sondern ein Verbund aus vielen kleinen Netzwerken (Instanzen oder Servern). Es ist wie bei E-Mails: Egal ob du bei [Posteo.de](https://posteo.de) oder [Mailbox.org](https://mailbox.org) bist, du kannst jedem schreiben und von jedem Nachrichten empfangen."
+    instructions:
+      - content:
+          "**Serverwahl:** Gehe auf [joinmastodon.org/de](https://joinmastodon.org/de) oder [fedi.garden](https://fedi.garden). Suche dir ein [Zuhause](https://joinmastodon.org/de/servers) aus, das gut zu dir passt. (Keine Entscheidung für immer – Du kannst den Server später auch wechseln, nimmst aber Deine Follower und die, denen Du folgst, mit!).
+
+          "
+      - content:
+          "**Konto erstellen:** Registriere dich auf deinem gewählten Server.
+
+          "
+      - content:
+          '**App laden:** Lade die offizielle Mastodon-App oder (noch besser für Profis) Apps wie "Tusky" (Android) oder "Ivory" (iOS) herunter. Phanpy.social funktioniert sogar im Web und bietet einen transparenten Algorithmus zum Aufholen, wenn Du Deine Timeline mal aus den Augen gelassen hast.
+
+          '
+      - content:
+          "**Freunde finden:** Deine Timeline ist erst einmal leer – aber keine Sorge! Folge Accounts, die Du interessant findest: Tools wie der Fedifinder helfen dir, deine alten Twitter-Kontakte auf Mastodon wiederzufinden. Auch bei [Fediverse.info](https://fediverse.info) findest Du spannende Accounts. Thematisch sortiert kannst Du auch gleich mehreren Accounts mit eine Klick folgen ([Starter-Packs](https://fedidevs.com/starter-packs/)).
+
+          "
+      - content:
+          "**Vorstellung:** Schreibe deinen ersten Post (Toot) mit dem Hashtag #Neuhier und erzähle kurz, wer du bist. Die Community freut sich über Dich.
+
+          "
+    dessert:
+      "Kochanleitungen für jede Lebenslage gibt’s im Netz – beispielsweise bei [Sascha Pallenberg](https://www.metacheles.de/mastodon-anleitung-und-einstieg/), im [Video bei Digitalcourage](https://digitalcourage.video/w/wRyZ7DEQbPWmRS4bZjNQDP) oder auch als kleines [Büchlein](https://digitalcourage.de/fediverse-anleitung).
+
+
+      **X-Account stilllegen:** Hinterlasse auf deinem alten X-Profil einen angepinnten Tweet mit deinem neuen Mastodon-Link. Lösche die X-App von deinem Handy, um dem Sucht-Algorithmus zu entkommen.
+
+
+      **Keine Algorithmen:** Genieße die Ruhe. Keine gesponserten Posts, keine Krypto-Werbung – eine chronologische Timeline.
+
+      "
+    conclusion:
+      "**Guten Appetit!** Du hast einen riesigen Schritt zu mehr digitaler Unabhängigkeit gemacht.
+
+
+      **And once you #DIDit** – Teile unseren Wechselpost und inspiriere andere dazu, ihre digitale Privatsphäre selbst in die Hand zu nehmen!
+
+      "
+    topping:
+      'Mastodon ist Teil des "Fediverse". Das heißt, du kannst von hier aus auch Leuten folgen, die gar nicht auf Mastodon sind, sondern z.B. auf Pixelfed Fotos (ein wenig wie Instagram) oder auf Peertube Videos (ein wenig wie Youtube) posten. Du sprengst die Mauern der "Walled Gardens"! [Elena Rossini erklärt in diesem Video](https://digitalcourage.video/w/p4VBLACzX1sFG1YfVs1JEB?start=1s), wie das Fediverse funktioniert.
+
+      '
+  - id: posteo-mailbox-org
+    title: Gmail zu unabhängiger E-Mail
+    description:
+      "Kostenlos? Nur scheinbar: Für die Nutzung von Googles Gmail zahlst du mit deinen Daten. Denn Deine E-Mail-Adresse ist ein Teil Deiner digitalen Identität. Andere Anbieter bewahren dagegen die Entscheidungsfreiheit ihrer Nutzenden: Sie kosten einen kleinen monatlichen Beitrag (ca. 1 bis 3 Euro), sind aber werbefrei, sicher verschlüsselt und arbeiten unter strengem EU-Datenschutzrecht. Du bist dort Kunde und nicht das Produkt.
+
+      "
+    category: E-Mail
+    heroImage: /images/recipes/bread.jpg
+    time: 45 Minuten (plus Nachlaufzeit)
+    difficulty: Fortgeschritten (Meisterklasse der Unabhängigkeit!)
+    ingredients:
+      - content: "Ein Euro pro Monat.
+
+          "
+      - content:
+          "Ein Account zum Beispiel bei [Posteo.de](https://posteo.de/de) (grün, sicher, anonym), [Mailbox.org](https://mailbox.org/de/), [Proton.me](https://proton.me/) (aus der Schweiz, starke Verschlüsselung) oder [Tuta](https://tuta.com) (konsequent verschlüsselt, aus Hannover). Eine Liste mit weiteren vertrauenswürdigen Anbieter findest du [in diesem Blog (Mike Kuketz)](https://www.kuketz-blog.de/empfehlungsecke/#email-anbieter) oder bei [Digitalcourage](https://digitalcourage.de/digitale-selbstverteidigung/vertrauenswuerdige-e-mail-anbieter).
+
+          "
+    instructions:
+      - content: "**Erstelle ein Konto** beim neuen Anbieter.
+
+          "
+      - content:
+          '**Der Umzugsservice:** Fast alle guten Anbieter bieten einen „Umzugsservice" an. Du gibst deine Gmail-Daten ein, und der neue Anbieter zieht alle alten E-Mails und Ordner automatisch rüber.
+
+          '
+      - content:
+          '**Adressbuch:** Exportiere deine Kontakte bei Google ([google.com/contacts](https://google.com/contacts)) als „vCard" oder „CSV". Importiere diese Datei im Webmail-Bereich deines neuen Anbieters.
+
+          '
+      - content:
+          '**Richte eine automatische Antwort** bei Gmail ein: „Ich ziehe um! Bitte schreibt mir ab sofort an \[Neue Adresse]".
+
+          '
+    dessert:
+      "**Ändere nach und nach** deine Adresse bei wichtigen Diensten (Bank, Versicherung). Genieße das Gefühl, dass keine KI deine Liebesbriefe oder Rechnungen mitliest, um dir Werbung anzuzeigen.
+
+      "
+    conclusion:
+      "**Guten Appetit!** Du hast einen riesigen Schritt zu mehr digitaler Unabhängigkeit gemacht.
+
+
+      **And once you #DIDit** – Teile unseren Wechselpost und inspiriere andere dazu, ihre digitale Privatsphäre selbst in die Hand zu nehmen!
+
+      "
+    topping:
+      "Posteo.de und Mailbox.org nutzen 100% Ökostrom und setzen sich politisch für Datenschutz ein. Proton.me bietet eine kostenlose Basis-Version, falls das Budget knapp ist.
+
+      "
+  - id: bookstore
+    title: Amazon zum Buchladen
+    description:
+      "Amazon zerstört den lokalen Handel und nutzt seine Marktmacht oft gegen Verlage und Mitarbeiter*innen. Dabei können lokale Buchhändler*innen fast jedes Buch bis zum nächsten Tag besorgen – also oft schneller als der „Prime“-Versand! Und Lesungen gibt es eh nur im Laden an der Ecke.
+
+      "
+    category: Shopping
+    heroImage: /images/recipes/book.jpg
+    time: Je nach Gehweg (oder 5 Min. online)
+    difficulty: Anfänger bis Fortgeschritten
+    ingredients:
+      - content: "Der Titel eines Buches.
+
+          "
+      - content:
+          "Deine Buchhandlung kennst Du, oder? Wenn nicht: Bei der Suche hilft eine Plattform wie [buchkatalog.de](https://www.buchkatalog.de/) oder [geniallokal.de](https://www.genialokal.de/). Beide zeigen aber nur einen Ausschnitt der unabhängigen Buchläden in Deutschland. Große deutsche Buch-Versandhändler bieten auch guten Service - die zwei größten sind [Thalia](https://thalia.de) und [Hugendubel](https://hugendubel.de).
+
+          "
+    instructions:
+      - content:
+          "**Gehe auf** [buchkatalog.de](https://www.buchkatalog.de/) oder [genialokal.de.](http://genialokal.de/) Auch der Grosshändler Libri bietet eine [Suche nach Deiner Lieblingsbuchhandlung](https://www.buchhandlung.de/karte/).
+
+          "
+      - content: "**Gib dein Buch** und deine Postleitzahl ein.
+
+          "
+      - content:
+          "**Die Seiten zeigen** dir, welche Buchhandlung in deiner Nähe das Buch vorrätig hat oder es bis morgen bestellen kann.
+
+          "
+      - content:
+          '**Bestelle es** dort online („Click & Collect" oder „Abholen") oder lass es dir von der Buchhandlung zuschicken (viele liefern portofrei!).
+
+          '
+      - content:
+          "**Oder ganz revolutionär:** Geh einfach hin! Die Beratung eines echten Menschen ist durch keinen Algorithmus zu ersetzen!
+
+          "
+    dessert:
+      'Bücher aus unabhängigen Läden verschenken kannst Du auch mit dem [buecherscheck](https://buecherscheck.de). Der Online-Händler [buch7.de](https://www.buch7.de/) spendet 75 Prozent seines Gewinns. [Autorenwelt](https://shop.autorenwelt.de) beteiligt Autor\*innen mit 7 Prozent am Umsatz ihrer verkauften Bücher.Lösche die Amazon-App von deinem Homescreen, um Spontankäufe zu vermeiden.
+
+      Entdecke, dass Buchläden oft Kaffee anbieten und wunderschöne Orte der Begegnung sind!
+
+      '
+    conclusion:
+      "**Guten Appetit!** Du hast einen riesigen Schritt zu mehr digitaler Unabhängigkeit gemacht.
+
+
+      **And once you #DIDit** – Teile unseren Wechselpost und inspiriere andere dazu, ihre digitale Privatsphäre selbst in die Hand zu nehmen!
+
+      "
+    topping:
+      "Du stärkst deine lokale Wirtschaft und zahlst Steuern in deiner Gemeinde, statt Jeff Bezos' nächste Weltraumreise zu finanzieren. Deutsche Bücher haben in Deutschland eine Preisbindung – bei Amazon ist das Buch deswegen keinen Cent billiger als im Laden!
+
+      "
+  - id: google-to-ecosia
+    title: Google zu Ecosia
+    description:
+      "Die Google-Suche liefert Ergebnisse, die nicht auf Dich zugeschnitten sind - sondern auf die Bedürfnisse von Googles Werbekunden. Dafür speichert Google, was Du wann suchst, was Du anklickst. Wenn Du Dich davon befreien willst, kannst Du Suchmaschinen wählen, die Dich und Deine Privatsphäre achten. Sie haben Vor- und Nachteile, arbeiten aus unserer Sicht aber in jedem Fall gemeinwohlorienterter als die Marktbeherrscher. Suchmaschinen-Vielfalt ist übrigens eine Voraussetzung für eine pluralistische Demokratie.
+
+      "
+    category: Suchmaschine
+    heroImage: /images/recipes/bowl.jpg
+    time: 2 Minuten
+    difficulty: Sehr einfach (Anfänger)
+    ingredients:
+      - content: "Dein Browser (egal ob am Handy oder PC).
+
+          "
+      - content: 'Die Entscheidung für eine Alternative, zum Beispiel:
+
+          • [Ecosia.org](https://www.ecosia.org?c=de&): Europäische Suchmaschine, nutzt Ergebnisse von Google, Microsoft Bing und [European Search Perspective](https://www.eu-searchperspective.com/) (ESP, europäischer Suchindex, den Ecosia und Qwant entwickeln). 100 Prozent der Gewinn gehen nach eigenen Angaben in den Umweltschutz, vor allem [Baumpflanzprojekte](https://de.blog.ecosia.org/was-ist-ecosia/). Speist "mehr erneuerbaren Strom ins Netz, als die eigenen Server brauchen".
+
+          • [Qwant](https://www.qwant.com/), französische Suchmaschine mit Bing- und ESP-Ergebnissen, hat zusammen mit Ecosia einen französischen Suchindex erstellt. Qwant sagt von sich selbst, Datenschutz sei wichtig, und Nutzende würden nicht getrackt.
+
+          • [Startpage.com/de](https://www.startpage.com/): Liefert dir Google-Ergebnisse, aber anonymisiert. Google erfährt also nicht, wer gesucht hat.
+
+          • [DuckDuckGo.com](https://duckduckgo.com/): Der Klassiker aus den USA. Vor allem Bing-Ergebnisse, der Anteil [eigener Crawler](https://duckduckgo.com/duckduckbot) wird nicht angegeben, [Fokus auf Privatsphäre](https://duckduckgo.com/compare-privacy) der Nutzenden.
+
+          • [MetaGer.de](https://metager.de/): Eine deutsche Meta-Suchmaschine (Verein SUMA-EV), die Ergebnisse verschiedener Maschinen bündelt, mittlerweile aber kostenpflichtig ist. Datenschutz "Made in Germany" und [gemeinnützig](https://metager.de/about).
+
+          '
+    instructions:
+      - content: "**Öffne** die Einstellungen deines Browsers.
+
+          "
+      - content:
+          '**Suche** den Menüpunkt „Suchmaschine" (oft unter „Suche" oder „Datenschutz").
+
+          '
+      - content:
+          "**Wähle** deine neue Standard-Suchmaschine aus der Liste aus (z.B. Ecosia).
+
+          "
+      - content:
+          '**Falls sie nicht gelistet ist:** Gehe auf die Webseite der Suchmaschine – oft fragt sie direkt: „Zu Chrome/Firefox hinzufügen?". Klicke auf „Ja".
+
+          '
+    dessert:
+      "Installiere die App deiner neuen Suchmaschine auf dem Smartphone und platziere sie dort, wo vorher der Google-Balken war.
+
+      "
+    conclusion:
+      "**Guten Appetit!** Du hast einen riesigen Schritt zu mehr digitaler Unabhängigkeit gemacht.
+
+
+      **And once you #DIDit** – Teile unseren Wechselpost und inspiriere andere dazu, ihre digitale Privatsphäre selbst in die Hand zu nehmen!
+
+      "
+    topping:
+      "Jede Suche bei Ecosia hilft sogar dem Planeten. Letztlich ist es eine persönliche Entscheidung, welche Suchmaschine du bevorzugst. Die Auswahl an datenschutzfreundlichen Suchmaschinen ist jedenfalls groß genug. Und: Verwende nach Möglichkeit keinen der neuen KI-Browser, weil sie in puncto Datenschutz versagen ([Rezept](https://di.day/firefox/) [gute Browser](https://di.day/firefox/))!
+
+      "
+  - id: firefox
+    title: Chrome zu Firefox
+    description:
+      "Die Internet-Browser Google Chrome, Microsoft Edge und Safari (Apple) dominieren das Internet. Sie basieren fast alle auf der gleichen Technik (Chromium) - Google beherrscht damit die Standards im Web. Firefox ist eine der letzten großen, unabhängigen Bastionen (Open Source, angeboten von der Non-Profit-Organisation Mozilla Foundation), die sich für ein offenes Web einsetzt.
+
+      "
+    category: Browser
+    heroImage: /images/recipes/soup.jpg
+    time: 10 Minuten
+    difficulty: Anfänger
+    ingredients:
+      - content: "Ein Computer oder Smartphone.
+
+          "
+      - content:
+          "Der Download-Link von [mozilla.org/firefox](https://mozilla.org/firefox).
+
+          "
+    instructions:
+      - content: "**Lade Firefox** herunter und starte die Installation.
+
+          "
+      - content:
+          '**Der wichtigste Schritt (Import):** Beim ersten Start (oder später unter „Einstellungen" -> „Importieren und Sichern") fragt dich Firefox, ob du Daten aus einem anderen Browser übernehmen willst. Wähle „Chrome" oder „Edge".
+
+          '
+      - content: "**Setze Häkchen** bei Lesezeichen, Passwörter und Verlauf.
+
+          "
+      - content:
+          '**Klicke auf** „Importieren". Zack – alles ist da, wo es hingehört, nur in einem sicheren Zuhause.
+
+          '
+      - content:
+          '**Lege Firefox** als „Standardbrowser" fest (Systemeinstellungen).
+
+          '
+    dessert:
+      "Installiere den „[uBlock Origin](https://addons.mozilla.org/de/firefox/addon/ublock-origin/)“ Werbeblocker als Add-on in Firefox. Chrome plant, solche effektiven Blocker technisch einzuschränken – Firefox garantiert dir weiterhin volle [Kontrolle über Werbung](https://www.kuketz-blog.de/empfehlungsecke/#firefox).
+
+      Infos über weitere Browser-Alternativen wie den [Brave-](https://brave.com/) oder [Tor-](https://www.torproject.org/download/)Browser findest Du beispielsweise [in diesem Blog](https://www.kuketz-blog.de/sichere-und-datenschutzfreundliche-browser-meine-empfehlungen-teil-1/).
+
+      "
+    conclusion:
+      "**Guten Appetit!** Du hast einen riesigen Schritt zu mehr digitaler Unabhängigkeit gemacht.
+
+
+      **And once you #DIDit** – Teile unseren Wechselpost und inspiriere andere dazu, ihre digitale Privatsphäre selbst in die Hand zu nehmen!
+
+      "
+    topping:
+      'Firefox verhindert standardmäßig „Fingerprinting" (das Identifizieren deines Geräts durch Dritte). Mit der Nutzung von Firefox sorgst du dafür, dass das Internet nicht komplett in Googles Hand fällt.
+
+
+      #### Wichtig: Verwende nach Möglichkeit keinen der neuen KI-Browser, weil sie beim Datenschutz versagen!
+
+
+      Browser, die KI "tief integriert" haben (sei es Comet, Arc mit "Arc Max" oder Edge mit Copilot), basieren auf einem Deal: Komfort gegen Daten.
+
+      '

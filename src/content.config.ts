@@ -2,7 +2,7 @@ import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 
 const recipes = defineCollection({
-  loader: glob({ base: "./src/content/recipes", pattern: "*.json" }),
+  loader: glob({ base: "./src/content/recipes", pattern: "*.yaml" }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -35,7 +35,7 @@ const pages = defineCollection({
 });
 
 const snacks = defineCollection({
-  loader: glob({ base: "./src/content/snacks", pattern: "*.json" }),
+  loader: glob({ base: "./src/content/snacks", pattern: "*.yaml" }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -63,7 +63,7 @@ const snacks = defineCollection({
 });
 
 const faqs = defineCollection({
-  loader: glob({ base: "./src/content/faqs", pattern: "*.json" }),
+  loader: glob({ base: "./src/content/faqs", pattern: "*.yaml" }),
   schema: z.object({
     title: z.string(),
     desc: z.string(),

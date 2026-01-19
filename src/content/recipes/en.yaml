@@ -1,0 +1,213 @@
+title: Change Recipes
+description: Step-by-step guides to switch to digital independence
+recipes:
+- id: firefox
+  title: Firefox Browser
+  category: Browser
+  heroImage: /images/recipes/soup.jpg
+  instructions:
+  - content: 'Visit [mozilla.org/firefox](https://www.mozilla.org/firefox/)
+
+      - Download the version for your system
+
+      - Install Firefox'
+  - content: 'On the first start, Firefox offers to import bookmarks and passwords
+
+      - Select your previous browser
+
+      - Confirm the import'
+  - content: 'Sign in with a Firefox account (optional)
+
+      - Adjust privacy settings
+
+      - Install useful add-ons like uBlock Origin'
+  - content: 'Firefox asks on the first start if it should be the default browser
+
+      - Or: System Settings → Default Apps → Web Browser'
+  dessert: '**Sync**: With a Firefox account, you can synchronize bookmarks, passwords, and tabs between devices.
+
+
+    **Containers**: Firefox offers "Multi-Account Containers" to separate different identities (private, work, shopping).'
+  conclusion: '- **Tracking Protection**: Blocks many trackers by default
+
+    - **Open Source**: The source code is publicly viewable
+
+    - **Independent**: Firefox is developed by the non-profit Mozilla Foundation
+
+    - **Extensions**: Wide selection of privacy add-ons available'
+  description: Switch to Firefox - the independent and privacy-friendly browser
+- id: posteo-mailbox-org
+  title: Posteo & Mailbox.org
+  category: Email
+  heroImage: /images/recipes/bread.jpg
+  instructions:
+  - content: 'Visit [posteo.de](https://posteo.de)
+
+      - Click "Create Posteo Account"
+
+      - Choose an email address (€1/month)'
+  - content: 'Posteo accepts anonymous payments (cash, transfer)
+
+      - No personal data required'
+  - content: 'Use the web interface or set up an email client
+
+      - IMAP: posteo.de:993 (SSL/TLS)
+
+      - SMTP: posteo.de:465 (SSL/TLS)'
+  - content: 'Visit [mailbox.org](https://mailbox.org)
+
+      - Choose a plan (from €1/month)
+
+      - Create your account'
+  - content: 'Calendar and contacts included
+
+      - Office suite available
+
+      - PGP encryption possible'
+  dessert: '**Migration**: Both providers offer tools to import emails from other mailboxes.
+
+
+    **Encryption**: Use PGP for end-to-end encrypted emails.'
+  conclusion: '- **Privacy**: Servers in Germany, GDPR compliant
+
+    - **Sustainable**: Both use renewable energy
+
+    - **No Ads**: Ad-free and tracker-free
+
+    - **Additional Features**: Calendar, contacts, cloud storage'
+  description: Switch to German, privacy-friendly email providers
+  time: 45 minutes (plus follow-up time)
+  difficulty: Advanced (Master class of independence!)
+  ingredients:
+  - content: One Euro per month.
+  - content: An account for example at Posteo.de (green, secure, anonymous), Mailbox.org, Proton.me (from Switzerland, strong encryption) or Tuta (consistently encrypted, from Hannover).
+- id: whatsapp-to-signal
+  title: WhatsApp to Signal
+  category: Messenger
+  heroImage: /images/recipes/cake.jpg
+  instructions:
+  - content: 'Download Signal from the App Store (iOS) or Google Play Store (Android)
+
+      - Or visit [signal.org](https://signal.org) for desktop versions'
+  - content: 'Open Signal and enter your phone number
+
+      - Confirm your number with the SMS code'
+  - content: 'Add a name and profile picture
+
+      - Adjust your privacy settings'
+  - content: 'Signal automatically finds contacts who already use Signal
+
+      - Inform your important contacts about the switch'
+  dessert: '**Transfer Groups**: Recreate your important WhatsApp groups in Signal and invite members.
+
+
+    **Backup**: Signal offers encrypted backups for your chats. Enable this feature in settings.'
+  conclusion: '- **End-to-End Encryption**: All messages are encrypted by default
+
+    - **No Ads**: Signal is completely ad-free
+
+    - **Open Source**: The source code is publicly viewable
+
+    - **Donation-Funded**: Signal is funded by donations, not data sales'
+  description: Switch from WhatsApp to Signal - the secure and privacy-friendly alternative
+- id: google-to-ecosia
+  title: Google to Ecosia
+  category: Search Engine
+  heroImage: /images/recipes/bowl.jpg
+  instructions:
+  - content: 'Visit [ecosia.org](https://www.ecosia.org)
+
+      - Click "Add Ecosia to [Browser]"
+
+      - Confirm the installation'
+  - content: '**Chrome/Edge**: Settings → Search engine → Select Ecosia
+
+      - **Firefox**: Settings → Search → Default search engine → Ecosia
+
+      - **Safari**: Settings → Search → Ecosia'
+  - content: 'Download the Ecosia app from the App Store or Google Play Store
+
+      - Or use Ecosia in your mobile browser'
+  dessert: '**Search History**: Ecosia does not permanently store your search queries. After one week, all data is anonymized.
+
+
+    **Transparency**: On the Ecosia website, you can see exactly how many trees have been planted.'
+  conclusion: '- **80% of Profits for Tree Planting**: Ecosia invests most of its profits in reforestation projects
+
+    - **Carbon Negative**: Ecosia removes more CO₂ from the atmosphere than it causes
+
+    - **Privacy**: No data sales to third parties
+
+    - **Transparent Financial Reports**: Monthly publication of all income and expenses'
+  description: Switch from Google to Ecosia - the search engine that plants trees
+- id: mastodon
+  title: Mastodon
+  category: Social Media
+  heroImage: /images/recipes/cookies.jpg
+  instructions:
+  - content: 'Visit [joinmastodon.org/servers](https://joinmastodon.org/servers)
+
+      - Choose a server based on your interests or region
+
+      - Recommendation for German-speaking users: mastodon.social, chaos.social'
+  - content: 'Click "Sign Up" on your chosen server
+
+      - Enter username, email, and password
+
+      - Confirm your email address'
+  - content: 'Add a profile picture and header
+
+      - Write a short bio
+
+      - Link your website or other profiles'
+  - content: 'Search for hashtags that interest you
+
+      - Follow interesting accounts
+
+      - Use the local and federated timeline for discovery'
+  dessert: '**Apps**: There are many apps for Mastodon - e.g. Tusky (Android), Ivory (iOS), or use the web interface.
+
+
+    **Migration**: You can move to another server later and take your followers with you.'
+  conclusion: '- **Decentralized**: No single company controls the network
+
+    - **Chronological Timeline**: No algorithmic sorting
+
+    - **Open Source**: The code is publicly viewable
+
+    - **No Ads**: Funded by donations and volunteers
+
+    - **Privacy**: You decide who can see your posts'
+  description: Switch to Mastodon - the decentralized social network
+- id: bookstore
+  title: Local Bookstore
+  category: Shopping
+  heroImage: /images/recipes/book.jpg
+  instructions:
+  - content: 'Search for bookstores in your area
+
+      - Many offer online ordering with pickup
+
+      - Support local businesses and jobs'
+  - content: '**buch7.de**: Donates 75% of profits to social projects
+
+      - **genialokal.de**: Mediates to local bookstores
+
+      - **Thalia, Hugendubel**: German book retail chains'
+  - content: '**medimops.de**: Used books, movies, games
+
+      - **booklooker.de**: Marketplace for used books
+
+      - Local second-hand stores'
+  dessert: '**Library**: Use your local library - many also offer e-book lending.
+
+
+    **Reading Circles**: Exchange books with friends or join a reading circle.'
+  conclusion: '- **Local Economy**: Supports local jobs
+
+    - **Expert Advice**: Personal book recommendations from staff
+
+    - **Sustainability**: Shorter shipping distances, less packaging
+
+    - **Fair Working Conditions**: Better conditions than large online retailers'
+  description: Support local bookstores instead of Amazon
