@@ -1,0 +1,288 @@
+---
+import { ClientRouter } from "astro:transitions";
+import { getRelativeLocaleUrl } from "astro:i18n";
+import "../styles/globals.css";
+import MobileMenu from "../components/MobileMenu";
+import Navigation from "../components/Navigation";
+import LanguageSwitcher from "../components/LanguageSwitcher";
+import { useTranslations } from "../utils/i18n";
+import { LOCALES, LOCALE_NAMES } from "../consts";
+import { Image } from "astro:assets";
+import logo from "../assets/logo.svg";
+
+interface Props {
+  title?: string;
+  description?: string;
+  lang?: string;
+}
+
+const { lang = Astro.currentLocale || "de" } = Astro.props;
+
+const t = useTranslations(lang);
+
+const { title = t.site.title, description = t.site.description } = Astro.props;
+
+const navItems = [
+  {
+    href: getRelativeLocaleUrl(lang, "motivation"),
+    label: t.nav.motivation,
+  },
+  {
+    href: getRelativeLocaleUrl(lang, "snacks"),
+    label: t.nav.snacks,
+  },
+  {
+    href: getRelativeLocaleUrl(lang, "recipes"),
+    label: t.nav.recipes,
+  },
+  { href: getRelativeLocaleUrl(lang, "faqs"), label: t.nav.faqs },
+  {
+    href: getRelativeLocaleUrl(lang, "partners"),
+    label: t.nav.partners,
+  },
+];
+
+const footerLinks = [
+  {
+    href: getRelativeLocaleUrl(lang, "partners"),
+    label: t.nav.partners,
+  },
+  {
+    href: getRelativeLocaleUrl(lang, "contribute"),
+    label: t.nav.contribute,
+  },
+  {
+    href: getRelativeLocaleUrl(lang, "press"),
+    label: t.nav.press,
+  },
+];
+
+const legalItems = [
+  {
+    href: getRelativeLocaleUrl(lang, "legal"),
+    label: t.nav.legal,
+  },
+  {
+    href: getRelativeLocaleUrl(lang, "privacy"),
+    label: t.nav.privacy,
+  },
+];
+
+// Generate language switching links dynamically
+const languageLinks = LOCALES.map((locale) => ({
+  code: locale,
+  name: LOCALE_NAMES[locale] || locale.toUpperCase(),
+  href: getRelativeLocaleUrl(
+    locale,
+    Astro.url.pathname.replace(new RegExp(`^/(${LOCALES.join("|")})`), ""),
+  ),
+  isActive: lang === locale,
+}));
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <script is:inline transition:persist>
+      const applyTheme = () => {
+        const isDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        document.documentElement.classList[isDark ? "add" : "remove"]("dark");
+      };
+
+      applyTheme();
+
+      // Reapply theme on view transitions
+      document.addEventListener("astro:after-swap", applyTheme);
+
+      // Also listen for media query changes
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", applyTheme);
+    </script>
+
+    <ClientRouter />
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://di.day/logo.svg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={Astro.url} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content="https://di.day/logo.svg" />
+
+    <link rel="icon" href="/favicon.png" sizes="32x32" />
+    <link rel="icon" href="/favicon.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <meta name="msapplication-TileImage" content="/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+
+    <!-- Schema.org structured data -->
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: title,
+        url: "https://di.day",
+        logo: "https://di.day/images/logo.svg",
+        description: description,
+        sameAs: [],
+      })}
+    />
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: title,
+        url: "https://di.day",
+        description: description,
+        inLanguage: lang,
+      })}
+    />
+  </head>
+  <body>
+    <div class="min-h-screen flex flex-col">
+      <header
+        class="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800"
+      >
+        <nav class="container mx-auto px-4 py-4">
+          <div class="flex items-center justify-between">
+            <a
+              href={getRelativeLocaleUrl(lang, "/")}
+              class="flex items-center gap-3"
+            >
+              <Image src={logo} alt="DI.DAY" class="h-10 w-auto" />
+            </a>
+            <Navigation navItems={navItems} client:load />
+            <div
+              class="border-l border-gray-200 dark:border-gray-700 pl-6 ml-2 hidden md:block"
+            >
+              <LanguageSwitcher
+                currentLang={lang}
+                languages={languageLinks}
+                client:load
+              />
+            </div>
+            <MobileMenu
+              t={t.menu}
+              navItems={navItems}
+              footerLinks={footerLinks}
+              legalItems={legalItems}
+              languageLinks={languageLinks}
+              client:load
+            />
+          </div>
+        </nav>
+
+        <main class="flex-1">
+          <slot />
+        </main>
+
+        <footer class="bg-gray-900 text-gray-300 py-12">
+          <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+              <div>
+                <h3 class="text-xl font-display font-bold text-white mb-4">
+                  {t.site.title}
+                </h3>
+                <p class="text-sm">
+                  {t.site.description}
+                </p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-white mb-4">
+                  {t.base_layout.links}
+                </h4>
+                <ul class="space-y-2 text-sm">
+                  <li>
+                    <a
+                      href={getRelativeLocaleUrl(lang, "partners")}
+                      class="hover:text-primary-400 transition-colors"
+                      >{t.nav.partners}</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href={getRelativeLocaleUrl(lang, "contribute")}
+                      class="hover:text-primary-400 transition-colors"
+                      >{t.nav.contribute}</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href={getRelativeLocaleUrl(lang, "motivation")}
+                      class="hover:text-primary-400 transition-colors"
+                      >{t.nav.motivation}</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href={getRelativeLocaleUrl(lang, "snacks")}
+                      class="hover:text-primary-400 transition-colors"
+                      >{t.nav.snacks}</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href={getRelativeLocaleUrl(lang, "recipes")}
+                      class="hover:text-primary-400 transition-colors"
+                      >{t.nav.recipes}</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href={getRelativeLocaleUrl(lang, "faqs")}
+                      class="hover:text-primary-400 transition-colors"
+                      >{t.nav.faqs}</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href={getRelativeLocaleUrl(lang, "press")}
+                      class="hover:text-primary-400 transition-colors"
+                      >{t.nav.press}</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold text-white mb-4">
+                  {t.base_layout.legal}
+                </h4>
+                <ul class="space-y-2 text-sm">
+                  <li>
+                    <a
+                      href={getRelativeLocaleUrl(lang, "legal")}
+                      class="hover:text-primary-400 transition-colors"
+                      >{t.nav.legal}</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href={getRelativeLocaleUrl(lang, "privacy")}
+                      class="hover:text-primary-400 transition-colors"
+                      >{t.nav.privacy}</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </header>
+    </div>
+  </body>
+</html>

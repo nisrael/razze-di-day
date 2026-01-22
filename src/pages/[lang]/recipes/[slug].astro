@@ -1,0 +1,53 @@
+---
+import { getCollection } from "astro:content";
+import RecipeLayout from "../../../layouts/RecipeLayout.astro";
+import { LOCALES, DEFAULT_LOCALE } from "@/consts.ts";
+import { RecipesRecipes } from "tina/__generated__/types";
+
+export async function getStaticPaths() {
+  const recipesCollection = await getCollection("recipes");
+
+  const paths: unknown[] = [];
+
+  LOCALES.forEach((lang) => {
+    let recipesData = recipesCollection.find((r) => r.id === lang);
+    let isFallback = false;
+    
+    if (!recipesData && lang !== DEFAULT_LOCALE) {
+      recipesData = recipesCollection.find((r) => r.id === DEFAULT_LOCALE);
+      if (recipesData) {
+        isFallback = true;
+      }
+    }
+    
+    const recipes = recipesData?.data.recipes || [];
+    recipes.forEach((recipe: RecipesRecipes) => {
+      paths.push({
+        params: { lang, slug: recipe.id },
+        props: { recipe, lang, isFallback },
+      });
+    });
+  });
+
+  return paths;
+}
+
+const { recipe, lang, isFallback } = Astro.props;
+---
+
+<RecipeLayout
+  title={recipe.title}
+  description={recipe.description}
+  category={recipe.category}
+  heroImage={recipe.heroImage}
+  slug={recipe.id}
+  time={recipe.time}
+  difficulty={recipe.difficulty}
+  ingredients={recipe.ingredients}
+  instructions={recipe.instructions}
+  dessert={recipe.dessert}
+  conclusion={recipe.conclusion}
+  topping={recipe.topping}
+  lang={lang}
+  isFallback={isFallback}
+/>

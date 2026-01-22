@@ -1,0 +1,83 @@
+{
+    "nav": {
+        "recipes": "Recipes",
+        "motivation": "Motivation",
+        "snacks": "Snacks",
+        "alternatives": "Alternatives",
+        "faqs": "FAQs",
+        "imprint": "Imprint",
+        "legal": "Legal",
+        "privacy": "Privacy",
+        "partners": "Partners",
+        "contribute": "Contribute",
+        "press": "Press"
+    },
+    "site": {
+        "title": "Digital Independence Day",
+        "description": "Switch to the good side every first Sunday!"
+    },
+    "base_layout": {
+        "links": "Links",
+        "legal": "Legal"
+    },
+    "recipe": {
+        "back": "Back to all recipes",
+        "instructions": "Instructions",
+        "dessert": "Dessert",
+        "prep_time": "Preparation Time",
+        "difficulty": "Difficulty",
+        "ingredients": "Ingredients"
+    },
+    "menu": {
+        "title": "Menu",
+        "close": "Close menu",
+        "toggle": "Toggle menu"
+    },
+    "partners_page": {
+        "partners_title": "Partners"
+    },
+    "recipes_index": {
+        "title": "Recipes",
+        "desc": "Step-by-step instructions for switching to digital independence"
+    },
+    "home": {
+        "hero_title": "Switch to the good side every first Sunday!",
+        "hero_subtitle_template": "The next DI.DAY will take place on {date}",
+        "hero_cta_recipes": "Discover Recipes",
+        "hero_cta_alternatives": "Learn about Digital Independence",
+        "featured_title": "Next Digital Independence Day",
+        "featured_desc": "On the first Sunday of every month, we encourage you to take a step toward digital independence. Discover our switch recipes and tips.",
+        "featured_all": "View all recipes",
+        "why_title": "Why Digital Independence?",
+        "why_p1": "Big tech corporations collect massive amounts of data, influence our perception through algorithms, and have an enormous impact on our lives.",
+        "why_p2": "There are privacy-friendly and ethical alternatives for almost every service. Switching is often easier than expected!",
+        "why_cta": "Learn more",
+        "contribute_title": "Together we are stronger",
+        "contribute_desc": "Every small step counts. Share your experiences and help others switch.",
+        "contribute_cta": "Contribute",
+        "events_title": "Upcoming Events",
+        "events_desc": "Check out Digital Independence Day events near you and join in!",
+        "events_cta": "View all dates",
+        "events_loading": "Loading map...",
+        "events_error_loading": "Error loading events",
+        "events_not_found": "No events found",
+        "events_more_info": "More Info",
+        "events_count": "{count} events shown on the map"
+    },
+    "press": {
+        "title": "Press",
+        "description": "Information for media representatives and journalists",
+        "graphics_title": "Graphics & Materials",
+        "graphics_text": "Here you will find logos, banners and other materials for reporting.",
+        "contact_title": "Contact",
+        "contact_text": "For inquiries and further information, please contact us at:"
+    },
+    "not_found": {
+        "title": "Page Not Found",
+        "description": "Sorry, we couldn't find the page you were looking for. It might have been moved or deleted.",
+        "home": "Back to Home"
+    },
+    "fallback": {
+        "banner": "This content is not yet available in your language. Showing the German version instead."
+    }
+}

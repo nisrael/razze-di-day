@@ -1,0 +1,83 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { useTranslations } from "../../utils/i18n";
+import { getNextDIDayInfo } from "../../utils/diday";
+import { LOCALES } from "../../consts";
+import { RecipesRecipes } from "tina/__generated__/types";
+import HeroSection from "../../components/sections/HeroSection.astro";
+import FeaturedRecipesSection from "../../components/sections/FeaturedRecipesSection.astro";
+import WhySection from "../../components/sections/WhySection.astro";
+import EventsSection from "../../components/sections/EventsSection.astro";
+import ContributeSection from "../../components/sections/ContributeSection.astro";
+import { getLocalizedContent } from "@/utils/content.ts";
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = useTranslations(lang);
+
+const { entry } = await getLocalizedContent("recipes", lang);
+const recipesData = entry?.data.recipes || [];
+const featuredRecipes = recipesData
+  .slice(0, 6)
+  .map((recipe: RecipesRecipes) => ({
+    id: `${lang}/${recipe.id}`,
+    data: {
+      title: recipe.title,
+      description: recipe.description,
+      heroImage: recipe.heroImage,
+    },
+  }));
+
+// Get next DI.DAY date
+const { formatted: nextDIDayDate } = getNextDIDayInfo(lang);
+const heroSubtitle = t.home.hero_subtitle_template.replace(
+  "{date}",
+  nextDIDayDate,
+);
+---
+
+<BaseLayout
+  lang={lang}
+  title={`Digital Independence Day | ${t.home.hero_title}`}
+>
+  <HeroSection
+    lang={lang}
+    title={t.home.hero_title}
+    subtitle={heroSubtitle}
+    ctaRecipesLabel={t.home.hero_cta_recipes}
+    ctaAlternativesLabel={t.home.hero_cta_alternatives}
+  />
+
+  <WhySection
+    lang={lang}
+    title={t.home.why_title}
+    p1={t.home.why_p1}
+    p2={t.home.why_p2}
+    ctaLabel={t.home.why_cta}
+  />
+
+  <FeaturedRecipesSection
+    lang={lang}
+    title={t.home.featured_title}
+    description={t.home.featured_desc}
+    recipes={featuredRecipes}
+    viewAllLabel={t.home.featured_all}
+  />
+
+  <EventsSection
+    lang={lang}
+    title={t.home.events_title}
+    description={t.home.events_desc}
+    ctaLabel={t.home.events_cta}
+  />
+
+  <ContributeSection
+    lang={lang}
+    title={t.home.contribute_title}
+    description={t.home.contribute_desc}
+    cta1Label={t.home.contribute_cta}
+  />
+</BaseLayout>

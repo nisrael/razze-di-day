@@ -1,0 +1,83 @@
+{
+    "nav": {
+        "recipes": "Wechselrezepte",
+        "motivation": "Motivation",
+        "snacks": "Wissenshäppchen",
+        "alternatives": "Alternativen",
+        "faqs": "FAQs",
+        "imprint": "Impressum",
+        "legal": "Rechtliches",
+        "privacy": "Datenschutz",
+        "partners": "Partner",
+        "contribute": "Mitwirken",
+        "press": "Presse"
+    },
+    "site": {
+        "title": "Digital Independence Day",
+        "description": "Jeden ersten Sonntag auf die gute Seite wechseln!"
+    },
+    "base_layout": {
+        "links": "Links",
+        "legal": "Rechtliches"
+    },
+    "recipe": {
+        "back": "Zurück zu allen Wechselrezepten",
+        "instructions": "Zubereitung",
+        "dessert": "Nachtisch",
+        "prep_time": "Zubereitungszeit",
+        "difficulty": "Schwierigkeit",
+        "ingredients": "Zutaten"
+    },
+    "menu": {
+        "title": "Menü",
+        "close": "Menü schließen",
+        "toggle": "Menü umschalten"
+    },
+    "partners_page": {
+        "partners_title": "Partner"
+    },
+    "recipes_index": {
+        "title": "Wechselrezepte",
+        "desc": "Schritt-für-Schritt Anleitungen zum Wechsel zu digitaler Unabhängigkeit"
+    },
+    "home": {
+        "hero_title": "Jeden ersten Sonntag auf die gute Seite wechseln!",
+        "hero_subtitle_template": "Am {date} findet der nächste DI.DAY statt",
+        "hero_cta_recipes": "Wechselrezepte entdecken",
+        "hero_cta_alternatives": "Mehr über digitale Unabhängigkeit",
+        "featured_title": "Der nächste Digital Independence Day",
+        "featured_desc": "Am ersten Sonntag jeden Monats ermutigen wir dich, einen Schritt zu digitaler Unabhängigkeit zu machen. Entdecke unsere Wechselrezepte und kleine Tipps.",
+        "featured_all": "Alle Rezepte ansehen",
+        "why_title": "Warum digitale Unabhängigkeit?",
+        "why_p1": "Große Tech-Konzerne sammeln massiv Daten, beeinflussen durch Algorithmen unsere Wahrnehmung und haben enormen Einfluss auf unser Leben.",
+        "why_p2": "Es gibt für fast jeden Dienst datenschutzfreundliche und ethische Alternativen. Der Wechsel ist oft einfacher als gedacht!",
+        "why_cta": "Mehr erfahren",
+        "contribute_title": "Gemeinsam sind wir stärker",
+        "contribute_desc": "Jeder kleine Schritt zählt. Teile deine Erfahrungen und hilf anderen beim Wechsel.",
+        "contribute_cta": "Mitwirken",
+        "events_title": "Kommende Events",
+        "events_desc": "Schau dir Digital Independence Day Events in deiner Nähe an und mach mit!",
+        "events_cta": "Zur Terminübersicht",
+        "events_loading": "Karte wird geladen...",
+        "events_error_loading": "Fehler beim Laden der Events",
+        "events_not_found": "Keine Events gefunden",
+        "events_more_info": "Mehr Info",
+        "events_count": "{count} Events werden auf der Karte angezeigt"
+    },
+    "press": {
+        "title": "Presse",
+        "description": "Informationen für Medienvertreter und Journalisten",
+        "graphics_title": "Grafiken & Materialien",
+        "graphics_text": "Hier findest du Logos, Banner und andere Materialien für die Berichterstattung.",
+        "contact_title": "Kontakt",
+        "contact_text": "Für Anfragen und weitere Informationen kontaktiere uns unter:"
+    },
+    "not_found": {
+        "title": "Seite nicht gefunden",
+        "description": "Entschuldigung, wir konnten die Seite, die du suchst, nicht finden. Sie wurde möglicherweise verschoben oder gelöscht.",
+        "home": "Zurück zur Startseite"
+    },
+    "fallback": {
+        "banner": "Dieser Inhalt ist in deiner Sprache noch nicht verfügbar. Es wird die deutsche Version angezeigt."
+    }
+}

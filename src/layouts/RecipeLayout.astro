@@ -1,0 +1,342 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import { getRelativeLocaleUrl } from "astro:i18n";
+import { useTranslations } from "../utils/i18n";
+import { Clock, Zap, CheckCircle, ArrowLeft, HomeIcon } from "lucide-react";
+import {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "../components/ui/breadcrumb.tsx";
+import FallbackBanner from "@/components/FallbackBanner.astro";
+
+import { remark } from "remark";
+import html from "remark-html";
+
+// Helper to parse markdown
+async function parseMd(text: string) {
+  if (!text) return "";
+  const processed = await remark().use(html).process(text);
+  return processed.toString();
+}
+
+interface Props {
+  title: string;
+  description: string;
+  category: string;
+  heroImage?: string;
+  slug: string;
+  time?: string;
+  difficulty?: string;
+  ingredients?: Array<{ content: string }>;
+  instructions?: Array<{ content: string }>;
+  dessert: string;
+  conclusion: string;
+  topping?: string;
+  lang: string;
+  isFallback?: boolean;
+}
+
+const {
+  title,
+  description,
+  category,
+  heroImage,
+  slug,
+  time,
+  difficulty,
+  ingredients,
+  instructions,
+  dessert,
+  conclusion,
+  topping,
+  lang,
+  isFallback = false,
+} = Astro.props;
+
+const t = useTranslations(lang);
+
+const dessertHtml = await parseMd(dessert);
+const conclusionHtml = await parseMd(conclusion);
+const toppingHtml = topping ? await parseMd(topping) : "";
+
+const instructionItems = instructions ? await Promise.all(
+  instructions.map(async (step) => ({
+    ...step,
+    html: await parseMd(step.content),
+  })),
+) : [];
+
+const ingredientItems = ingredients
+  ? await Promise.all(
+      ingredients.map(async (ing) => ({
+        ...ing,
+        html: await parseMd(ing.content),
+      })),
+    )
+  : [];
+---
+
+<BaseLayout
+  title={`${title} | Digital Independence Day`}
+  description={description || title}
+  lang={lang}
+>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article" slot="head" />
+  <meta property="og:url" content={Astro.url} slot="head" />
+  <meta property="og:title" content={title} slot="head" />
+  <meta property="og:description" content={description || title} slot="head" />
+  {
+    heroImage && (
+      <meta
+        property="og:image"
+        content={`https://di.day${heroImage}`}
+        slot="head"
+      />
+    )
+  }
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" slot="head" />
+  <meta property="twitter:url" content={Astro.url} slot="head" />
+  <meta property="twitter:title" content={title} slot="head" />
+  <meta
+    property="twitter:description"
+    content={description || title}
+    slot="head"
+  />
+  {
+    heroImage && (
+      <meta
+        property="twitter:image"
+        content={`https://di.day${heroImage}`}
+        slot="head"
+      />
+    )
+  }
+
+  <!-- Schema.org HowTo structured data -->
+  <script
+    type="application/ld+json"
+    slot="head"
+    set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: title,
+      description: description || title,
+      image: heroImage ? `https://di.day${heroImage}` : undefined,
+      step: [
+        ...instructions.map((step: { content: string }, index: number) => ({
+          "@type": "HowToStep",
+          text: step.content,
+          position: index + 1,
+        })),
+        ...(dessert
+          ? [
+              {
+                "@type": "HowToStep",
+                name: t.recipe.dessert,
+                text: dessert,
+                position: instructions.length + 1,
+              },
+            ]
+          : []),
+      ],
+      about: {
+        "@type": "Thing",
+        name: category,
+      },
+    })}
+  />
+  <div class="container mx-auto px-4 pt-8 max-w-4xl">
+    <Breadcrumb client:load className="mb-4">
+      <BreadcrumbList>
+        <BreadcrumbItem>
+          <BreadcrumbLink href={getRelativeLocaleUrl(lang)}>
+            <HomeIcon className="size-5" />
+          </BreadcrumbLink>
+        </BreadcrumbItem>
+        <BreadcrumbSeparator />
+        <BreadcrumbItem>
+          <BreadcrumbLink href={getRelativeLocaleUrl(lang, "recipes")}>
+            {t.nav.recipes}
+          </BreadcrumbLink>
+        </BreadcrumbItem>
+        <BreadcrumbSeparator />
+        <BreadcrumbItem>
+          <BreadcrumbPage>{title}</BreadcrumbPage>
+        </BreadcrumbItem>
+      </BreadcrumbList>
+    </Breadcrumb>
+  </div>
+
+  <article
+    class="container mx-auto px-4 pb-12 max-w-4xl"
+    transition:animate="fade"
+  >
+    {
+      heroImage && (
+        <div
+          class="mb-10 rounded-3xl overflow-hidden shadow-xl"
+          transition:name={`recipe-image-${title}`}
+        >
+          <img src={heroImage} alt={title} class="w-full h-auto object-cover" />
+        </div>
+      )
+    }
+
+    {isFallback && <FallbackBanner lang={lang} />}
+    <header class="mb-10 text-center">
+      <div
+        class="inline-block px-3 py-1 mb-4 text-sm font-medium text-primary-700 bg-primary-100 dark:text-primary-300 dark:bg-primary-900/50 rounded-full"
+      >
+        {category}
+      </div>
+      <h1
+        class="text-4xl md:text-6xl font-display font-bold mb-6 text-gray-900 dark:text-gray-100 leading-tight"
+      >
+        {title}
+      </h1>
+      <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        {description}
+      </p>
+    </header>
+
+    {
+      (time || difficulty || ingredients) && (
+        <div class="mb-12 bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+          <div class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-100 dark:divide-gray-700">
+            {/* Metadata Column */}
+            <div class="p-8 space-y-6">
+              {time && (
+                <div>
+                  <h3 class="text-sm font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-2">
+                    {t.recipe.prep_time}
+                  </h3>
+                  <p class="text-lg font-medium text-gray-900 dark:text-gray-100 flex items-center gap-2">
+                    <Clock className="h-5 w-5 text-primary-500" />
+                    {time}
+                  </p>
+                </div>
+              )}
+              {difficulty && (
+                <div>
+                  <h3 class="text-sm font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-2">
+                    {t.recipe.difficulty}
+                  </h3>
+                  <p class="text-lg font-medium text-gray-900 dark:text-gray-100 flex items-center gap-2">
+                    <Zap className="h-5 w-5 text-primary-500" />
+                    {difficulty}
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* Ingredients Column */}
+            {ingredients && ingredients.length > 0 && (
+              <div class="p-8 bg-gray-50/50 dark:bg-gray-800/50">
+                <h3 class="text-sm font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-4">
+                  {t.recipe.ingredients}
+                </h3>
+                <ul class="space-y-3">
+                  {ingredientItems.map((ingredient) => (
+                    <li class="flex items-start text-gray-700 dark:text-gray-300">
+                      <CheckCircle className="h-5 w-5 text-primary-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <span
+                        class="prose dark:prose-invert"
+                        set:html={ingredient.html}
+                      />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </div>
+      )
+    }
+
+    <div class="prose prose-lg dark:prose-invert max-w-none">
+      {
+        (
+          <section class="mb-12">
+            <ol class="list-decimal list-outside ml-4 space-y-8">
+              {instructionItems.map((step) => (
+                <li class="pl-4">
+                  <div
+                    class="mb-4 leading-relaxed text-gray-700 dark:text-gray-300"
+                    set:html={step.html}
+                  />
+                </li>
+              ))}
+            </ol>
+          </section>
+        )
+      }
+
+      {
+        dessert && (
+          <section class="mb-12 p-8 bg-primary-50 dark:bg-primary-900/20 rounded-2xl border border-primary-100 dark:border-primary-800">
+            <h2 class="text-2xl font-display font-bold mb-4 text-primary-800 dark:text-primary-200">
+              {t.recipe.dessert}
+            </h2>
+            <div
+              class="mb-4 leading-relaxed text-gray-700 dark:text-gray-300"
+              set:html={dessertHtml}
+            />
+          </section>
+        )
+      }
+
+      {
+        conclusion && (
+          <section class="mb-12 p-8 bg-gray-50 dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700">
+            <div
+              class="mb-4 leading-relaxed text-gray-700 dark:text-gray-300"
+              set:html={conclusionHtml}
+            />
+          </section>
+        )
+      }
+
+      {
+        topping && (
+          <section class="mb-12 p-8 bg-accent-50 dark:bg-accent-900/20 rounded-2xl border border-accent-100 dark:border-accent-800">
+            <h2 class="text-2xl font-display font-bold mb-4 text-accent-800 dark:text-accent-200">
+              {t.recipe.topping || "Topping"}
+            </h2>
+            <div
+              class="leading-relaxed text-gray-700 dark:text-gray-300"
+              set:html={toppingHtml}
+            />
+          </section>
+        )
+      }
+    </div>
+
+    <div
+      class="mt-12 flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-gray-200 dark:border-gray-800 text-sm text-gray-500 dark:text-gray-400"
+    >
+      <div class="flex items-center gap-2"></div>
+
+      <a
+        href={getRelativeLocaleUrl(lang, "recipes")}
+        class="inline-flex items-center px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors gap-2 font-medium"
+      >
+        <ArrowLeft className="h-4 w-4" />
+        {t.recipe.back}
+      </a>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  /* Base prose overrides if needed, but we try to use inline classes now */
+  .prose :global(p) {
+    @apply mb-4 leading-relaxed text-gray-700 dark:text-gray-300;
+  }
+</style>

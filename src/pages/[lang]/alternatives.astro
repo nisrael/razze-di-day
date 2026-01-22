@@ -1,0 +1,47 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { render } from "astro:content";
+import { Image } from "astro:assets";
+import romeImage from "../../assets/rome.jpg";
+import { LOCALES } from "@/consts.ts";
+import { getLocalizedContent } from "@/utils/content.ts";
+import FallbackBanner from "@/components/FallbackBanner.astro";
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const { entry, isFallback } = await getLocalizedContent(  "pages",  `${lang}/alternatives`);
+if (!entry) return Astro.redirect("/404");
+const { Content } = await render(entry);
+---
+
+<BaseLayout
+  lang={lang}
+  title={`${entry.data.title} | Digital Independence Day`}
+  description={entry.data.description}
+>
+  <section
+    class="relative bg-gradient-to-br from-primary-600 to-accent-600 text-white py-16 overflow-hidden"
+  >
+    <div class="absolute inset-0 opacity-30">
+      <Image src={romeImage} alt="" class="w-full h-full object-cover" />
+    </div>
+    <div class="relative container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-display font-bold mb-4">
+        {entry.data.title}
+      </h1>
+      <p class="text-xl text-primary-100">
+        {entry.data.description}
+      </p>
+    </div>
+  </section>
+
+  <div class="container mx-auto px-4 py-12 max-w-4xl">
+    {isFallback && <FallbackBanner lang={lang} />}
+    <div class="prose prose-lg dark:prose-invert max-w-none">
+      <Content />
+    </div>
+  </div>
+</BaseLayout>

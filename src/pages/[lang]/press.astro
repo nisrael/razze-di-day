@@ -1,0 +1,81 @@
+---
+import { LOCALES } from "@/consts.ts";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeroBanner from "../../components/HeroBanner.astro";
+import { useTranslations } from "@/utils/i18n.ts";
+import { render } from "astro:content";
+import { getLocalizedContent } from "@/utils/content.ts";
+import FallbackBanner from "@/components/FallbackBanner.astro";
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = useTranslations(lang);
+
+// Try to get a press content page, if it exists
+const { entry, isFallback } = await getLocalizedContent("pages", `${lang}/press`);
+let hasContent = false;
+if (entry) {
+  hasContent = true;
+}
+
+let Content = null;
+if (entry) {
+  const rendered = await render(entry);
+  Content = rendered.Content;
+}
+---
+
+<BaseLayout
+  lang={lang}
+  title={`${t.press.title || "Presse"} | Digital Independence Day`}
+  description={t.press.description ||
+    "Informationen für Medienvertreter und Journalisten"}
+>
+  <HeroBanner
+    title={t.press.title || "Presse"}
+    description={t.press.description ||
+      "Informationen für Medienvertreter und Journalisten"}
+  />
+
+  <div class="container mx-auto px-4 py-16 max-w-4xl">
+    {
+      hasContent && Content ? (
+        <div class="prose prose-lg dark:prose-invert max-w-none">
+          {isFallback && <FallbackBanner lang={lang} />}
+          <Content />
+        </div>
+      ) : (
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-8">
+            <h2 class="text-2xl font-display font-bold mb-4">
+              {t.press.graphics_title || "Grafiken & Materialien"}
+            </h2>
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+              {t.press.graphics_text ||
+                "Hier findest Du Logos, Banner und andere Materialien für die Berichterstattung."}
+            </p>
+          </div>
+
+          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-8">
+            <h2 class="text-2xl font-display font-bold mb-4">
+              {t.press.contact_title || "Kontakt"}
+            </h2>
+            <p class="text-gray-700 dark:text-gray-300">
+              {t.press.contact_text ||
+                "Für Anfragen und weitere Informationen kontaktiere uns unter:"}
+            </p>
+            <a
+              href="mailto:contact@di.day"
+              class="mt-4 inline-flex items-center text-primary-600 dark:text-primary-400 font-semibold hover:underline"
+            >
+              contact@di.day
+            </a>
+          </div>
+        </div>
+      )
+    }
+  </div>
+</BaseLayout>

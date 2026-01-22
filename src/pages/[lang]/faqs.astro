@@ -1,0 +1,99 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import FAQsList from "../../components/FAQsList";
+import { useTranslations } from "@/utils/i18n.ts";
+import { LOCALES, DEFAULT_LOCALE } from "@/consts.ts";
+import { getCollection } from "astro:content";
+import FallbackBanner from "@/components/FallbackBanner.astro";
+import { remark } from "remark";
+import html from "remark-html";
+
+// Helper to parse markdown
+async function parseMd(text: string) {
+  if (!text) return "";
+  const processed = await remark().use(html).process(text);
+  return processed.toString();
+}
+
+export async function getStaticPaths() {
+  const faqsCollection = await getCollection("faqs");
+
+  return LOCALES.map((lang) => {
+    const faqsForLang = faqsCollection.find((faq) => faq.id === lang);
+    const fallbackFaqs = faqsCollection.find(
+      (faq) => faq.id === DEFAULT_LOCALE,
+    );
+
+    const faqsData = faqsForLang || fallbackFaqs;
+    const isFallback = !faqsForLang && !!fallbackFaqs;
+
+    return {
+      params: { lang },
+      props: { faqsData: faqsData?.data, isFallback },
+    };
+  });
+}
+
+const { lang } = Astro.params;
+const { faqsData, isFallback } = Astro.props;
+const t = useTranslations(lang);
+
+const faqs = faqsData?.items
+  ? await Promise.all(
+      faqsData.items.map(async (faq) => ({
+        ...faq,
+        answer: await parseMd(faq.answer),
+      })),
+    )
+  : [];
+
+const moreQuestionsHtml = faqsData?.moreQuestions
+  ? await parseMd(faqsData.moreQuestions)
+  : "";
+---
+
+<BaseLayout
+  lang={lang}
+  title={`${t.nav.faqs} | Digital Independence Day`}
+  description={faqsData?.desc}
+>
+  <!-- Schema.org FAQPage structured data -->
+  <script
+    type="application/ld+json"
+    slot="head"
+    set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
+    })}
+  />
+  <div class="container mx-auto px-4 py-12 max-w-4xl">
+    {isFallback && <FallbackBanner lang={lang} />}
+    <header class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-display font-bold mb-4">
+        {faqsData?.title}
+      </h1>
+      <p class="text-xl text-gray-600 dark:text-gray-400">
+        {faqsData?.desc}
+      </p>
+    </header>
+
+    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
+      <FAQsList faqs={faqs} client:load />
+    </div>
+
+    <div class="mt-12 text-center">
+      <div
+        class="text-gray-600 dark:text-gray-400 mb-4 prose dark:prose-invert max-w-none"
+        set:html={moreQuestionsHtml}
+      />
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,168 @@
+{
+  "partners": [
+    {
+      "name": "101lab",
+      "logo": "/images/partners/101LAB-Logo_lila.png"
+    },
+    {
+      "name": "Bonn.digital",
+      "logo": "/images/partners/Logo_schwarz.webp"
+    },
+    {
+      "name": "Chaos Computer Club",
+      "logo": "/images/partners/Chaos_Computer_Club_logo.svg-2.webp"
+    },
+    {
+      "name": "collective zero e. V.",
+      "logo": "/images/partners/Logo_collective-zero_lila.png"
+    },
+    {
+      "name": "D64 – Zentrum für Digitalen Fortschritt",
+      "logo": "/images/partners/D64-Logo_RGB-Cyberschwarz_lila-4096x2304.png"
+    },
+    {
+      "name": "Computertruhe e. V.",
+      "logo": "/images/partners/Computertruhe-Logo-fuer-DID-Kampagne.png"
+    },
+    {
+      "name": "Datenburg e. V.",
+      "logo": "/images/partners/Datenburg_org.svg"
+    },
+    {
+      "name": "Digitalcourage e. V.",
+      "logo": "/images/partners/Digitalcourage_Logo_lila.png"
+    },
+    {
+      "name": "Digitale Gesellschaft e. V.",
+      "logo": "/images/partners/DG-Logo-lila.png"
+    },
+    {
+      "name": "Ecosia",
+      "logo": "/images/partners/ecosia-logo-1500x1125-1.webp"
+    },
+    {
+      "name": "epicenter.works",
+      "logo": "/images/partners/ew_Logo_farbe_L.webp"
+    },
+    {
+      "name": "European Permaculture Network",
+      "logo": "/images/partners/eupn-logo_lila.png"
+    },
+    {
+      "name": "fairkom Gesellschaft",
+      "logo": "/images/partners/fairkom_logo-lila.png"
+    },
+    {
+      "name": "FediVariety",
+      "logo": "/images/partners/FediVariety-logo-—-lila.png"
+    },
+    {
+      "name": "FeedBeat",
+      "logo": "/images/partners/FeedBeat-Logo-Icon-On-The-Left-1_lila.png"
+    },
+    {
+      "name": "Forum InformatikerInnen für Frieden und gesellschaftliche Verantwortung",
+      "logo": "/images/partners/fiff_ditit.png"
+    },
+    {
+      "name": "freiburg.social",
+      "logo": "/images/partners/fs-logo.webp"
+    },
+    {
+      "name": "Freie Messenger",
+      "logo": "/images/partners/fm-diday.png"
+    },
+    {
+      "name": "Freies Radio Salzkammergut",
+      "logo": "/images/partners/frs-logo-transparent-2_lila.png"
+    },
+    {
+      "name": "Gesellschaft für Informatik",
+      "logo": "/images/partners/PAK-Logo-2.webp"
+    },
+    {
+      "name": "hostsharing eG",
+      "logo": "/images/partners/hostsharing-logo-did.svg"
+    },
+    {
+      "name": "IFTAS",
+      "logo": "/images/partners/IFTAS-lila.png"
+    },
+    {
+      "name": "King Consult | Kommunikation",
+      "logo": "/images/partners/KC-logo-lila.png"
+    },
+    {
+      "name": "kleindatenverein",
+      "logo": "/images/partners/logo_kleindatenverein.png"
+    },
+    {
+      "name": "Mastodon",
+      "logo": "/images/partners/Mastodon-lila.png"
+    },
+    {
+      "name": "mailbox.org",
+      "logo": "/images/partners/mailbox_Logo_Save-Social_transparent.png"
+    },
+    {
+      "name": "netzbegrünung e. V.",
+      "logo": "/images/partners/logo-NBGclose_di_day.png"
+    },
+    {
+      "name": "Nextcloud",
+      "logo": "/images/partners/Nextcloud-logo-blue.webp"
+    },
+    {
+      "name": "Open Search Foundation",
+      "logo": "/images/partners/osf_800080.png"
+    },
+    {
+      "name": "Ossrox UG",
+      "logo": "/images/partners/ossrox-white.webp"
+    },
+    {
+      "name": "Pioneers Of Change",
+      "logo": "/images/partners/DIESES-Pioneers-of-Change-Logo-HEX-800080-4096x1229.png"
+    },
+    {
+      "name": "ROBIN WOOD",
+      "logo": "/images/partners/RW_LOGO_GR_RGB_G_1.webp"
+    },
+    {
+      "name": "Save Social - Networks For Democracy",
+      "logo": "/images/partners/signal-2025-12-18-125900_002.png"
+    },
+    {
+      "name": "Schöpflin Stiftung",
+      "logo": "/images/partners/SPS_Schoepflin_Logo_Stiftung_schwarz_RGB_mit_Schutzzone-2.webp"
+    },
+    {
+      "name": "SOCIAL SOCIAL",
+      "logo": "/images/partners/Social-Social-Logo-lila-2.png"
+    },
+    {
+      "name": "SUMA-EV",
+      "logo": "/images/partners/suma-lila.png"
+    },
+    {
+      "name": "Tangrintel Repair Café e. V.",
+      "logo": "/images/partners/Logo-Tangrintel-Repair-Cafe-e.V._lila.png"
+    },
+    {
+      "name": "Topio e. V.",
+      "logo": "/images/partners/topio-logo-big.webp"
+    },
+    {
+      "name": "ver.di Hamburg",
+      "logo": "/images/partners/signal-2025-12-16-132809.png"
+    },
+    {
+      "name": "wechange eG",
+      "logo": "/images/partners/wechange-logo.webp"
+    },
+    {
+      "name": "Wikimedia Deutschland",
+      "logo": "/images/partners/signal-2025-12-16-132805-4096x949.png"
+    }
+  ]
+}

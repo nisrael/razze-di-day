@@ -1,0 +1,17 @@
+---
+import { useTranslations } from "../utils/i18n";
+
+interface Props {
+    lang: string;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<div
+        class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-8"
+        role="alert"
+>
+    <p class="font-bold">{t.fallback.banner}</p>
+</div>
